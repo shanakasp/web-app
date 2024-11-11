@@ -1,15 +1,128 @@
 .heroSection {
   position: relative;
-  height: 80vh;
+  justify-content: space-between;
   overflow: hidden;
 }
 
-.leftImage {
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 80%;
+  height: 80%;
 
-  object-fit: cover;
+  z-index: 0;
+}
+.left {
+  flex: 1; /* Takes up 50% width */
+  position: relative;
+}
+
+.right {
+  flex: 1; /* Takes up 50% width */
+  position: relative;
 }
 
 .content {
+  position: relative;
   z-index: 10;
+  display: flex;
+  z-index: 2;
+  height: 100%;
+  align-items: left;
+  justify-content: left;
+  margin-top: 10%;
+  margin-left: 10%;
+
+  margin-bottom: 20%;
+}
+
+.left {
+  max-width: 50%;
+  text-align: left;
+}
+
+.headerTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.headerSubtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.leftSearchContainer {
+  display: flex;
+  margin-right: 3%;
+  align-items: center;
+  margin-top: 20%;
+  padding-left: 5%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: #049c64;
+  padding: 2%;
+  border-radius: 30px;
+  width: 35%;
+  font-size: 1.2rem;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.star {
+  height: auto;
+  width: auto;
+  margin-left: 80%;
+}
+
+.shadow {
+  height: auto;
+  width: 15%;
+  margin-left: -3%;
+  margin-top: -5.5%;
+  z-index: -1;
+  position: absolute;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+
+.backarrow {
+  margin-left: 10%;
+  height: 10%;
+  cursor: pointer;
+  width: auto;
+}
+
+.right {
+  position: relative; /* Make this the positioning context for the child images */
+}
+
+.rightbackgroundimage1 {
+  width: 95%;
+
+  height: auto;
+}
+
+.rightbackgroundimage2 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: auto;
+}
+
+.rightbackgroundimage7 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: auto;
 }
