@@ -1,9 +1,8 @@
-// Header.js
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import "./Header.css";
 
-function Header() {
+function Header({ isScrolled }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,7 +10,7 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="logo">
         <img src="/logo.png" alt="Logo" />
       </div>

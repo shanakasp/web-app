@@ -1,15 +1,21 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  color: #000000;
+  padding: 1rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 
-.logo img {
-  height: 40px;
-  margin-left: 45px;
-  margin-top: 20px;
+.header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -18,52 +24,54 @@
 }
 
 .nav-items {
+  list-style-type: none;
   display: flex;
-  list-style: none;
-  gap: 7.5rem;
-  margin-top: 20px;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-items li a {
-  color: #000000;
+.nav-items a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+  margin: 0 2rem;
 }
 
-.nav-items li a:hover {
+.nav-items a:hover {
   color: #049c64;
 }
 
-.loginButton {
+.header.scrolled .nav-items a {
+  color: #333;
+}
+
+.nav-items .loginButton a {
   background-color: #049c64;
-  border: none;
-  padding: 0.5rem 1rem;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-top: -8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.nav-items li .loginButton a {
   color: white;
-  text-decoration: none;
-  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
-.loginButton:hover {
-  background-color: #046b4b;
+.nav-items .loginButton a:hover {
+  background-color: #037249;
 }
 
 .nav__toggle {
   display: none;
   background-color: transparent;
   border: none;
-  font-size: 1.5rem;
+  position: absolute; /* Added position: absolute */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically centered */
+  right: 20px; /* Adjusted right position */
   cursor: pointer;
-  margin-right: 1rem;
+  color: white;
+}
+
+.header.scrolled .nav__toggle {
+  color: #333;
 }
 
 @media (max-width: 768px) {
@@ -74,17 +82,26 @@
   .nav--open .nav-items {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    margin-top: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav--open .nav-items a {
+    color: #333;
+  }
+
+  .nav--open .nav-items a:hover {
+    color: #049c64;
   }
 
   .nav__toggle {
     display: block;
-  }
-
-  .logo img {
-    height: 30px;
-    margin-left: 0;
-    margin-top: 0;
   }
 }

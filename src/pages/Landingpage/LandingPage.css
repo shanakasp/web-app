@@ -1,0 +1,15 @@
+.heroSection {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.leftImage {
+  width: 80%;
+
+  object-fit: cover;
+}
+
+.content {
+  z-index: 10;
+}
