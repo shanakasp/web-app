@@ -1,14 +1,24 @@
 // Header.js
-import React from "react";
+import { Menu, X } from "lucide-react";
+import React, { useState } from "react";
 import "./Header.css";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="logo">
         <img src="/logo.png" alt="Logo" />
       </div>
-      <nav className="nav">
+      <nav className={`nav ${isMenuOpen ? "nav--open" : ""}`}>
+        <button className="nav__toggle" onClick={toggleMenu}>
+          {isMenuOpen ? <X /> : <Menu />}
+        </button>
         <ul className="nav-items">
           <li>
             <a href="#home">Home</a>
