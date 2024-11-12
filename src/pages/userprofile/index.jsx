@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import ProfileDetails from "./ProfileDetails";
+import SavedJobs from "./SavedJobs";
 
-function index() {
-  return <div></div>;
-}
+const App = () => {
+  const [currentView, setCurrentView] = useState("savedJobs");
 
-export default index;
+  const handleViewChange = (view) => {
+    setCurrentView(view);
+  };
+
+  return (
+    <div>
+      <button onClick={() => handleViewChange("savedJobs")}>Saved Jobs</button>
+      <button onClick={() => handleViewChange("profileDetails")}>
+        Profile Details
+      </button>
+
+      <main>
+        {currentView === "savedJobs" ? <SavedJobs /> : <ProfileDetails />}
+      </main>
+    </div>
+  );
+};
+
+export default App;

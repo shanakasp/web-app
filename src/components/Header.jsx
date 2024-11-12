@@ -45,7 +45,7 @@ function Header() {
           </li>
           <li>
             <div className="loginButton">
-              <a href="#contact">Login</a>
+              <a href="/login">Login</a>
             </div>
           </li>
         </ul>
