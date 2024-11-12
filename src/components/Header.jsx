@@ -20,10 +20,10 @@ function Header({ isScrolled }) {
         </button>
         <ul className="nav-items">
           <li>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#about">Jobs</a>
+            <a href="/jobs">Jobs</a>
           </li>
           <li>
             <a href="#services">About Us</a>

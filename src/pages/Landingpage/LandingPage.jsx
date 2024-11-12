@@ -9,9 +9,10 @@ import frameImage2 from "../../Images/Vector.png";
 import myImage from "../../Images/heroBackground.png";
 import frameImage4 from "../../Images/rightheaderimage.png";
 import Header from "../../components/Header";
-import JobStatisticsDashboard from "./JobStatistics";
 import "./LandingPage.css";
+import Review from "./Review";
 import StatsPanel from "./StatsPanel";
+import Testimonial from "./Testimonial";
 import WaveDesign from "./Wavedesign";
 function LandingPage() {
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
@@ -151,7 +152,9 @@ function LandingPage() {
       <div style={{ marginTop: "8%" }}>
         <StatsPanel />
       </div>
-      <JobStatisticsDashboard />
+      {/* <JobStatisticsDashboard /> */}
+      <Testimonial />
+      <Review />
     </div>
   );
 }
