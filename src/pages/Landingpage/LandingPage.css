@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 80%;
-  height: 80%;
+  height: 90%;
 
   z-index: 0;
 }
@@ -106,7 +106,7 @@
 .rightbackgroundimage1 {
   width: 95%;
 
-  height: auto;
+  height: 93%;
 }
 
 .rightbackgroundimage2 {
@@ -125,4 +125,110 @@
   transform: translateX(-50%);
   width: 70%;
   height: auto;
+}
+
+.rightbackgroundimage8 {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: auto;
+}
+
+.rightbackgroundimage9 {
+  position: absolute;
+  top: 55%;
+  left: 85%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: auto;
+}
+
+.rightContent {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.firsttitle {
+  margin-top: -2%;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.secondtitle {
+  margin-top: 3%;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+}
+.searchComponent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  margin-top: 8%;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  gap: 15px;
+}
+
+.sectionImage,
+.calenderIcon,
+.locationIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.searchInput {
+  border: none;
+  font-size: 14px;
+  flex: 1;
+  outline: none;
+  color: #333;
+  background-color: transparent;
+}
+
+.centerSection,
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.divider {
+  height: 30px;
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #009688; /* Adjust to desired color */
+  border-radius: 8px;
+  padding: 10px;
+  width: 40px; /* Make it square */
+  height: 40px;
+}
+
+.searchButton img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* Adjust for white icon on dark background */
 }
