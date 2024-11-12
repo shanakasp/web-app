@@ -6,7 +6,7 @@ function Testimonial() {
       <span className="items-center flex text-4xl justify-center font-semibold opacity-80">
         Testimonial
       </span>
-      <p className="items-center flex justify-center mt-4">
+      <p className="items-center flex justify-center mt-4 p-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
