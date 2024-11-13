@@ -2,9 +2,22 @@ import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 
+// Add this CSS to your Header.css file:
+/* Add these new styles to your existing CSS */
+/*
+.nav-items a.active {
+  color: #049c64 !important;
+}
+
+.nav-items .loginButton a.active {
+  background-color: #037249;
+}
+*/
+
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activePath, setActivePath] = useState(window.location.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +34,18 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleNavClick = (path) => {
+    setActivePath(path);
+    setIsMenuOpen(false);
+  };
+
+  const isActive = (path) => {
+    if (path === "/") {
+      return activePath === path;
+    }
+    return activePath.startsWith(path);
+  };
+
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="logo">
@@ -32,20 +57,50 @@ function Header() {
         </button>
         <ul className="nav-items">
           <li>
-            <a href="/">Home</a>
+            <a
+              href="/"
+              className={isActive("/") ? "active" : ""}
+              onClick={() => handleNavClick("/")}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="/jobs">Jobs</a>
+            <a
+              href="/jobs"
+              className={isActive("/jobs") ? "active" : ""}
+              onClick={() => handleNavClick("/jobs")}
+            >
+              Jobs
+            </a>
           </li>
           <li>
-            <a href="#services">About Us</a>
+            <a
+              href="#services"
+              className={isActive("#services") ? "active" : ""}
+              onClick={() => handleNavClick("#services")}
+            >
+              About Us
+            </a>
           </li>
           <li>
-            <a href="#portfolio">Contact Us</a>
+            <a
+              href="#portfolio"
+              className={isActive("#portfolio") ? "active" : ""}
+              onClick={() => handleNavClick("#portfolio")}
+            >
+              Contact Us
+            </a>
           </li>
           <li>
             <div className="loginButton">
-              <a href="/login">Login</a>
+              <a
+                href="/login"
+                className={isActive("/login") ? "active" : ""}
+                onClick={() => handleNavClick("/login")}
+              >
+                Login
+              </a>
             </div>
           </li>
         </ul>

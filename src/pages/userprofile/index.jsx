@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ProfileDetails from "./ProfileDetails";
-import SavedJobs from "./SavedJobs";
 
 const App = () => {
   const [currentView, setCurrentView] = useState("savedJobs");
@@ -16,9 +15,7 @@ const App = () => {
         Profile Details
       </button>
 
-      <main>
-        {currentView === "savedJobs" ? <SavedJobs /> : <ProfileDetails />}
-      </main>
+      <ProfileDetails />
     </div>
   );
 };

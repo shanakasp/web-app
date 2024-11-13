@@ -105,3 +105,11 @@
     display: block;
   }
 }
+
+.nav-items a.active {
+  color: #049c64 !important;
+}
+
+.nav-items .loginButton a.active {
+  background-color: #037249;
+}
