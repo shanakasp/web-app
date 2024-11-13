@@ -6,8 +6,8 @@ import wave4 from "../../Images/Rectangle 20.png";
 
 const WaveDesign = () => {
   return (
-    <div className="absolute  w-full h-full overflow-hidden -z-10">
-      {/* Wave Layer 1 */}
+    <div className="absolute w-full h-full overflow-hidden -z-10">
+      {/* Wave Layer 1 (Rectangle 18) */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={wave1}
@@ -15,15 +15,15 @@ const WaveDesign = () => {
           className="w-full h-25 object-cover object-top"
         />
       </div>
-      {/* Wave Layer 2 */}
+      {/* Wave Layer 2 (Rectangle 19) */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src={wave2}
+          src={wave4}
           alt="Wave 2"
-          className="w-full h-20 object-cover object-top"
+          className="w-full mt-3 h-25 object-cover object-top"
         />
       </div>
-      {/* Wave Layer 3 */}
+      {/* Wave Layer 3 (Rectangle 20) */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={wave3}
@@ -31,12 +31,12 @@ const WaveDesign = () => {
           className="w-full h-25 object-cover object-top"
         />
       </div>
-      {/* Wave Layer 4 */}
+      {/* Wave Layer 4 (Rectangle 16) */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src={wave4}
+          src={wave2}
           alt="Wave 4"
-          className="w-full h-25 object-cover object-top"
+          className="w-full mt-10 h-15 object-cover object-top"
         />
       </div>
     </div>
