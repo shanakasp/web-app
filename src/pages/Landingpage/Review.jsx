@@ -63,7 +63,7 @@ const ReviewCarousel = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8 bg-[#fff9f7] from-green-50/50">
+    <div className="w-full max-w-6xl mx-auto px-4 py-8 bg-[#fff9f7] from-green-50/50 -z-10">
       <div className="relative h-[600px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {getVisibleReviews().map((index, position) => {
@@ -77,7 +77,7 @@ const ReviewCarousel = () => {
                       ? "left-0 -translate-x-1/4 scale-90 opacity-50 z-0"
                       : ""
                   }
-                  ${isCenter ? "translate-x-0 scale-100 opacity-100 z-20" : ""}
+                  ${isCenter ? "translate-x-0 scale-100 opacity-100 z-10" : ""}
                   ${
                     position === 2
                       ? "right-0 translate-x-1/4 scale-90 opacity-50 z-0"

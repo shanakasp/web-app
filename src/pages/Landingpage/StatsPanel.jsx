@@ -59,7 +59,7 @@ const StatsPanel = () => {
           <div className="space-y-4">
             <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
-                <h2 className="text-lg font-semibold">
+                <h2 className="text-lg font-medium">
                   Number of Jobs by Location
                 </h2>
                 <select className="border border-gray-300 rounded-md px-2 py-1 text-xs text-gray-700 bg-[#fff9f7]">
@@ -68,7 +68,7 @@ const StatsPanel = () => {
                   <option>Last 3 Months</option>
                 </select>
               </div>
-              <div className="grid grid-cols-4 gap-4 p-4 bg-[#fff9f7]">
+              <div className="grid grid-cols-4 gap-4 p-4 bg-[#fff9f7] text-xs">
                 {[
                   { location: "Ahmedabad", count: 10 },
                   { location: "Bengaluru", count: 5 },
@@ -103,10 +103,10 @@ const StatsPanel = () => {
 
             <div className="flex flex-col bg-[#fff9f7] rounded-lg  border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
-                <h2 className="text-lg font-semibold">
+                <h2 className="text-lg font-medium">
                   Number of Jobs by Experience
                 </h2>
-                <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700">
+                <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
                   <option>This Month</option>
                   <option>Last Month</option>
                   <option>Last 3 Months</option>
@@ -150,10 +150,10 @@ const StatsPanel = () => {
           {/* Middle Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-lg font-semibold">
+              <h2 className="text-lg font-medium">
                 Number of Jobs by Industry
               </h2>
-              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700">
+              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
                 <option>This Month</option>
                 <option>Last Month</option>
                 <option>Last 3 Months</option>
@@ -204,10 +204,10 @@ const StatsPanel = () => {
           {/* Right Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-lg font-semibold">
+              <h2 className="text-lg font-medium">
                 Number of Jobs by Function
               </h2>
-              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700">
+              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
                 <option>This Month</option>
                 <option>Last Month</option>
                 <option>Last 3 Months</option>

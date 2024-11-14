@@ -1,23 +1,21 @@
-import {
-  ArrowRight,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import React from "react";
-
+import CopyrightIcon from "../Images/Copyright.png";
+import instagramIcon from "../Images/Instagram Circle.png";
+import linkedinIcon from "../Images/LinkedIn Circled.png";
+import twitterIcon from "../Images/Twitter Circled.png";
+import facebookIcon from "../Images/fb.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#172b4d] text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+    <footer className="bg-[#172b4d] text-[#979797] font-poppins">
+      <div className="max-w-7xl mx-auto  py-12 opacity-90">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Find your way section */}
           <div>
-            <h3 className="text-white font-semibold text-lg italic mb-4">
+            <h3 className="text-white font-semibold text-2xl italic mb-4 font-sansita">
               Find your way
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-lg">
               <li>
                 <a href="/" className="hover:text-white transition-colors">
                   Home
@@ -46,10 +44,10 @@ const Footer = () => {
 
           {/* Apps section */}
           <div>
-            <h3 className="text-white font-semibold text-lg italic mb-4">
+            <h3 className="text-white font-semibold text-2xl italic mb-4 font-sansita">
               Apps
             </h3>
-            <p className="text-sm">
+            <p className="text-lg leading-relaxed">
               Download the Careers Central app for your Desktop or Mobile
               devices.
             </p>
@@ -57,53 +55,68 @@ const Footer = () => {
 
           {/* Contact Us section */}
           <div>
-            <h3 className="text-white font-semibold text-lg italic mb-4">
+            <h3 className="text-white font-semibold text-2xl italic mb-4 font-sansita">
               Contact Us
             </h3>
-            <p className="text-sm">
+            <p className="text-lg leading-relaxed">
               Need anything? Get in touch and we can help.
             </p>
           </div>
 
           {/* Newsletter section */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">
-              Subscribe to our <span className="italic">Newsletter</span>
-            </h3>
-            <div className="flex items-center">
+            <span className="text-lg leading-relaxed opacity-90">
+              Subscribe to our{" "}
+              <span className="italic font-sansita text-white opacity-100 text-2xl ml-1">
+                Newsletter
+              </span>
+            </span>
+            <div className="flex items-center border-b border-gray-600 pb-1 pt-10">
               <input
                 type="email"
                 placeholder="Enter your Email ID"
-                className="bg-transparent border-b border-gray-600 border-solid focus:border-white outline-none py-1 pr-10 w-full text-sm transition-colors"
+                className="bg-transparent outline-none w-full text-lg placeholder-[#979797] text-[#979797]"
               />
               <button className="ml-2 text-white hover:text-gray-300 transition-colors">
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-6 h-6" />
               </button>
             </div>
           </div>
         </div>
 
         {/* Footer bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-gray-800">
-          <div className="flex items-center mb-4 md:mb-0">
-            <span className="text-sm">
-              © Careers Central 2024. All Rights Reserved
+        <div className="flex flex-col md:flex-row justify-between items-center mt-8 pt-8 border-t border-[#b0b0b0]">
+          <div className="flex items-center mb-4 md:mb-0 text-white">
+            <a href="#">
+              <img
+                src={CopyrightIcon}
+                alt="Instagram"
+                className="w-8 h-8 mr-2"
+              />{" "}
+              {/* Increased size */}
+            </a>
+            <span className="text-lg">
+              Careers Central 2024. All Rights Reserved
             </span>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex space-x-6">
-            <a href="#" className="hover:text-white transition-colors">
-              <Facebook className="w-5 h-5" />
+          <div className="flex space-x-4">
+            <a href="#">
+              <img src={facebookIcon} alt="Facebook" className="w-10 h-10" />{" "}
+              {/* Increased size */}
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              <Linkedin className="w-5 h-5" />
+            <a href="#">
+              <img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10" />{" "}
+              {/* Increased size */}
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              <Twitter className="w-5 h-5" />
+            <a href="#">
+              <img src={twitterIcon} alt="Twitter" className="w-10 h-10" />{" "}
+              {/* Increased size */}
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              <Instagram className="w-5 h-5" />
+            <a href="#">
+              <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />{" "}
+              {/* Increased size */}
             </a>
           </div>
         </div>
