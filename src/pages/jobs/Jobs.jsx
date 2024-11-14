@@ -1,109 +1,94 @@
-import { ChevronDown, Filter, Search } from "lucide-react";
-import React from "react";
+import { ChevronDown, MapPin, Search } from "lucide-react";
+import React, { useState } from "react";
+import Filter from "../../Images/Slider.png";
 import JobDetail from "./JobDetail";
-import LeftjobList from "./LeftJobList";
+import LeftJobList from "./LeftJobList";
 
-const JobListing = () => {
+const Jobs = () => {
+  const [selectedJob, setSelectedJob] = useState(null);
+
   return (
-    <div className="max-w-full mx-auto p-4 sm:p-10 mt-10">
+    <div className="max-w-full px-[2%] sm:p-10 mt-10">
       <hr className="sm:mt-4" />
       {/* Search Section */}
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 py-3">
         {/* Search Role */}
         <div className="sm:col-span-7 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
-            <Search className="h-5 w-5 text-gray-400" />
+            <Search className="h-5 w-5 text-[#049c64]" />
           </div>
           <input
             type="text"
             placeholder="Search Role"
-            className="w-full pl-10 pr-3 py-2 bg-emerald-200 border-0 rounded-md focus:ring-2 focus:ring-emerald-500"
+            className="w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
           />
         </div>
         {/* Search By CCID */}
         <div className="sm:col-span-2 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
-            <Search className="h-5 w-5 text-gray-400" />
+            <Search className="h-5 w-5 text-[#049c64]" />
           </div>
           <input
             type="text"
             placeholder="Search By CCID"
-            className="w-full pl-10 pr-3 py-2 bg-emerald-200 border-0 rounded-md focus:ring-2 focus:ring-emerald-500"
+            className="w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
           />
         </div>
         {/* Location */}
         <div className="sm:col-span-2 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
-            <Search className="h-5 w-5 text-gray-400" />
+            <MapPin className="h-5 w-5 text-[#049c64]" /> {/* Location Icon */}
           </div>
           <input
             type="text"
             placeholder="Location"
-            className="w-full pl-10 pr-3 py-2 bg-emerald-200 border-0 rounded-md focus:ring-2 focus:ring-emerald-500"
+            className="w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
           />
         </div>
         {/* Search Button */}
         <div className="sm:col-span-1 mt-2 sm:mt-0">
-          <button className="w-full bg-white border border-emerald-500 border-solid text-emerald-500 px-4 py-2 rounded-md">
+          <button className="w-full bg-white border border-[#049c64] border-solid text-[#049c64] px-4 py-2 rounded-md hover:bg-emerald-50">
             Search
           </button>
         </div>
       </div>
       <hr />
 
-      <div>
-        {/* Filters */}
-        <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 mb-6 items-center w-full mt-3">
-          {/* Filter Button */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-emerald-500 text-white rounded-md">
-            <Filter className="h-4 w-4" />
-            Filter
-          </button>
+      {/* Filters Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 mb-6 items-center w-full mt-3">
+        <button className="flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-[#049c64] text-[#049c64] font-medium">
+          <img src={Filter} alt="Filter" className="h-4 w-4" />
+          Filter
+        </button>
 
-          {/* Location Filter */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 border-solid rounded-md">
-            Location
-            <ChevronDown className="h-4 w-4" />
-          </button>
+        {["Location", "Job Title", "Exp.Min", "Exp.Max", "Sort By"].map(
+          (filter) => (
+            <button
+              key={filter}
+              className="flex items-center justify-center gap-2 px-4 py-2 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50"
+            >
+              {filter}
+              <ChevronDown className="h-4 w-4" />
+            </button>
+          )
+        )}
 
-          {/* Job Title Filter */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 border-solid rounded-md">
-            Job Title
-            <ChevronDown className="h-4 w-4" />
-          </button>
-
-          {/* Exp. Min Filter */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 border-solid rounded-md">
-            Exp.Min
-            <ChevronDown className="h-4 w-4" />
-          </button>
-
-          {/* Exp. Max Filter */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 border-solid rounded-md">
-            Exp.Max
-            <ChevronDown className="h-4 w-4" />
-          </button>
-
-          {/* Sort By Filter */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 border-solid rounded-md">
-            Sort By
-            <ChevronDown className="h-4 w-4" />
-          </button>
-          <div className="text-gray-700 font-medium text-right w-full sm:col-span-2">
-            36 Jobs Search
-          </div>
-        </div>{" "}
+        <div className="text-gray-700 font-medium text-right">
+          36 Jobs Search
+        </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row w-full">
-        <div className="w-full sm:w-1/3 mr-0 sm:mr-4 mb-4 sm:mb-0">
-          <LeftjobList />
+      {/* Main Content */}
+      <div className="flex flex-col sm:flex-row w-full gap-4">
+        <div className="w-full sm:w-1/3">
+          <LeftJobList onSelectJob={setSelectedJob} />
         </div>
         <div className="w-full sm:w-2/3">
-          <JobDetail />
+          <JobDetail job={selectedJob} />
         </div>
       </div>
 
+      {/* Pagination */}
       <div className="flex items-center justify-between mt-6">
         <span className="text-base sm:text-xl text-gray-600">
           1 - 12 of 100
@@ -112,14 +97,16 @@ const JobListing = () => {
           {[1, 2, 3, 4, "....", 10, 11].map((page, index) => (
             <button
               key={index}
-              className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded ${
-                page === 1 ? "bg-emerald-500 text-white" : "text-gray-600"
+              className={`w-8 h-8 flex items-center justify-center rounded ${
+                page === 1
+                  ? "bg-[#049c64] text-white"
+                  : "text-gray-600 hover:bg-gray-100"
               }`}
             >
               {page}
             </button>
           ))}
-          <button className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded text-gray-600">
+          <button className="w-8 h-8 flex items-center justify-center rounded text-gray-600 hover:bg-gray-100">
             <ChevronDown className="h-4 w-4 rotate-270" />
           </button>
         </div>
@@ -128,4 +115,4 @@ const JobListing = () => {
   );
 };
 
-export default JobListing;
+export default Jobs;
