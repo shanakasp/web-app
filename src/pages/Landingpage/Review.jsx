@@ -1,5 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
+import Man1 from "../../Images/man1.png";
+import Man2 from "../../Images/man2.png";
+import Man3 from "../../Images/man3.png";
 
 const ReviewCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -7,24 +10,24 @@ const ReviewCarousel = () => {
   const reviews = [
     {
       name: "Nathan R",
-      avatar: "/api/placeholder/48/48",
+      username: "@nook",
+      avatar: Man1,
       rating: 3,
-      text: "Great experience working with the team. They delivered the project on time and were very professional throughout the process.",
-      position: "Client",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       name: "Michel Anderson",
-      avatar: "/api/placeholder/48/48",
+      username: "@andrw",
+      avatar: Man2,
       rating: 5,
-      text: "Exceptional service! The attention to detail and customer support were outstanding. Would definitely recommend to others.",
-      position: "Customer",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       name: "Anderson",
-      avatar: "/api/placeholder/48/48",
+      username: "@andrw",
+      avatar: Man3,
       rating: 3,
-      text: "Very satisfied with the results. The team was responsive and addressed all our concerns promptly.",
-      position: "Client",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
   ];
 
@@ -44,8 +47,8 @@ const ReviewCarousel = () => {
     return [...Array(5)].map((_, index) => (
       <span
         key={index}
-        className={`text-xl ${
-          index < rating ? "text-yellow-400" : "text-gray-300"
+        className={`text-2xl ${
+          index < rating ? "text-yellow-400" : "text-gray-200"
         }`}
       >
         ★
@@ -53,59 +56,91 @@ const ReviewCarousel = () => {
     ));
   };
 
+  const getVisibleReviews = () => {
+    const prev = currentIndex === 0 ? reviews.length - 1 : currentIndex - 1;
+    const next = currentIndex === reviews.length - 1 ? 0 : currentIndex + 1;
+    return [prev, currentIndex, next];
+  };
+
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8">
-      <div className="relative">
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {reviews.map((review, index) => (
-              <div key={index} className="w-full flex-shrink-0 px-4 md:px-8">
-                <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                  <div className="flex items-center mb-4">
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 bg-[#fff9f7] from-green-50/50">
+      <div className="relative h-[600px]">
+        <div className="absolute inset-0 flex items-center justify-center">
+          {getVisibleReviews().map((index, position) => {
+            const isCenter = position === 1;
+            return (
+              <div
+                key={index}
+                className={`absolute transition-all duration-500 ease-in-out
+                  ${
+                    position === 0
+                      ? "left-0 -translate-x-1/4 scale-90 opacity-50 z-0"
+                      : ""
+                  }
+                  ${isCenter ? "translate-x-0 scale-100 opacity-100 z-20" : ""}
+                  ${
+                    position === 2
+                      ? "right-0 translate-x-1/4 scale-90 opacity-50 z-0"
+                      : ""
+                  }
+                `}
+                style={{
+                  width: isCenter ? "60%" : "40%",
+                }}
+              >
+                <div
+                  className="bg-[#fff9f7] border border-gray-200 border-solid p-8 transform transition-transform duration-500"
+                  style={{
+                    boxShadow:
+                      "0 4px 8px rgba(16, 185, 129, 0.1), 0 -8px 8px rgba(16, 185, 129, 0.1)",
+                  }}
+                >
+                  <div className="flex flex-col items-center text-center mb-6">
                     <img
-                      src={review.avatar}
-                      alt={review.name}
-                      className="w-12 h-12 rounded-full"
+                      src={reviews[index].avatar}
+                      alt={reviews[index].name}
+                      className="w-16 h-16 rounded-full border-2 border-gray-300 mb-3"
                     />
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold">{review.name}</h3>
-                      <p className="text-gray-600">{review.position}</p>
-                    </div>
+                    <h3 className="text-xl font-semibold mb-1">
+                      {reviews[index].name}
+                    </h3>
+                    <p className="text-gray-500 text-sm">
+                      {reviews[index].username}
+                    </p>
                   </div>
-                  <p className="text-gray-700 mb-4">{review.text}</p>
-                  <div className="flex items-center">
-                    {renderStars(review.rating)}
+                  <p className="text-gray-600 text-center mb-6 leading-relaxed line-clamp-6">
+                    {reviews[index].text}
+                  </p>
+                  <div className="flex justify-center space-x-1">
+                    {renderStars(reviews[index].rating)}
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
 
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-50 transition-colors z-30"
         >
           <ChevronLeft className="w-6 h-6 text-gray-600" />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-50 transition-colors z-30"
         >
           <ChevronRight className="w-6 h-6 text-gray-600" />
         </button>
 
-        <div className="flex justify-center mt-4 gap-2">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center mt-6 gap-2 z-30">
           {reviews.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-colors ${
-                currentIndex === index ? "bg-blue-500" : "bg-gray-300"
+                currentIndex === index ? "bg-emerald-500" : "bg-gray-300"
               }`}
             />
           ))}
