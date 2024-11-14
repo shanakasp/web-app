@@ -75,7 +75,9 @@ const JobSearch = () => {
 
       {/* Pagination */}
       <div className="mt-6 flex items-center justify-between">
-        <span className="text-sm text-gray-600">1 - 12 of 100</span>
+        <span className="text-base sm:text-xl text-gray-600">
+          1 - 12 of 100
+        </span>
         <div className="flex items-center gap-2">
           {paginationNumbers.map((num, index) => (
             <button
