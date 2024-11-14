@@ -33,7 +33,7 @@ const ProfileDetails = () => {
         </div>
 
         {/* Final Part: Edit Button */}
-        <div className="flex justify-end sm:ml-auto">
+        <div className="flex justify-end sm:ml-auto -mr-[1%]">
           <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
             <img src={pen} alt="Edit" className="w-4 h-4" />
             Edit
@@ -42,24 +42,21 @@ const ProfileDetails = () => {
       </div>
 
       {/* Personal Information */}
-      <div className="mb-4 sm:mb-6">
-        <div className="flex items-center justify-between mb-2 sm:mb-4">
+      <div className="mb-4 sm:mb-6 border border-[#049c64] rounded-md p-3">
+        <div className="flex items-center justify-between">
           <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
             <Info className="text-gray-600" />
             <span className="text-gray-600">Personal Information</span>
           </h3>
-        </div>
-
-        <div className="p-4 border border-[#049c64] rounded-lg relative sm:p-6">
-          {/* Edit Button: Positioned at the top right */}
-          <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
+          <div>
             <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
               <img src={pen} alt="Edit" className="w-4 h-4" />
               Edit
             </button>
           </div>
+        </div>
 
-          {/* Grid Layout */}
+        <div className="py-4 rounded-lg relative sm:p-6">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
             {/* First Name */}
             <div>
@@ -101,23 +98,20 @@ const ProfileDetails = () => {
       </div>
 
       {/* Location Information */}
-      <div className="mb-4 sm:mb-6 ">
-        <div className="flex items-center justify-between mb-2 sm:mb-4">
+      <div className="mb-4 sm:mb-6 border border-[#049c64] rounded-md p-3">
+        <div className="flex items-center justify-between">
           <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
             <MapPin className="text-gray-600" />
             <span className="text-gray-600">Location Information</span>
           </h3>
-        </div>
-        <div className="p-4 border border-[#049c64] rounded-lg relative sm:p-6">
-          {/* Edit Button: Positioned at the top right */}
-          <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
+          <div>
             <button className="flex items-left gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
               <img src={pen} alt="Edit" className="w-4 h-4" />
               Edit
             </button>
           </div>
-
-          {/* Grid Layout */}
+        </div>
+        <div className="p-4 relative sm:p-6">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
             {/* Country */}
             <div>
@@ -158,12 +152,19 @@ const ProfileDetails = () => {
         </div>
       </div>
 
-      <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg mb-4">
-        <img src={Payment} alt="Description" className="w-5 h-5 " />
-        <span className="text-gray-600">Account Information</span>
-      </h3>
-
-      <div className="p-4 border border-[#049c64] rounded-lg sm:p-6 mb-[5%]">
+      <div className=" border border-[#049c64] rounded-lg sm:p-6 mb-[5%]">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
+            <img src={Payment} alt="Description" className="w-5 h-5 " />
+            <span className="text-gray-600">Account Information</span>
+          </h3>
+          <div className="-mr-[1%]">
+            <button className="flex items-left gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
+              <img src={pen} alt="Edit" className="w-4 h-4" />
+              Edit
+            </button>
+          </div>
+        </div>
         <div className="space-y-4">
           {/* Account 01 */}
           <div className="flex items-center">
@@ -177,7 +178,6 @@ const ProfileDetails = () => {
                 </div>
               </div>
             </div>
-            {/* Delete Icon - Moved to the left */}
             <div className="ml-auto lg:ml-[15%]">
               <button className="text-red-500 border border-red-500 p-1 rounded-md">
                 <svg
@@ -208,7 +208,6 @@ const ProfileDetails = () => {
                 </div>
               </div>
             </div>
-            {/* Delete Icon - Moved to the left */}
             <div className="ml-auto lg:ml-[15%]">
               <button className="text-red-500 border border-red-500 p-1 rounded-md">
                 <svg

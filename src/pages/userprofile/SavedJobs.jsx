@@ -1,5 +1,7 @@
 // SavedJobs.js
 import React from "react";
+import JobDetail from "../jobs/JobDetail";
+import LeftJobList from "../jobs/LeftJobList";
 
 const SavedJobs = () => {
   // Sample job data
@@ -18,20 +20,16 @@ const SavedJobs = () => {
   ];
 
   return (
-    <div>
-      <h2>Saved Jobs</h2>
-      {jobs.map((job) => (
-        <div key={job.id}>
-          <h3>{job.title}</h3>
-          <p>{job.company}</p>
-          <p>{job.location}</p>
-          <p>Experience: {job.experience}</p>
-          <p>Salary: {job.salary}</p>
-          <p>Job ID: {job.jobId}</p>
-          <p>CCID: {job.ccId}</p>
-          <button>Apply Job</button>
+    <div className="mb-[5%]">
+      {/* Main Content */}
+      <div className="flex flex-col sm:flex-row w-full gap-4">
+        <div className="w-full sm:w-1/3">
+          <LeftJobList />
         </div>
-      ))}
+        <div className="w-full sm:w-2/3">
+          <JobDetail j />
+        </div>
+      </div>
     </div>
   );
 };
