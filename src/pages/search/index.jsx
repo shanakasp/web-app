@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Search } from "lucide-react";
 import React from "react";
 
 const JobSearch = () => {
@@ -20,44 +20,57 @@ const JobSearch = () => {
   const paginationNumbers = [1, 2, 3, 4, "...", 10, 11];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      {/* Search Bar */}
-      <div className="relative mb-8">
-        <input
-          type="text"
-          placeholder="Search with Keywords (Role, Job Title, Occupation..)"
-          className="w-full p-3 pr-20 border rounded-md bg-green-50/30 focus:outline-none focus:ring-1 focus:ring-green-500"
-        />
-        <button className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1 text-green-500 font-medium rounded-md">
-          Search
-        </button>
+    <div className="max-w-7xl mx-auto py-[7%] border-t-2">
+      <hr></hr>
+      <div className="sm:grid sm:grid-cols-12 gap-4 mt-4">
+        {/* Search bar */}
+        <div className="sm:col-span-10 relative">
+          <div className="absolute inset-y-0 left-3 flex items-center">
+            <Search className="h-5 w-5 text-[#049c64]" />
+          </div>
+          <input
+            type="text"
+            placeholder="Search With Keywords (Role, JobTitle, Occupation ...)"
+            className="w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
+          />
+        </div>
+
+        {/* Search button */}
+        <div className="sm:col-span-2 mt-2 sm:mt-0">
+          <button className="w-full bg-white border border-[#049c64] border-solid text-[#049c64] px-4 py-2 rounded-md hover:bg-emerald-50">
+            Search
+          </button>
+        </div>
       </div>
 
+      <div class="border-b-2 mt-2"></div>
+
       {/* Frequently Searched */}
-      <div className="mb-8">
-        <h2 className="text-lg font-medium mb-4">Frequently Searched</h2>
-        <div className="flex flex-wrap gap-2">
-          {frequentSearches.map((item, index) => (
-            <button
-              key={index}
-              className="px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded-md text-blue-500"
-            >
-              {item.text}
-            </button>
-          ))}
+      <div class="border-2 mt-2">
+        <div className="mb-8  pt-3">
+          <h2 className="text-lg font-medium my-2 ml-3">Frequently Searched</h2>
+          <div className="flex flex-wrap gap-2">
+            {frequentSearches.map((item, index) => (
+              <button
+                key={index}
+                className="px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded-md text-blue-500"
+              >
+                {item.text}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Search Results */}
-      <div>
+      <div class="border-2 mt-2 p-3">
         <h2 className="text-lg font-medium mb-4">Search Results</h2>
-        <div className="space-y-3">
-          {searchResults.map((company, index) => (
-            <div key={index} className="p-3 border rounded-md hover:bg-gray-50">
-              {company}
-            </div>
-          ))}
-        </div>
+
+        {searchResults.map((company, index) => (
+          <div key={index} className="p-3  hover:bg-gray-50">
+            {company}
+          </div>
+        ))}
       </div>
 
       {/* Pagination */}
@@ -67,7 +80,7 @@ const JobSearch = () => {
           {paginationNumbers.map((num, index) => (
             <button
               key={index}
-              className={`w-8 h-8 flex items-center justify-center rounded-md 
+              className={`w-8 h-8 flex items-center justify-center  
                 ${
                   typeof num === "number" && num === 1
                     ? "bg-blue-50 text-blue-600"
@@ -77,7 +90,7 @@ const JobSearch = () => {
               {num}
             </button>
           ))}
-          <button className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-gray-100">
+          <button className="w-8 h-8 flex items-center justify-center hover:bg-gray-100">
             <ChevronRight size={20} />
           </button>
         </div>

@@ -1,14 +1,15 @@
-import { ArrowRight, Bookmark, Share2, Star } from "lucide-react";
+import { Bookmark, ChevronDown, Share2, Star } from "lucide-react";
 import React from "react";
 import { BsLightningCharge } from "react-icons/bs";
-
+import userIcon from "../../Images/Checked Identification Documents.png";
+import salaryIcon from "../../Images/Money Bag.png";
 const JobDetail = () => {
   return (
-    <div className="max-w-4xl bg-white rounded-lg shadow-lg p-6">
+    <div className="max-w-4xl bg-[#fff9f7] rounded-lg shadow-lg p-6 border">
       <div className="flex justify-between items-center px-4">
         {" "}
         {/* Added padding here */}
-        <h1 className="text-xl font-semibold text-gray-900">
+        <h1 className="text-2xl font-bold text-[#333333]-gray-900">
           Delivery Head - Customer Service Operations (15-20 yrs)
         </h1>
         <div className="flex gap-2 shrink-0">
@@ -31,7 +32,7 @@ const JobDetail = () => {
       <div className="border-b-2 box-border"></div>
 
       {/* Header Section */}
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-4 mb-4">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-4 my-4 px-2">
         {/* Left side with title and company info */}
         <div className="flex items-start gap-4">
           <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center shrink-0">
@@ -42,43 +43,39 @@ const JobDetail = () => {
             />
           </div>
           <div>
-            <h1 className="text-xl font-semibold text-gray-900">
-              Delivery Head - Customer Service Operations (15-20 yrs)
-            </h1>
+            <h2 className="text-xl font-medium text-[#333333-700] mt-1">
+              Tata Consultancy Services Ltd
+            </h2>
             <div className="mt-2">
               <div className="flex items-center gap-2">
-                <span className="inline-flex items-center px-2 py-1 bg-emerald-500 text-white rounded text-sm">
-                  3.7 <Star className="h-3 w-3 ml-1" />
+                <span className="inline-flex items-center px-2 py-1 bg-[#049c64] text-white rounded text-sm">
+                  <Star className="h-3 w-3 ml-1 fill-white mr-2" /> 3.7
                 </span>
-                <span className="text-gray-500 text-sm">
+
+                <span className="text-[#979797] text-xs">
                   Based on 81.7k Reviews
                 </span>
               </div>
-              <h2 className="text-lg text-gray-700 mt-1">
-                Tata Consultancy Services Ltd
-              </h2>
             </div>
           </div>
         </div>
 
         {/* Right side with action buttons */}
         <div className="flex gap-2 shrink-0">
-          <button className="px-6 py-2 bg-white border-2 border-emerald-500 border-solid text-emerald-500 rounded-full hover:bg-emerald-50 font-medium">
+          <button
+            className="px-6 py-1 bg-white border-2 border-[#049c64]
+ border-solid text-[#049c64]
+ rounded-full hover:bg-emerald-50 font-medium"
+          >
             Follow
-          </button>
-          <button className="p-2 text-gray-600 hover:bg-gray-100 rounded-full">
-            <Share2 className="h-5 w-5" />
-          </button>
-          <button className="p-2 text-gray-600 hover:bg-gray-100 rounded-full">
-            <Bookmark className="h-5 w-5" />
           </button>
         </div>
       </div>
 
       {/* Location and Experience */}
-      <div className="flex flex-wrap gap-4 text-gray-600 mt-4">
+      <div className="flex flex-wrap gap-4 text-[#979797] mt-4 px-2">
         <div className="flex items-center gap-2">
-          <span className="text-gray-400">
+          <span className="text-[#979797]">
             <svg
               className="h-5 w-5"
               fill="none"
@@ -96,7 +93,7 @@ const JobDetail = () => {
           15-20 Yrs
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-gray-400">
+          <span className="text-[#979797]">
             <svg
               className="h-5 w-5"
               fill="none"
@@ -133,33 +130,50 @@ const JobDetail = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-
-      {/* Salary and IDs Section */}
-      <div className="mt-6 bg-emerald-50 p-4 rounded-lg">
-        <div className="text-emerald-600 font-medium text-lg">
-          Salary: $40,000 - $60,000
-        </div>
-        <div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-600">
-          <div>Job ID: #12345</div>
-          <div>CCID: #120001</div>
-        </div>
-      </div>
-
-      {/* Action Buttons */}
-      <div className="mt-6 flex flex-wrap gap-4">
-        <button className="inline-flex items-center px-6 py-2 text-emerald-600 hover:bg-emerald-50 rounded-md">
-          Read More
-        </button>
-        <button className="inline-flex items-center px-6 py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 gap-2">
-          Easy Apply
-          <ArrowRight className="h-4 w-4" />
+      <div className="mt-6 flex justify-center items-center flex-wrap gap-4">
+        <button className="inline-flex items-center px-6 py-2 text-[#049c64] rounded-md hover:bg-[#049c64] hover:text-white transition-all">
+          <span>Read More</span>
+          <ChevronDown className="h-3 w-3 ml-2" />{" "}
+          {/* Arrow next to the text */}
         </button>
       </div>
 
-      {/* Posted Date */}
-      <div className="mt-4 text-right text-sm text-gray-500">
-        2024 August 25
-        <span className="ml-2">45d</span>
+      <div className="border-b-2 box-border mt-4"></div>
+
+      <div className="mt-6 p-4 rounded-lg">
+        <div className="mt-6 flex justify-between items-center gap-4">
+          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-lg w-80 flex items-center gap-2">
+            <img
+              src={salaryIcon}
+              alt="Salary Icon"
+              className="h-5 w-5 text-[#049c64]"
+            />
+            <span>Salary: $40,000 - $60,000</span>
+          </div>
+          <div className="text-sm text-[#979797] text-right">
+            <div>2024 August 25</div>
+            <div className="ml-2">45d</div>
+          </div>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-4">
+          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-lg w-50 flex items-center gap-2">
+            <img
+              src={userIcon}
+              alt="Salary Icon"
+              className="h-5 w-5 text-[#049c64]"
+            />{" "}
+            Job ID: #12345
+          </div>
+          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-lg w-50 flex items-center gap-2">
+            <img
+              src={userIcon}
+              alt="Salary Icon"
+              className="h-5 w-5 text-[#049c64]"
+            />{" "}
+            CCID: #120001
+          </div>
+        </div>
       </div>
     </div>
   );

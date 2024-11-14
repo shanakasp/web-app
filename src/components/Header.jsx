@@ -71,7 +71,17 @@ function Header() {
               className={isActive("/jobs") ? "active" : ""}
               onClick={() => handleNavClick("/jobs")}
             >
-              Jobs
+              jobs
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/iSearch"
+              className={isActive("/Search") ? "active" : ""}
+              onClick={() => handleNavClick("/Search")}
+            >
+              Search
             </a>
           </li>
           <li>
