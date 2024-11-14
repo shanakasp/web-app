@@ -47,8 +47,10 @@ function Header() {
   };
 
   return (
-    <header className={`header ${isScrolled ? "scrolled" : ""} `}>
-      <div className="pl-14 pt-2">
+    <header
+      className={`header ${isScrolled ? "scrolled" : ""} mb-[15%] sm:mb-0`}
+    >
+      <div className="xl:pl-14 pt-2">
         <img src="/logo.png" alt="Logo" />
       </div>
       <nav className={`nav ${isMenuOpen ? "nav--open" : ""}`}>

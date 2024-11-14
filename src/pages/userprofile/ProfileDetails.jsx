@@ -1,33 +1,39 @@
 import { Info, MapPin } from "lucide-react";
 import React from "react";
 import visa from "../../Images/Visa.png";
+import Payment from "../../Images/paymnet.png";
 import pen from "../../Images/pen.png";
 import userImg from "../../Images/userimg.png";
+
 const ProfileDetails = () => {
   return (
     <div>
       {/* Navigation Tabs */}
-      <div className="flex items-center justify-between p-6 border rounded-lg mb-6">
+      <div className="p-4 border border-[#049c64] rounded-lg mb-4 sm:p-6 sm:mb-6 sm:flex sm:items-center sm:justify-between">
         {/* First Part: Image and Name */}
-        <div className="flex items-center gap-4 w-1/4">
-          <img src={userImg} alt="Profile" className="w-16 h-16 rounded-full" />
-          <h2 className="text-xl font-semibold">Phill Forden</h2>
+        <div className="flex items-center gap-4 mb-4 sm:w-1/4 sm:mb-0">
+          <img
+            src={userImg}
+            alt="Profile"
+            className="w-12 h-12 rounded-full sm:w-16 sm:h-16"
+          />
+          <h2 className="text-lg font-semibold sm:text-xl">Phill Forden</h2>
         </div>
 
         {/* Second Part: Overall Experience */}
-        <div className="w-1/4 text-center">
+        <div className="text-center sm:w-1/4">
           <span className="font-medium">Overall Exp.</span>
           <p>10-15 yrs</p>
         </div>
 
         {/* Third Part: Last Login */}
-        <div className="w-1/4 text-center gap-4">
+        <div className="text-center sm:w-1/4">
           <span className="font-medium">Last Login</span>
           <p>5 hours ago</p>
         </div>
 
         {/* Final Part: Edit Button */}
-        <div className="ml-auto">
+        <div className="flex justify-end sm:ml-auto">
           <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
             <img src={pen} alt="Edit" className="w-4 h-4" />
             Edit
@@ -36,17 +42,17 @@ const ProfileDetails = () => {
       </div>
 
       {/* Personal Information */}
-      <div className="mb-6">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="flex items-center gap-2 text-lg font-medium">
-            <Info className="text-gray-600" /> {/* Info icon before text */}
+      <div className="mb-4 sm:mb-6">
+        <div className="flex items-center justify-between mb-2 sm:mb-4">
+          <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
+            <Info className="text-gray-600" />
             <span className="text-gray-600">Personal Information</span>
           </h3>
         </div>
 
-        <div className="relative p-6 border rounded-lg">
+        <div className="p-4 border border-[#049c64] rounded-lg relative sm:p-6">
           {/* Edit Button: Positioned at the top right */}
-          <div className="absolute top-6 right-6">
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
             <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
               <img src={pen} alt="Edit" className="w-4 h-4" />
               Edit
@@ -54,7 +60,7 @@ const ProfileDetails = () => {
           </div>
 
           {/* Grid Layout */}
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
             {/* First Name */}
             <div>
               <p className="text-sm text-gray-600 mb-1">First Name</p>
@@ -95,16 +101,16 @@ const ProfileDetails = () => {
       </div>
 
       {/* Location Information */}
-      <div className="mb-6">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="flex items-center gap-2 text-lg font-medium">
+      <div className="mb-4 sm:mb-6 ">
+        <div className="flex items-center justify-between mb-2 sm:mb-4">
+          <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
             <MapPin className="text-gray-600" />
             <span className="text-gray-600">Location Information</span>
           </h3>
         </div>
-        <div className="relative p-6 border rounded-lg">
+        <div className="p-4 border border-[#049c64] rounded-lg relative sm:p-6">
           {/* Edit Button: Positioned at the top right */}
-          <div className="absolute top-6 right-6">
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
             <button className="flex items-left gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
               <img src={pen} alt="Edit" className="w-4 h-4" />
               Edit
@@ -112,38 +118,38 @@ const ProfileDetails = () => {
           </div>
 
           {/* Grid Layout */}
-          <div className="grid grid-cols-3 gap-6">
-            {/* First Name */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
+            {/* Country */}
             <div>
               <p className="text-sm text-gray-600 mb-1">Country</p>
               <p className="font-medium">Germany</p>
             </div>
 
-            {/* Last Name */}
+            {/* City */}
             <div>
               <p className="text-sm text-gray-600 mb-1">City</p>
               <p className="font-medium">Berlin</p>
             </div>
 
-            {/* Age */}
+            {/* Zip Code */}
             <div>
               <p className="text-sm text-gray-600 mb-1">Zip Code</p>
               <p className="font-medium">10094</p>
             </div>
 
-            {/* Email Address */}
+            {/* Street */}
             <div>
               <p className="text-sm text-gray-600 mb-1">Street</p>
               <p className="font-medium">Berliner Stralie</p>
             </div>
 
-            {/* Phone Number */}
+            {/* House Number */}
             <div>
               <p className="text-sm text-gray-600 mb-1">House Number</p>
               <p className="font-medium">24</p>
             </div>
 
-            {/* Gender */}
+            {/* Apartment */}
             <div>
               <p className="text-sm text-gray-600 mb-1">Apartment</p>
               <p className="font-medium">3A</p>
@@ -151,7 +157,13 @@ const ProfileDetails = () => {
           </div>
         </div>
       </div>
-      <div className="p-6 border rounded-lg">
+
+      <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg mb-4">
+        <img src={Payment} alt="Description" className="w-5 h-5 " />
+        <span className="text-gray-600">Account Information</span>
+      </h3>
+
+      <div className="p-4 border border-[#049c64] rounded-lg sm:p-6 mb-[5%]">
         <div className="space-y-4">
           {/* Account 01 */}
           <div className="flex items-center">
@@ -159,18 +171,14 @@ const ProfileDetails = () => {
               <img src={visa} alt="Description" className="w-8 h-8 rounded" />
               <div className="flex flex-col">
                 <span className="text-[#979797]">Account 01</span>
-                <div className="flex items-center gap-4">
-                  {" "}
-                  {/* Added gap here */}
+                <div className="flex items-center gap-2">
                   <span className="text-[#333333]">**** **** **** 1141</span>
                   <span className="text-[#333333]">12/26</span>
                 </div>
               </div>
             </div>
             {/* Delete Icon - Moved to the left */}
-            <div className="ml-[10%]">
-              {" "}
-              {/* Added margin-left */}
+            <div className="ml-auto lg:ml-[15%]">
               <button className="text-red-500 border border-red-500 p-1 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -194,18 +202,14 @@ const ProfileDetails = () => {
               <img src={visa} alt="Description" className="w-8 h-8 rounded" />
               <div className="flex flex-col">
                 <span className="text-[#979797]">Account 02</span>
-                <div className="flex items-center gap-4">
-                  {" "}
-                  {/* Added gap here */}
+                <div className="flex items-center gap-2">
                   <span className="text-[#333333]">**** **** **** 1241</span>
                   <span className="text-[#333333]">12/26</span>
                 </div>
               </div>
             </div>
             {/* Delete Icon - Moved to the left */}
-            <div className="ml-[10%]">
-              {" "}
-              {/* Added margin-left */}
+            <div className="ml-auto lg:ml-[15%]">
               <button className="text-red-500 border border-red-500 p-1 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
