@@ -47,8 +47,8 @@ function Header() {
   };
 
   return (
-    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <div className="logo">
+    <header className={`header ${isScrolled ? "scrolled" : ""} `}>
+      <div className="pl-14 pt-2">
         <img src="/logo.png" alt="Logo" />
       </div>
       <nav className={`nav ${isMenuOpen ? "nav--open" : ""}`}>
@@ -93,7 +93,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <div className="loginButton">
+            <div className="loginButton pr-5">
               <a
                 href="/login"
                 className={isActive("/login") ? "active" : ""}

@@ -63,7 +63,7 @@ const ReviewCarousel = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8 bg-[#fff9f7] from-green-50/50 -z-10">
+    <div className="max-w-6xl mx-auto px-8 py-8 bg-[#fff9f7] from-green-50/50 -z-10">
       <div className="relative h-[600px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {getVisibleReviews().map((index, position) => {

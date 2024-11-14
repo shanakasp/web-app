@@ -1,30 +1,63 @@
-import { Building2, Calendar, Megaphone } from "lucide-react";
 import React from "react";
-
+import Calendar3 from "../../Images/30D.png";
+import Calendar1 from "../../Images/3D.png";
+import Calendar2 from "../../Images/7D.png";
+import Megaphone from "../../Images/Commercial.png";
+import Permanent from "../../Images/Permanent Job.png";
 const StatsPanel = () => {
   const stats = [
     {
-      icon: <Building2 className="w-8 h-8 text-emerald-600" />,
+      icon: (
+        <img
+          src={Permanent}
+          alt="Permanent Job"
+          className="w-15 h-15 text-emerald-600"
+        />
+      ), // Fixed the icon as an image
       value: "250+",
       label: "Number of Companies",
     },
     {
-      icon: <Megaphone className="w-8 h-8 text-emerald-600" />,
+      icon: (
+        <img
+          src={Megaphone}
+          alt="Job Ads"
+          className="w-15 h-15 text-emerald-600"
+        />
+      ),
       value: "3000+",
       label: "Number of Job Ads",
     },
     {
-      icon: <Calendar className="w-8 h-8 text-emerald-600" />,
+      icon: (
+        <img
+          src={Calendar1}
+          alt="Job Ads (3 Days)"
+          className="w-15 h-15 text-emerald-600"
+        />
+      ), // Updated with correct image import
       value: "50+",
       label: "Number of Job Ads (3 Days)",
     },
     {
-      icon: <Calendar className="w-8 h-8 text-emerald-600" />,
+      icon: (
+        <img
+          src={Calendar2}
+          alt="Job Ads (7 Days)"
+          className="w-15 h-15 text-emerald-600"
+        />
+      ),
       value: "150+",
       label: "Number of Job Ads (7 Days)",
     },
     {
-      icon: <Calendar className="w-8 h-8 text-emerald-600" />,
+      icon: (
+        <img
+          src={Calendar3}
+          alt="Job Ads (30 Days)"
+          className="w-15 h-15 text-emerald-600"
+        />
+      ),
       value: "2000+",
       label: "Number of Job Ads (30 Days)",
     },
@@ -34,7 +67,7 @@ const StatsPanel = () => {
     <div>
       {" "}
       <div className="relative z-10 w-full bg-[#fff9f7] pb-5 ">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-gray-300 shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-gray-300 shadow-lg py-3">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -51,10 +84,10 @@ const StatsPanel = () => {
           ))}
         </div>
       </div>
-      <div className="w-full mx-auto pt-5 px-2 bg-[#fff9f7] z-30">
+      <div className="w-full mx-auto pt-5 px-4 bg-[#fff9f7] z-30">
         {/* Stats cards overlaid on waves */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mb-5 gap-4 bg-[#fff9f7] z-30 shadow-sm border border-gray-300 py-4 px-2 shadow-xl ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mb-5 gap-4 bg-[#fff9f7] z-30 shadow-sm border border-gray-300 py-4 px-2 shadow-xl rounded-lg">
           {/* Left Column - 2 tables */}
           <div className="space-y-4">
             <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
