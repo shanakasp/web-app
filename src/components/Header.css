@@ -45,7 +45,7 @@
 }
 
 .header.scrolled .nav-items a {
-  color: #333;
+  color: #333333;
 }
 
 .nav-items .loginButton a {
@@ -68,7 +68,7 @@
   transform: translateY(-50%); /* Vertically centered */
   right: 20px; /* Adjusted right position */
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .header.scrolled .nav__toggle {

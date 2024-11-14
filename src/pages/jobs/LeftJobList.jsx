@@ -46,7 +46,7 @@ const LeftJobList = ({ onSelectJob }) => {
         <div
           key={job.id}
           onClick={() => onSelectJob(job)}
-          className="bg-[#fff9f7] border border-gray-200 border-solid  p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
+          className="bg-[#fff9f7] border border-gray-200 border-solid p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
         >
           <div className="flex justify-between items-start">
             <div className="space-y-1">

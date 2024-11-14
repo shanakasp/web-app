@@ -43,16 +43,19 @@ function LandingPage() {
         <div className="content">
           <div className="left">
             <img src={frameImage} alt="star" className="star" />
-            <div className="headerTitle">
-              Unlock your Next <br /> Career Move
-            </div>{" "}
-            <img src={frameImage2} alt="shadow" className="shadow" />
-            <div className="headerSubtitle">
-              {" "}
-              Tailored opportunities across industries and skill levels,
-              <br /> designed to match your career goals
+            <div className="headerTitle text-5xl md:text-7xl font-bold">
+              Unlock your Next <br />
+              <span style={{ color: "#049c64" }}>Career</span> Move
             </div>
-            <button className="flex items-center space-x-3 bg-emerald-500 text-white px-8 py-4 rounded-full text-lg hover:bg-emerald-600 transition-colors">
+            <img src={frameImage2} alt="shadow" className="shadow" />
+            <div className="headerSubtitle text-lg md:text-2xl mt-4">
+              Tailored opportunities across industries and skill levels,
+              <br />
+              designed to match your{" "}
+              <span style={{ color: "#049c64" }}>career</span> goals
+            </div>
+
+            <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-lg hover:bg-emerald-500 transition-colors mt-[15%]">
               <span>Start Your Search</span>
               <svg
                 className="w-5 h-5"
@@ -103,10 +106,9 @@ function LandingPage() {
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
-              {/* Search Component */}
-              <div className="bg-white rounded-full shadow-md p-2 flex flex-col md:flex-row items-center gap-2">
+              <div className="bg-white rounded-md shadow-md py-[2%] flex flex-col md:flex-row items-center gap-2 mt-[3%]">
                 <div className="flex items-center flex-1 px-4 py-2">
-                  <Search className="w-5 h-5 text-gray-400 mr-3" />
+                  <Search className="w-6 h-6 text-gray-400 mr-3" />
                   <input
                     type="text"
                     placeholder="Search Role"
@@ -114,18 +116,18 @@ function LandingPage() {
                   />
                 </div>
 
-                <div className="hidden md:block w-px h-8 bg-gray-200" />
+                <div className="hidden md:block w-px h-10 bg-[#979797]" />
 
                 <div className="flex items-center px-4 py-2">
                   <Briefcase className="w-5 h-5 text-gray-400 mr-3" />
                   <input
                     type="text"
                     placeholder="Exp."
-                    className="w-20 outline-none text-gray-600"
+                    className="w-20 outline-none text-[##979797]"
                   />
                 </div>
 
-                <div className="hidden md:block w-px h-8 bg-gray-200" />
+                <div className="hidden md:block w-px h-10 bg-[#979797]" />
 
                 <div className="flex items-center flex-1 px-4 py-2">
                   <MapPin className="w-5 h-5 text-gray-400 mr-3" />
@@ -135,10 +137,11 @@ function LandingPage() {
                     className="w-full outline-none text-gray-600"
                   />
                 </div>
-
-                <button className="bg-emerald-500 p-3 rounded-full hover:bg-emerald-600 transition-colors">
-                  <Search className="w-5 h-5 text-white" />
-                </button>
+                <div className="mr-1">
+                  <button className="bg-[#049c64] p-3 rounded-md hover:bg-emerald-500 transition-colors">
+                    <Search className="w-8 h-8 text-white" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
