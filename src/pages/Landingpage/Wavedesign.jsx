@@ -1,3 +1,4 @@
+import { Building2, Calendar, Speaker } from "lucide-react";
 import React from "react";
 import wave1 from "../../Images/Rectangle 16.png";
 import wave2 from "../../Images/Rectangle 18.png";
@@ -5,9 +6,37 @@ import wave3 from "../../Images/Rectangle 19.png";
 import wave4 from "../../Images/Rectangle 20.png";
 
 const WaveDesign = () => {
+  const stats = [
+    {
+      icon: <Building2 className="w-8 h-8 text-emerald-600" />,
+      value: "250+",
+      label: "Number of Companies",
+    },
+    {
+      icon: <Speaker className="w-8 h-8 text-emerald-600" />,
+      value: "3000+",
+      label: "Number of Job Ads",
+    },
+    {
+      icon: <Calendar className="w-8 h-8 text-emerald-600" />,
+      value: "50+",
+      label: "Number of Job Ads(3 Days)",
+    },
+    {
+      icon: <Calendar className="w-8 h-8 text-emerald-600" />,
+      value: "150+",
+      label: "Number of Job Ads(7 Days)",
+    },
+    {
+      icon: <Calendar className="w-8 h-8 text-emerald-600" />,
+      value: "2000+",
+      label: "Number of Job Ads(30 Days)",
+    },
+  ];
+
   return (
-    <div className="absolute w-full h-full overflow-hidden -z-10">
-      {/* Wave Layer 1 (Rectangle 18) */}
+    <div className="relative w-full -z-10 ">
+      {/* Wave backgrounds */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={wave1}
@@ -15,7 +44,6 @@ const WaveDesign = () => {
           className="w-full h-25 object-cover object-top"
         />
       </div>
-      {/* Wave Layer 2 (Rectangle 19) */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={wave4}
@@ -23,7 +51,6 @@ const WaveDesign = () => {
           className="w-full mt-3 h-25 object-cover object-top"
         />
       </div>
-      {/* Wave Layer 3 (Rectangle 20) */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={wave3}
@@ -31,7 +58,6 @@ const WaveDesign = () => {
           className="w-full h-25 object-cover object-top"
         />
       </div>
-      {/* Wave Layer 4 (Rectangle 16) */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={wave2}

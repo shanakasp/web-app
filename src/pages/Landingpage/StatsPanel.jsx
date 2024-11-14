@@ -31,22 +31,42 @@ const StatsPanel = () => {
   ];
 
   return (
-    <div className="w-full mx-auto px-4 rounded-lg bg-[#fff9f7]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-8">
+    <div className="w-full mx-auto pt-5 px-2 bg-[#fff9f7] z-30">
+      {/* Stats cards overlaid on waves */}
+      <div className="relative z-10 w-full bg-[#fff9f7] pb-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-gray-300 shadow-lg">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-[#fff9f7] bg-opacity-90 backdrop-blur-sm p-6 flex flex-col items-center justify-center hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="mb-4">{stat.icon}</div>
+              <div className="text-emerald-600 text-3xl font-bold mb-2">
+                {stat.value}
+              </div>
+              <div className="text-gray-600 text-sm text-center">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mb-5 gap-4 bg-[#fff9f7] z-30 shadow-sm border border-gray-300 py-4 px-2 shadow-sm ">
         {/* Left Column - 2 tables */}
         <div className="space-y-4">
-          <div className="flex flex-col bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+          <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
               <h2 className="text-lg font-semibold">
                 Number of Jobs by Location
               </h2>
-              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700">
+              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
                 <option>This Month</option>
                 <option>Last Month</option>
                 <option>Last 3 Months</option>
               </select>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-[#fff9f7]">
               {[
                 { location: "Ahmedabad", count: 10 },
                 { location: "Bengaluru", count: 5 },
@@ -68,14 +88,15 @@ const StatsPanel = () => {
                   key={index}
                   className="flex flex-col items-center border-r border-b border-gray-200 border-solid p-2"
                 >
-                  <span className="text-sm font-medium">{job.location}</span>
-                  <span className="text-sm text-gray-600">{job.count}</span>
+                  <span className="text-sm font-medium">
+                    {job.location}: {job.count}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="flex flex-col bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+          <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
               <h2 className="text-lg font-semibold">
                 Number of Jobs by Experience
@@ -86,11 +107,13 @@ const StatsPanel = () => {
                 <option>Last 3 Months</option>
               </select>
             </div>
-            <div className="p-4">
-              <div className="w-full">
+            <div className="p-4 bg-[#fff9f7]">
+              <div className="w-full border border-gray-300">
                 <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
-                  <div className="p-3 font-medium">Experience</div>
-                  <div className="p-3 font-medium">No. of Job Ads</div>
+                  <div className="p-3 font-medium text-center">Experience</div>
+                  <div className="p-3 font-medium text-center">
+                    No. of Job Ads
+                  </div>
                 </div>
                 <div className="divide-y divide-gray-200">
                   {[
@@ -103,10 +126,14 @@ const StatsPanel = () => {
                   ].map((item, index) => (
                     <div
                       key={index}
-                      className="grid grid-cols-2 hover:bg-gray-50"
+                      className={`grid grid-cols-2 hover:bg-gray-50 ${
+                        index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
+                      }`}
                     >
-                      <div className="p-3 text-sm">{item.exp}</div>
-                      <div className="p-3 text-sm">{item.count}</div>
+                      <div className="p-3 text-sm text-center">{item.exp}</div>
+                      <div className="p-3 text-sm text-center">
+                        {item.count}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -116,7 +143,7 @@ const StatsPanel = () => {
         </div>
 
         {/* Middle Column */}
-        <div className="flex flex-col bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
           <div className="flex items-center justify-between p-4">
             <h2 className="text-lg font-semibold">
               Number of Jobs by Industry
@@ -127,11 +154,13 @@ const StatsPanel = () => {
               <option>Last 3 Months</option>
             </select>
           </div>
-          <div className="p-4">
-            <div className="w-full">
+          <div className="p-4 bg-[#fff9f7]">
+            <div className="w-full border border-gray-300">
               <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
-                <div className="p-3 font-medium">Industry</div>
-                <div className="p-3 font-medium">No. of Job Ads</div>
+                <div className="p-3 font-medium text-center">Industry</div>
+                <div className="p-3 font-medium text-center">
+                  No. of Job Ads
+                </div>
               </div>
               <div className="divide-y divide-gray-200">
                 {[
@@ -150,10 +179,14 @@ const StatsPanel = () => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="grid grid-cols-2 hover:bg-gray-50"
+                    className={`grid grid-cols-2 hover:bg-gray-50 ${
+                      index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
+                    }`}
                   >
-                    <div className="p-3 text-sm">{item.industry}</div>
-                    <div className="p-3 text-sm">{item.count}</div>
+                    <div className="p-3 text-sm text-center">
+                      {item.industry}
+                    </div>
+                    <div className="p-3 text-sm text-center">{item.count}</div>
                   </div>
                 ))}
               </div>
@@ -162,47 +195,39 @@ const StatsPanel = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex flex-col bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
           <div className="flex items-center justify-between p-4">
-            <h2 className="text-lg font-semibold">
-              Number of Jobs by Function
-            </h2>
+            <h2 className="text-lg font-semibold">Number of Jobs by Salary</h2>
             <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700">
               <option>This Month</option>
               <option>Last Month</option>
               <option>Last 3 Months</option>
             </select>
           </div>
-          <div className="p-4">
-            <div className="w-full">
+          <div className="p-4 bg-[#fff9f7]">
+            <div className="w-full border border-gray-300">
               <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
-                <div className="p-3 font-medium">Function</div>
-                <div className="p-3 font-medium">No. of Job Ads</div>
+                <div className="p-3 font-medium text-center">Salary Range</div>
+                <div className="p-3 font-medium text-center">
+                  No. of Job Ads
+                </div>
               </div>
               <div className="divide-y divide-gray-200">
                 {[
-                  { function: "Technology", count: 20 },
-                  { function: "Human Resources", count: 16 },
-                  { function: "Finance", count: 20 },
-                  { function: "Operations & Supply Chain", count: 14 },
-                  { function: "Customer Service/Support", count: 15 },
-                  { function: "Sales/Business Development", count: 38 },
-                  { function: "Healthcare", count: 48 },
-                  { function: "Legal & Compliance", count: 24 },
-                  {
-                    function: "Data Analytics & Business Intelligence",
-                    count: 3,
-                  },
-                  { function: "Education", count: 15 },
-                  { function: "Engineering", count: 55 },
-                  { function: "Others", count: 155 },
+                  { salary: "10K-30K", count: 10 },
+                  { salary: "30K-50K", count: 20 },
+                  { salary: "50K-70K", count: 30 },
+                  { salary: "70K-90K", count: 40 },
+                  { salary: "90K-1L", count: 50 },
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="grid grid-cols-2 hover:bg-gray-50"
+                    className={`grid grid-cols-2 hover:bg-gray-50 ${
+                      index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
+                    }`}
                   >
-                    <div className="p-3 text-sm">{item.function}</div>
-                    <div className="p-3 text-sm">{item.count}</div>
+                    <div className="p-3 text-sm text-center">{item.salary}</div>
+                    <div className="p-3 text-sm text-center">{item.count}</div>
                   </div>
                 ))}
               </div>
