@@ -55,7 +55,7 @@ function Header() {
         <button className="nav__toggle" onClick={toggleMenu}>
           {isMenuOpen ? <X /> : <Menu />}
         </button>
-        <ul className="nav-items">
+        <ul className="nav-items text-xl">
           <li>
             <a
               href="/"
