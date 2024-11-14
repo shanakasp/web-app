@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,jsx}", // Path to all your React components
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        xxs: "0.625rem", // Custom size for xxs
+      },
+    },
   },
   plugins: [],
 };

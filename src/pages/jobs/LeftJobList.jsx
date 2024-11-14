@@ -1,6 +1,7 @@
-import { Bookmark, Briefcase, MapPin, MessageSquare, User } from "lucide-react";
+import { Bookmark, Briefcase, MapPin, MessageSquare } from "lucide-react";
 import React, { useEffect, useState } from "react";
-
+import UserIcon from "../../Images/Salary.png";
+import ImageCalender from "../../Images/Screenshot_5.png";
 const LeftJobList = ({ onSelectJob }) => {
   const [jobs, setJobs] = useState([]);
 
@@ -40,12 +41,12 @@ const LeftJobList = ({ onSelectJob }) => {
   }, []);
 
   return (
-    <div className=" max-h-[calc(100vh-300px)] overflow-y-auto border rounded-lg">
+    <div className=" max-h-[calc(100vh-300px)] overflow-y-auto border rounded-lg ">
       {jobs.map((job) => (
         <div
           key={job.id}
           onClick={() => onSelectJob(job)}
-          className="bg-white border border-gray-200 border-solid  p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
+          className="bg-[#fff9f7] border border-gray-200 border-solid  p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
         >
           <div className="flex justify-between items-start">
             <div className="space-y-1">
@@ -65,47 +66,60 @@ const LeftJobList = ({ onSelectJob }) => {
           </div>
 
           <div className="mt-4 space-y-3">
-            <div className="flex items-center text-sm text-gray-600 gap-2">
-              <Briefcase className="h-4 w-4" />
-              <span className="text-lg">{job.experience}</span>
+            <div className="flex items-center text-sm gap-4 text-[#979797]">
+              <div className="flex items-center gap-2">
+                <Briefcase className="h-4 w-4" />
+                <span className="text-lg">{job.experience}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span className="text-lg">{job.location}</span>
+              </div>
             </div>
-            <div className="flex items-center text-sm text-gray-600 gap-2">
-              <MapPin className="h-4 w-4" />
-              <span>{job.location}</span>
-            </div>
-            <div className="flex items-center text-sm text-gray-600 gap-2">
-              <User className="h-4 w-4" />
-              <span>{job.salary}</span>
-            </div>
-          </div>
 
-          <div className="mt-3 space-y-3">
-            <div className="flex items-start gap-2 text-sm text-gray-600">
-              <MessageSquare className="h-4 w-4 mt-1 flex-shrink-0" />
-              <p className="line-clamp-2">
-                {job.description}
-                <button className="text-[#049c64] hover:underline ml-1">
-                  Read More
-                </button>
-              </p>
+            <div className="mt-3 space-y-3">
+              <div className="flex items-start gap-2 text-sm ">
+                <MessageSquare className="h-4 w-4 mt-1 flex-shrink-0 text-[#979797]" />
+                <p className="line-clamp-2">
+                  {job.description}
+                  <button className="text-[#049c64] hover:underline ml-1">
+                    Read More
+                  </button>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center text-sm  gap-2">
+              <img src={UserIcon} alt="User Icon" className="h-5 w-5" />
+              <span className="text-lg">{job.salary}</span>
             </div>
           </div>
 
           <div className="mt-3 pt-3 border-t border-gray-200">
-            <div className="flex justify-between text-xs text-gray-500">
+            <div className="flex justify-between text-xs ">
               <div className="flex gap-1">
-                <span>Job ID: #{job.id}</span>
-                <span className="mx-2">|</span>
-                <span>CCID: #{job.ccid}</span>
-              </div>
-            </div>
-            <div className="flex justify-between text-xs text-gray-500 mt-2">
-              <span>Posted On: {job.postedOn}</span>
-              <div className="flex items-center gap-2">
-                <span>CC Update date</span>
-                <span className="px-2 py-1 bg-gray-100 rounded text-[#049c64]">
-                  {job.ccUpdateDate}
+                <span className="text-sm text-[#979797]">
+                  Job ID: #{job.id}
                 </span>
+                <span className="mx-2 text-[#979797]">|</span>
+                <span className="text-sm text-[#979797]">
+                  CCID: #{job.ccid}
+                </span>
+              </div>
+            </div>{" "}
+            <div className="flex justify-between items-center w-full text-xs mt-4">
+              {/* Left Section */}
+              <div className="flex items-center gap-2">
+                <span>Posted On: {job.postedOn}</span>
+              </div>
+
+              {/* Right Section */}
+              <div className="flex items-center gap-2 ">
+                <span>CC Update date</span>
+                <div className="flex items-center gap-2 px-2 py-1 rounded text-[#049c64] border border-[#049c64] border-solid">
+                  <img src={ImageCalender} alt="icon" className="h-4 w-4" />
+                  <span>{job.ccUpdateDate}</span>
+                </div>
               </div>
             </div>
           </div>

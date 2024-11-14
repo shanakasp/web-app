@@ -1,9 +1,35 @@
 import { ArrowRight, Bookmark, Share2, Star } from "lucide-react";
 import React from "react";
+import { BsLightningCharge } from "react-icons/bs";
 
 const JobDetail = () => {
   return (
     <div className="max-w-4xl bg-white rounded-lg shadow-lg p-6">
+      <div className="flex justify-between items-center px-4">
+        {" "}
+        {/* Added padding here */}
+        <h1 className="text-xl font-semibold text-gray-900">
+          Delivery Head - Customer Service Operations (15-20 yrs)
+        </h1>
+        <div className="flex gap-2 shrink-0">
+          <button className="p-2 text-gray-600 hover:text-[#049c64] hover:bg-gray-100 rounded-full">
+            <Share2 className="h-5 w-5" />
+          </button>
+          <button className="p-2 text-gray-600 hover:text-[#049c64] hover:bg-gray-100 rounded-full">
+            <Bookmark className="h-5 w-5" />
+          </button>
+        </div>
+      </div>
+      <div className="flex justify-end my-4 px-4">
+        {" "}
+        {/* Added padding here as well */}
+        <button className="inline-flex items-center px-4 py-2 text-xxs bg-[#049c64] text-white hover:bg-emerald-600 gap-2">
+          <BsLightningCharge className="h-4 w-4" />
+          Easy Apply
+        </button>
+      </div>
+      <div className="border-b-2 box-border"></div>
+
       {/* Header Section */}
       <div className="flex flex-col lg:flex-row justify-between items-start gap-4 mb-4">
         {/* Left side with title and company info */}
