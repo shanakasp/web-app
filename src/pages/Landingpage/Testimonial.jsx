@@ -3,7 +3,7 @@ import testimonila from "../../Images/testimonial.png";
 function Testimonial() {
   return (
     <div>
-      <span className="items-center flex text-4xl justify-center font-semibold opacity-80">
+      <span className="items-center pt-12 flex text-4xl justify-center font-semibold opacity-80">
         Testimonial
       </span>
       <p className="items-center flex justify-center mt-4 p-3">

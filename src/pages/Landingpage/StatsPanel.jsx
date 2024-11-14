@@ -54,7 +54,7 @@ const StatsPanel = () => {
       <div className="w-full mx-auto pt-5 px-2 bg-[#fff9f7] z-30">
         {/* Stats cards overlaid on waves */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mb-5 gap-4 bg-[#fff9f7] z-30 shadow-sm border border-gray-300 py-4 px-2 shadow-sm ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mb-5 gap-4 bg-[#fff9f7] z-30 shadow-sm border border-gray-300 py-4 px-2 shadow-xl ">
           {/* Left Column - 2 tables */}
           <div className="space-y-4">
             <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
@@ -101,7 +101,7 @@ const StatsPanel = () => {
               </div>
             </div>
 
-            <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
+            <div className="flex flex-col bg-[#fff9f7] rounded-lg  border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
                 <h2 className="text-lg font-semibold">
                   Number of Jobs by Experience
@@ -113,7 +113,7 @@ const StatsPanel = () => {
                 </select>
               </div>
               <div className="p-4 bg-[#fff9f7]">
-                <div className="w-full border border-gray-300">
+                <div className="w-full border-b border-gray-300">
                   <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
                     <div className="p-3 font-medium text-left">Experience</div>
                     <div className="p-3 font-medium text-center">
@@ -160,7 +160,7 @@ const StatsPanel = () => {
               </select>
             </div>
             <div className="p-4 bg-[#fff9f7]">
-              <div className="w-full border border-gray-300">
+              <div className="w-full border-b border-gray-300">
                 <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
                   <div className="p-3 font-medium text-left">Industry</div>
                   <div className="p-3 font-medium text-center">
@@ -214,7 +214,7 @@ const StatsPanel = () => {
               </select>
             </div>
             <div className="p-4 bg-[#fff9f7]">
-              <div className="w-full border border-gray-300">
+              <div className="w-full border-b border-gray-300">
                 <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
                   <div className="p-3 font-medium text-left">Function</div>
                   <div className="p-3 font-medium text-center">
