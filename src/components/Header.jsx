@@ -55,7 +55,7 @@ function Header() {
         <button className="nav__toggle" onClick={toggleMenu}>
           {isMenuOpen ? <X /> : <Menu />}
         </button>
-        <ul className="nav-items text-xl">
+        <ul className="nav-items text-lg ">
           <li>
             <a
               href="/"
@@ -77,11 +77,11 @@ function Header() {
 
           <li>
             <a
-              href="/iSearch"
+              href="/Search"
               className={isActive("/Search") ? "active" : ""}
               onClick={() => handleNavClick("/Search")}
             >
-              Search
+              iSearch
             </a>
           </li>
           <li>

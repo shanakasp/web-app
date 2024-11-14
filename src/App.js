@@ -28,7 +28,7 @@ function AppContent() {
         <Route path="/jobs" element={<Jobs />} />{" "}
         <Route path="/profile" element={<Profile />} />{" "}
         <Route path="/login" element={<LoginPage />} />{" "}
-        <Route path="/iSearch" element={<Search />} />{" "}
+        <Route path="/Search" element={<Search />} />{" "}
         <Route path="/register" element={<Register />} />{" "}
       </Routes>
       {showHeaderAndFooter && <Footer />}

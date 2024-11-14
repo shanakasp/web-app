@@ -64,7 +64,10 @@ const JobSearch = () => {
 
       {/* Search Results */}
       <div class="border-2 mt-2 p-3">
-        <h2 className="text-lg font-medium mb-4">Search Results</h2>
+        <h2 className="text-lg font-medium mb-4 relative inline-block">
+          Search Results
+          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#111111] opacity-70"></span>
+        </h2>
 
         {searchResults.map((company, index) => (
           <div key={index} className="p-3  hover:bg-gray-50">
