@@ -8,10 +8,10 @@ const Jobs = () => {
   const [selectedJob, setSelectedJob] = useState(null);
 
   return (
-    <div className="max-w-full px-[2%] sm:p-10 mt-10">
+    <div className="max-w-full  sm:p-10 mt-10">
       <hr className="sm:mt-4" />
       {/* Search Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 py-3">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 py-3 px-[5%]">
         {/* Search Role */}
         <div className="sm:col-span-7 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
@@ -55,7 +55,7 @@ const Jobs = () => {
       <hr />
 
       {/* Filters Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 mb-6 items-center w-full mt-3">
+      <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 mb-6 items-center w-full mt-3 px-[5%]">
         <button className="flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-[#049c64] text-[#049c64] font-medium">
           <img src={Filter} alt="Filter" className="h-4 w-4" />
           Filter
@@ -79,7 +79,7 @@ const Jobs = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col sm:flex-row w-full gap-4">
+      <div className="flex flex-col sm:flex-row w-full gap-4 px-[5%]">
         <div className="w-full sm:w-1/3">
           <LeftJobList onSelectJob={setSelectedJob} />
         </div>
@@ -89,7 +89,7 @@ const Jobs = () => {
       </div>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between mt-6">
+      <div className="flex items-center justify-between mt-6 px-[5%]">
         <span className="text-base sm:text-xl text-gray-600">
           1 - 12 of 100
         </span>

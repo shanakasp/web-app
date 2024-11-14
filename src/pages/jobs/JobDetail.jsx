@@ -5,7 +5,7 @@ import userIcon from "../../Images/Checked Identification Documents.png";
 import salaryIcon from "../../Images/Money Bag.png";
 const JobDetail = () => {
   return (
-    <div className="max-w-4xl bg-[#fff9f7] rounded-lg shadow-lg p-6 border">
+    <div className="max-w-7xl bg-[#fff9f7] rounded-lg shadow-lg p-6 border">
       <div className="flex justify-between items-center px-4">
         {" "}
         {/* Added padding here */}
