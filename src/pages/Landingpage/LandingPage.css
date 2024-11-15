@@ -155,12 +155,42 @@
   -o-transform: translateX(-50%);
 }
 
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .rightContent {
+    top: 55%; /* Move text higher on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .rightContent {
+    top: 50%; /* Adjust further for medium screens */
+    width: 90%; /* Allow more width for smaller screens */
+  }
+}
+
 .firsttitle {
-  margin-top: -5%;
+  margin-top: -25%;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   text-align: center;
+  transition: font-size 0.3s ease, margin-top 0.3s ease;
+}
+
+/* Responsive adjustments for first title */
+@media (max-width: 1424px) {
+  .firsttitle {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-top: -15%; /* Adjust margin */
+  }
+}
+
+@media (max-width: 1000px) {
+  .firsttitle {
+    font-size: 1.1rem; /* Further adjust for medium screens */
+    margin-top: -10%; /* Adjust margin */
+  }
 }
 
 .secondtitle {
@@ -170,7 +200,24 @@
   font-weight: bold;
   font-size: 1.1rem;
   text-align: left;
+  transition: font-size 0.3s ease, margin-top 0.3s ease;
 }
+
+/* Responsive adjustments for second title */
+@media (max-width: 1024px) {
+  .secondtitle {
+    font-size: 0.8rem; /* Reduce font size */
+    margin-top: 3%; /* Adjust margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .secondtitle {
+    font-size: 0.9rem; /* Further reduce font size */
+    margin-top: 2%; /* Adjust margin */
+  }
+}
+
 .searchComponent {
   display: flex;
   align-items: center;
