@@ -20,8 +20,8 @@ const JobSearch = () => {
   const paginationNumbers = [1, 2, 3, 4, "...", 10, 11];
 
   return (
-    <div className="max-w-7xl mx-auto py-[6%] border-t-2">
-      <hr></hr>
+    <div className="max-w-7xl mx-auto py-[5%] border-t-2">
+      <hr class="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200 " />
       <div className="sm:grid sm:grid-cols-12 gap-4 mt-4">
         {/* Search bar */}
         <div className="sm:col-span-10 relative">
@@ -36,17 +36,17 @@ const JobSearch = () => {
         </div>
 
         {/* Search button */}
-        <div className="sm:col-span-2 mt-2 sm:mt-0">
+        <div className="sm:col-span-2 mt-2 mb-2 sm:mt-0">
           <button className="w-full bg-white border border-[#049c64] border-solid text-[#049c64] px-4 py-2 rounded-md hover:bg-emerald-50">
             Search
           </button>
         </div>
       </div>
 
-      <div class="border-b-2 mt-2"></div>
+      <hr class="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200 mt-1" />
 
       {/* Frequently Searched */}
-      <div class="border-2 mt-2">
+      <div class="border-2 mt-[1%]">
         <div className="mb-8  pt-3">
           <h2 className="text-lg font-medium my-2 ml-3">Frequently Searched</h2>
           <div className="flex flex-wrap gap-2">

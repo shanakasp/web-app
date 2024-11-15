@@ -9,9 +9,9 @@ const Jobs = () => {
 
   return (
     <div className="max-w-full  sm:p-10 mt-10">
-      <hr className="sm:mt-4" />
+      <hr class="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 mt-4" />
       {/* Search Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 py-3 px-[5%]">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 py-3 px-[5%] mt-1">
         {/* Search Role */}
         <div className="sm:col-span-7 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
@@ -52,7 +52,7 @@ const Jobs = () => {
           </button>
         </div>
       </div>
-      <hr />
+      <hr class="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 mt-1" />
 
       {/* Filters Section */}
       <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 mb-6 items-center w-full mt-3 px-[5%]">

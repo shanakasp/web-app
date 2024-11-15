@@ -13,8 +13,9 @@ const Index = () => {
 
   return (
     <div className="max-w-7xl mx-auto pt-[4%]">
+      <hr class="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 mt-3" />
       {/* Navigation Tabs */}
-      <div className="flex justify-center items-center border-y-2">
+      <div className="flex justify-center items-center">
         <div className="pt-8 max-w-md w-full">
           <div className="flex gap-2 justify-center">
             <button
@@ -40,6 +41,7 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <hr class="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 " />
 
       {/* Render the active component based on the state */}
       <div className="mt-6">
