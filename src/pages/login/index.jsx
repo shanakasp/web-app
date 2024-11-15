@@ -153,7 +153,8 @@ const Index = () => {
                   </div>
                   <a
                     href="#"
-                    className="text-emerald-600 hover:text-emerald-500"
+                    className="text-[#049c64]
+ hover:text-emerald-500"
                   >
                     Forgot Password?
                   </a>
@@ -161,7 +162,8 @@ const Index = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors"
+                  className="w-full bg-[#049c64]
+ text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors"
                 >
                   Sign In
                 </button>
@@ -187,7 +189,11 @@ const Index = () => {
 
                 <div className="text-center text-gray-600">
                   Don't have an account?{" "}
-                  <a href="#" className="text-emerald-600 hover:underline">
+                  <a
+                    href="/register"
+                    className="text-[#049c64]
+ hover:underline"
+                  >
                     Create Account
                   </a>
                 </div>
