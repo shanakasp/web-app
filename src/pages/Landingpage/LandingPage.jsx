@@ -115,7 +115,7 @@ function LandingPage() {
             />
 
             {/* Text content */}
-            <div className="rightContent relative z-10 px-1 pt-6">
+            <div className="rightContent relative z-10 px-1 ">
               <p className="firsttitle">
                 Effortless Job Search Across Leading <br /> Companies
               </p>
@@ -127,8 +127,8 @@ function LandingPage() {
 
             {/* Search feature at the bottom */}
 
-            <div className="bg-[#fff9f7] rounded-md shadow-md py-2  flex flex-col md:flex-row items-center gap-2 mt-auto  z-20 w-[600px]">
-              <div className="flex items-center flex-1 ">
+            <div className="bg-[#fff9f7] rounded-md shadow-md pl-6 py-2 flex flex-col md:flex-row items-center gap-2 z-20 w-[600px] absolute right-9 top-[82%]">
+              <div className="flex items-center flex-1">
                 <Search className="w-6 h-6 text-gray-400 mr-3" />
                 <input
                   type="text"
