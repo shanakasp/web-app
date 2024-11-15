@@ -464,7 +464,7 @@ const Index = () => {
                   <a
                     href="/login"
                     className="text-[#049c64]
- hover:underline"
+ hover:underline ml-1"
                   >
                     Log in
                   </a>
