@@ -37,6 +37,20 @@ const LeftJobList = ({ onSelectJob }) => {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
       },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+      },
     ]);
   }, []);
 

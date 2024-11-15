@@ -20,36 +20,37 @@ const JobSearch = () => {
   const paginationNumbers = [1, 2, 3, 4, "...", 10, 11];
 
   return (
-    <div className="max-w-7xl mx-auto py-[5%] border-t-2">
-      <hr class="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200 " />
-      <div className="sm:grid sm:grid-cols-12 gap-4 mt-4">
-        {/* Search bar */}
-        <div className="sm:col-span-10 relative">
-          <div className="absolute inset-y-0 left-3 flex items-center">
-            <Search className="h-5 w-5 text-[#049c64]" />
+    <div className="max-w-full  sm:p-10 mt-10">
+      <div className="w-7xl mx-auto py-10 px-[7%]">
+        <hr className="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200" />
+
+        <div className="sm:grid sm:grid-cols-12 gap-4 mt-6">
+          {/* Search bar */}
+          <div className="sm:col-span-10 relative">
+            <div className="absolute inset-y-0 left-3 flex items-center">
+              <Search className="h-5 w-5 text-[#049c64]" />
+            </div>
+            <input
+              type="text"
+              placeholder="Search With Keywords (Role, JobTitle, Occupation ...)"
+              className="w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
+            />
           </div>
-          <input
-            type="text"
-            placeholder="Search With Keywords (Role, JobTitle, Occupation ...)"
-            className="w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
-          />
+
+          {/* Search button */}
+          <div className="sm:col-span-2 mt-2 sm:mt-0">
+            <button className="w-full bg-white border border-[#049c64] border-solid text-[#049c64] px-4 py-2 rounded-md hover:bg-emerald-50">
+              Search
+            </button>
+          </div>
         </div>
 
-        {/* Search button */}
-        <div className="sm:col-span-2 mt-2 mb-2 sm:mt-0">
-          <button className="w-full bg-white border border-[#049c64] border-solid text-[#049c64] px-4 py-2 rounded-md hover:bg-emerald-50">
-            Search
-          </button>
-        </div>
-      </div>
+        <hr className="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200 mt-4" />
 
-      <hr class="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200 mt-1" />
-
-      {/* Frequently Searched */}
-      <div class="border-2 mt-[1%]">
-        <div className="mb-8  pt-3">
-          <h2 className="text-lg font-medium my-2 ml-3">Frequently Searched</h2>
-          <div className="flex flex-wrap gap-2">
+        {/* Frequently Searched */}
+        <div className="border-2 mt-6 p-4">
+          <h2 className="text-lg font-medium mb-4">Frequently Searched</h2>
+          <div className="flex flex-wrap gap-3">
             {frequentSearches.map((item, index) => (
               <button
                 key={index}
@@ -60,44 +61,43 @@ const JobSearch = () => {
             ))}
           </div>
         </div>
-      </div>
 
-      {/* Search Results */}
-      <div class="border-2 mt-2 p-3">
-        <h2 className="text-lg font-medium mb-4 relative inline-block">
-          Search Results
-          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#111111] opacity-70"></span>
-        </h2>
+        {/* Search Results */}
+        <div className="border-2 mt-4 p-4">
+          <h2 className="text-lg font-medium mb-4 relative inline-block">
+            Search Results
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#111111] opacity-70"></span>
+          </h2>
 
-        {searchResults.map((company, index) => (
-          <div key={index} className="p-3  hover:bg-gray-50">
-            {company}
-          </div>
-        ))}
-      </div>
+          {searchResults.map((company, index) => (
+            <div key={index} className="p-3 hover:bg-gray-50 rounded-md">
+              {company}
+            </div>
+          ))}
+        </div>
 
-      {/* Pagination */}
-      <div className="mt-6 flex items-center justify-between">
-        <span className="text-base sm:text-xl text-gray-600">
-          1 - 12 of 100
-        </span>
-        <div className="flex items-center gap-2">
-          {paginationNumbers.map((num, index) => (
-            <button
-              key={index}
-              className={`w-8 h-8 flex items-center justify-center  
-                ${
+        {/* Pagination */}
+        <div className="mt-6 flex items-center justify-between">
+          <span className="text-base sm:text-xl text-gray-600">
+            1 - 12 of 100
+          </span>
+          <div className="flex items-center gap-2">
+            {paginationNumbers.map((num, index) => (
+              <button
+                key={index}
+                className={`w-8 h-8 flex items-center justify-center ${
                   typeof num === "number" && num === 1
                     ? "bg-blue-50 text-blue-600"
                     : "hover:bg-gray-100"
-                }`}
-            >
-              {num}
+                } rounded-md`}
+              >
+                {num}
+              </button>
+            ))}
+            <button className="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded-md">
+              <ChevronRight size={20} />
             </button>
-          ))}
-          <button className="w-8 h-8 flex items-center justify-center hover:bg-gray-100">
-            <ChevronRight size={20} />
-          </button>
+          </div>
         </div>
       </div>
     </div>

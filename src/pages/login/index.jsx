@@ -9,6 +9,7 @@ import google from "../../Images/google.png";
 import mailIcon from "../../Images/icons/email.png";
 import passwordIcon from "../../Images/icons/password.png";
 import logo from "../../Images/logo.png";
+
 const Index = () => {
   return (
     <div
@@ -22,9 +23,9 @@ const Index = () => {
         alt="Top Right Image"
         className="absolute top-0 right-0"
         style={{
-          width: "22%", // You can adjust the width as per your needs
-          height: "auto", // Or set a fixed height if you prefer
-          objectFit: "cover", // Makes sure the image doesn't get stretched
+          width: "18%", // Adjusted for large screens
+          height: "auto",
+          objectFit: "cover",
         }}
       />
       <img
@@ -32,22 +33,22 @@ const Index = () => {
         alt="Bottom Right Image"
         className="absolute bottom-0 right-0 hidden md:block"
         style={{
-          width: "26%",
+          width: "22%", // Adjusted for large screens
           height: "auto",
           objectFit: "cover",
         }}
       />
 
       <div
-        className="w-full xl:max-w-[1400px] mx-auto rounded-3xl overflow-hidden"
+        className="w-full xl:max-w-[1300px] mx-auto rounded-3xl overflow-hidden"
         style={{
           boxShadow: "0 8px 10px rgba(0, 0, 0, 0.3)",
         }}
       >
         <div className="flex flex-col md:flex-row">
-          {/* Left Section - Full width on mobile, half on desktop */}
+          {/* Left Section */}
           <div
-            className="relative p-8 md:p-12 md:w-1/2 overflow-hidden"
+            className="relative p-6 md:p-10 md:w-1/2 overflow-hidden"
             style={{
               background: "#45AE89",
             }}
@@ -58,7 +59,7 @@ const Index = () => {
               alt="Top Image"
               className="absolute top-0 left-1/2 transform -translate-x-1/2"
               style={{
-                width: "70%",
+                width: "60%", // Reduced for large screens
                 height: "auto",
                 objectFit: "cover",
               }}
@@ -69,15 +70,15 @@ const Index = () => {
               alt="Bottom Image"
               className="absolute bottom-0 left-16 xl:ml-6"
               style={{
-                width: "78%",
+                width: "70%", // Adjusted for large screens
                 height: "auto",
                 objectFit: "cover",
               }}
             />
             {/* Main Content */}
-            <div className="relative h-full flex flex-col justify-center py-8 xl:px-[12%] md:py-0">
+            <div className="relative h-full flex flex-col justify-center py-6 xl:px-[10%] md:py-0">
               <h1
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-tight mb-4 text-center md:text-left"
+                className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4 text-center md:text-left"
                 style={{
                   textShadow: "0 4px 8px rgba(0,0,0,0.1)",
                 }}
@@ -93,7 +94,7 @@ const Index = () => {
           </div>
 
           {/* Right Section */}
-          <div className="relative p-8 md:p-12 md:w-1/2 bg-[#f5f6fa]">
+          <div className="relative p-6 md:p-10 md:w-1/2 bg-[#f5f6fa]">
             {/* Login Form */}
             <div className="max-w-md mx-auto relative">
               <div className="text-center mb-6 md:mb-8">
@@ -106,7 +107,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <h2 className="text-xl md:text-2xl font-semibold text-center mb-8 md:mb-12">
+              <h2 className="text-xl md:text-2xl font-semibold text-center mb-6 md:mb-8">
                 Welcome Back. We're Here to Help You Succeed!
               </h2>
 
@@ -133,7 +134,7 @@ const Index = () => {
                   <div className="relative">
                     <img
                       src={passwordIcon}
-                      alt="Mail Icon"
+                      alt="Password Icon"
                       className="w-5 h-5 absolute left-3 top-3"
                     />
                     <input
@@ -156,19 +157,14 @@ const Index = () => {
                       Remember me
                     </label>
                   </div>
-                  <a
-                    href="#"
-                    className="text-[#049c64]
- hover:text-emerald-500"
-                  >
+                  <a href="#" className="text-[#049c64] hover:text-emerald-500">
                     Forgot Password?
                   </a>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#049c64]
- text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors"
+                  className="w-full bg-[#049c64] text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors"
                 >
                   Sign In
                 </button>
@@ -187,8 +183,8 @@ const Index = () => {
                   <button className="p-2 border border-gray-200 rounded-lg hover:bg-emerald-100">
                     <img src={facebook} alt="Facebook" className="h-6 w-6" />
                   </button>
-                  <button className="p-2 border border-gray-200 rounded-lg  hover:bg-emerald-100">
-                    <img src={apple} alt="GitHub" className="h-6 w-6" />
+                  <button className="p-2 border border-gray-200 rounded-lg hover:bg-emerald-100">
+                    <img src={apple} alt="Apple" className="h-6 w-6" />
                   </button>
                 </div>
 
@@ -196,8 +192,7 @@ const Index = () => {
                   Don't have an account?{" "}
                   <a
                     href="/register"
-                    className="text-[#049c64]
- hover:underline"
+                    className="text-[#049c64] hover:underline"
                   >
                     Create Account
                   </a>
