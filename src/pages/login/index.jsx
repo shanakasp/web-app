@@ -1,17 +1,44 @@
 import { Lock, Mail } from "lucide-react";
 import React from "react";
-import bottomImage from "../../Images/bottomlogin.png";
-import topImage from "../../Images/loginform top.png";
+import topRight from "../../Images/Ellipse 3.png";
+import bottomImage from "../../Images/RightBottom2.png";
+import topImage from "../../Images/TopRight2.png";
+import apple from "../../Images/apple.png";
+import bottomRight from "../../Images/bottomRight.png";
+import facebook from "../../Images/facebook.png";
+import google from "../../Images/google.png";
+import logo from "../../Images/logo.png";
 const Index = () => {
   return (
     <div
       className="min-h-screen w-full p-4 md:p-8 flex items-center justify-center"
       style={{
-        background: "linear-gradient(to right, #049D65 50%, #dadaea 50%)",
+        background: "linear-gradient(to right, #049D65 50%, #E0E1EF 50%)",
       }}
     >
+      <img
+        src={topRight}
+        alt="Top Right Image"
+        className="absolute top-0 right-0"
+        style={{
+          width: "22%", // You can adjust the width as per your needs
+          height: "auto", // Or set a fixed height if you prefer
+          objectFit: "cover", // Makes sure the image doesn't get stretched
+        }}
+      />
+      <img
+        src={bottomRight}
+        alt="Bottom Right Image"
+        className="absolute bottom-0 right-0 hidden md:block"
+        style={{
+          width: "26%",
+          height: "auto",
+          objectFit: "cover",
+        }}
+      />
+
       <div
-        className="w-full max-w-6xl rounded-3xl overflow-hidden"
+        className="w-full xl:max-w-[1400px] mx-auto rounded-3xl overflow-hidden"
         style={{
           boxShadow: "0 8px 10px rgba(0, 0, 0, 0.3)",
         }}
@@ -30,7 +57,7 @@ const Index = () => {
               alt="Top Image"
               className="absolute top-0 left-1/2 transform -translate-x-1/2"
               style={{
-                width: "80%",
+                width: "70%",
                 height: "auto",
                 objectFit: "cover",
               }}
@@ -39,9 +66,9 @@ const Index = () => {
             <img
               src={bottomImage}
               alt="Bottom Image"
-              className="absolute bottom-0 left-14"
+              className="absolute bottom-0 left-16 xl:ml-6"
               style={{
-                width: "81%",
+                width: "78%",
                 height: "auto",
                 objectFit: "cover",
               }}
@@ -49,7 +76,7 @@ const Index = () => {
             {/* Main Content */}
             <div className="relative h-full flex flex-col justify-center py-8 xl:px-[12%] md:py-0">
               <h1
-                className="text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4 text-center md:text-left"
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-tight mb-4 text-center md:text-left"
                 style={{
                   textShadow: "0 4px 8px rgba(0,0,0,0.1)",
                 }}
@@ -69,12 +96,13 @@ const Index = () => {
             {/* Login Form */}
             <div className="max-w-md mx-auto relative">
               <div className="text-center mb-6 md:mb-8">
-                <h2 className="text-emerald-600 text-sm font-semibold">
-                  CAREERS CENTRAL
-                </h2>
-                <p className="text-sm text-gray-600">
-                  Connecting Talent With Opportunity
-                </p>
+                <div className="flex flex-col items-center">
+                  <img
+                    src={logo}
+                    alt="Careers Central"
+                    className="w-auto h-auto max-w-xs"
+                  />
+                </div>
               </div>
 
               <h2 className="text-xl md:text-2xl font-semibold text-center mb-8 md:mb-12">
@@ -85,7 +113,10 @@ const Index = () => {
                 <div className="relative">
                   <label className="text-gray-600 mb-2 block">Email</label>
                   <div className="relative">
-                    <Mail className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <Mail
+                      className="w-5 h-5 absolute left-3 top-3 text-[#049c64]
+0"
+                    />
                     <input
                       type="email"
                       placeholder="Enter your email address"
@@ -97,7 +128,10 @@ const Index = () => {
                 <div className="relative">
                   <label className="text-gray-600 mb-2 block">Password</label>
                   <div className="relative">
-                    <Lock className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <Lock
+                      className="w-5 h-5 absolute left-3 top-3 text-[#049c64]
+"
+                    />
                     <input
                       type="password"
                       placeholder="******************"
@@ -134,32 +168,20 @@ const Index = () => {
 
                 <div className="relative text-center">
                   <div className="absolute top-1/2 w-full h-px bg-gray-200" />
-                  <span className="relative bg-white px-4 text-sm text-gray-500">
+                  <span className="relative bg-[#f5f6fa] px-4 text-sm text-gray-500">
                     or
                   </span>
                 </div>
 
                 <div className="flex justify-center space-x-4">
-                  <button className="p-2 border border-gray-200 rounded-lg hover:bg-gray-50">
-                    <img
-                      src="/api/placeholder/24/24"
-                      alt="Google"
-                      className="h-6 w-6"
-                    />
+                  <button className="p-2 border border-gray-200 rounded-lg hover:bg-emerald-100">
+                    <img src={google} alt="Google" className="h-6 w-6" />
                   </button>
-                  <button className="p-2 border border-gray-200 rounded-lg hover:bg-gray-50">
-                    <img
-                      src="/api/placeholder/24/24"
-                      alt="Facebook"
-                      className="h-6 w-6"
-                    />
+                  <button className="p-2 border border-gray-200 rounded-lg hover:bg-emerald-100">
+                    <img src={facebook} alt="Facebook" className="h-6 w-6" />
                   </button>
-                  <button className="p-2 border border-gray-200 rounded-lg hover:bg-gray-50">
-                    <img
-                      src="/api/placeholder/24/24"
-                      alt="GitHub"
-                      className="h-6 w-6"
-                    />
+                  <button className="p-2 border border-gray-200 rounded-lg  hover:bg-emerald-100">
+                    <img src={apple} alt="GitHub" className="h-6 w-6" />
                   </button>
                 </div>
 
