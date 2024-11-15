@@ -43,16 +43,29 @@ function LandingPage() {
         <div className="content">
           <div className="left">
             <img src={frameImage} alt="star" className="star" />
-            <div className="headerTitle text-5xl md:text-7xl font-bold">
-              Unlock your Next <br />
-              <span style={{ color: "#049c64" }}>Career</span> Move
+            <div className="relative">
+              <div className="headerTitle text-5xl md:text-7xl font-bold z-50 relative">
+                Unlock your Next <br />
+                <span
+                  style={{ color: "#049c64", position: "relative", zIndex: 10 }}
+                >
+                  Career
+                </span>{" "}
+                Move
+              </div>
+
+              {/* Image positioned behind the "Career" text */}
+              <img
+                src={frameImage2}
+                alt="shadow"
+                className="absolute -mt-[8%] -z-10 top-[130%] -left-[5%] transform -translate-y-1/2"
+              />
             </div>
-            <img src={frameImage2} alt="shadow" className="shadow" />
-            <div className="headerSubtitle text-lg md:text-2xl mt-4">
+
+            <div className="headerSubtitle text-lg md:text-2xl mt-4 z-50">
               Tailored opportunities across industries and skill levels,
               <br />
-              designed to match your{" "}
-              <span style={{ color: "#049c64" }}>career</span> goals
+              designed to match your career goals
             </div>
 
             <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-lg hover:bg-emerald-500 transition-colors mt-[15%]">
@@ -72,76 +85,83 @@ function LandingPage() {
               </svg>
             </button>
           </div>
-          <div className="right">
+
+          <div className="right flex flex-col relative  max-w-[642px] h-[733px] w-[733px]  mx-auto">
+            {/* Background images */}
             <img
               src={frameImage6}
               alt="next"
-              className="rightbackgroundimage1"
-            ></img>
+              className="rightbackgroundimage1 absolute"
+            />
             <img
               src={frameImage7}
               alt="next"
-              className="rightbackgroundimage7"
-            ></img>
+              className="rightbackgroundimage7 absolute"
+            />
             <img
               src={frameImage4}
               alt="next"
-              className="rightbackgroundimage2"
-            ></img>
+              className="rightbackgroundimage2 absolute"
+            />
             <img
               src={frameImage8}
               alt="next"
-              className="rightbackgroundimage8"
-            ></img>
+              className="rightbackgroundimage8 absolute"
+            />
             <img
               src={frameImage9}
               alt="next"
-              className="rightbackgroundimage9"
-            ></img>
-            <div className="rightContent">
+              className="rightbackgroundimage9 absolute"
+            />
+
+            {/* Text content */}
+            <div className="rightContent relative z-10 px-1 pt-6">
               <p className="firsttitle">
-                Effortless Job Search Across Leading Companies
+                Effortless Job Search Across Leading <br /> Companies
               </p>
               <p className="secondtitle">
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
-              <div className="bg-white rounded-md shadow-md py-[2%] flex flex-col md:flex-row items-center gap-2 mt-[3%]">
-                <div className="flex items-center flex-1 px-4 py-2">
-                  <Search className="w-6 h-6 text-gray-400 mr-3" />
-                  <input
-                    type="text"
-                    placeholder="Search Role"
-                    className="w-full outline-none text-gray-600"
-                  />
-                </div>
+            </div>
 
-                <div className="hidden md:block w-px h-10 bg-[#979797]" />
+            {/* Search feature at the bottom */}
 
-                <div className="flex items-center px-4 py-2">
-                  <Briefcase className="w-5 h-5 text-gray-400 mr-3" />
-                  <input
-                    type="text"
-                    placeholder="Exp."
-                    className="w-20 outline-none text-[##979797]"
-                  />
-                </div>
+            <div className="bg-[#fff9f7] rounded-md shadow-md py-2  flex flex-col md:flex-row items-center gap-2 mt-auto  z-20 w-[600px]">
+              <div className="flex items-center flex-1 ">
+                <Search className="w-6 h-6 text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  placeholder="Search Role"
+                  className="w-full outline-none text-gray-600"
+                />
+              </div>
 
-                <div className="hidden md:block w-px h-10 bg-[#979797]" />
+              <div className="hidden md:block w-px h-10 bg-[#979797]" />
 
-                <div className="flex items-center flex-1 px-4 py-2">
-                  <MapPin className="w-5 h-5 text-gray-400 mr-3" />
-                  <input
-                    type="text"
-                    placeholder="Location"
-                    className="w-full outline-none text-gray-600"
-                  />
-                </div>
-                <div className="mr-1">
-                  <button className="bg-[#049c64] p-3 rounded-md hover:bg-emerald-500 transition-colors">
-                    <Search className="w-8 h-8 text-white" />
-                  </button>
-                </div>
+              <div className="flex items-center px-4 py-2">
+                <Briefcase className="w-5 h-5 text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  placeholder="Exp."
+                  className="w-20 outline-none text-gray-600"
+                />
+              </div>
+
+              <div className="hidden md:block w-px h-10 bg-[#979797]" />
+
+              <div className="flex items-center flex-1 px-4 py-2">
+                <MapPin className="w-5 h-5 text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  placeholder="Location"
+                  className="w-full outline-none text-gray-600"
+                />
+              </div>
+              <div className="mr-1">
+                <button className="bg-[#049c64] p-3 rounded-md hover:bg-emerald-500 transition-colors">
+                  <Search className="w-8 h-8 text-white" />
+                </button>
               </div>
             </div>
           </div>
