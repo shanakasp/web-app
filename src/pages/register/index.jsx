@@ -13,9 +13,11 @@ import topImage from "../../Images/TopRight2.png";
 import topImage3 from "../../Images/TopRight3.png";
 import topImage4 from "../../Images/Topright4.png";
 import apple from "../../Images/apple.png";
-import bottomRight from "../../Images/bottomRight.png";
+import bottomRight from "../../Images/cricle100.png";
 import facebook from "../../Images/facebook.png";
 import google from "../../Images/google.png";
+
+import dots from "../../Images/dots.png";
 import logo from "../../Images/logo.png";
 import topImage2 from "../../Images/register2.png";
 import topImage6 from "../../Images/topRight5.png";
@@ -42,9 +44,19 @@ const Index = () => {
       <img
         src={bottomRight}
         alt="Bottom Right Image"
-        className="absolute bottom-0 right-0 hidden md:block"
+        className="absolute -bottom-14 right-0.5 hidden md:block"
         style={{
           width: "26%",
+          height: "auto",
+          objectFit: "cover",
+        }}
+      />
+      <img
+        src={dots}
+        alt="Bottom Right Image"
+        className="absolute bottom-20 right-[5%] hidden md:block"
+        style={{
+          width: "5%",
           height: "auto",
           objectFit: "cover",
         }}
@@ -121,7 +133,7 @@ const Index = () => {
             <img
               src={topImage6}
               alt="Top Image2"
-              className="absolute top-[68%] left-[62.5%] transform -translate-x-1/2"
+              className="absolute top-[68%] left-[65.5%] transform -translate-x-1/2"
               style={{
                 width: "25%",
                 height: "auto",
@@ -162,7 +174,7 @@ const Index = () => {
             <img
               src={topImage2}
               alt="Top Image2"
-              className="absolute top-[85%] left-[67%] transform -translate-x-1/2"
+              className="absolute top-[85%] left-[70%] transform -translate-x-1/2"
               style={{
                 width: "25%",
                 height: "auto",
@@ -170,7 +182,7 @@ const Index = () => {
               }}
             />
 
-            <div className="relative h-full flex flex-col justify-center py-8 xl:px-[12%] md:py-0 mt-[20%]">
+            <div className="relative h-full flex flex-col justify-center py-8 xl:px-[12%] md:py-0 mt-[15%]">
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-tight mb-4 text-center md:text-left"
                 style={{
