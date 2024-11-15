@@ -1,5 +1,6 @@
 import { Briefcase, MapPin, Search } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import frameImage7 from "../../Images/Ellipse 66.png";
 import frameImage9 from "../../Images/Ellipse 67.png";
 import frameImage8 from "../../Images/Ellipse 69.png";
@@ -16,7 +17,7 @@ import Testimonial from "./Testimonial";
 import WaveDesign from "./Wavedesign";
 function LandingPage() {
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       setIsHeaderScrolled(window.pageYOffset > 0);
@@ -62,27 +63,34 @@ function LandingPage() {
               />
             </div>
 
-            <div className="headerSubtitle text-lg md:text-2xl mt-4 z-50">
+            <div className="headerSubtitle text-lg xl:text-xl md:text-lg mt-6 z-50">
               Tailored opportunities across industries and skill levels,
               <br />
               designed to match your career goals
             </div>
 
-            <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-lg hover:bg-emerald-500 transition-colors mt-[15%]">
-              <span>Start Your Search</span>
-              <svg
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
+            <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-xl hover:bg-emerald-500 transition-colors mt-[23%]">
+              <span
+                onClick={() => navigate("/jobs")}
+                className="cursor-pointer  "
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
+                Start Your Search
+              </span>
+              <div className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-white">
+                <svg
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </div>
             </button>
           </div>
 
@@ -137,7 +145,7 @@ function LandingPage() {
                 />
               </div>
 
-              <div className="hidden md:block w-px h-10 bg-[#979797]" />
+              <div className="hidden md:block w-[0.7px] h-10 bg-[#979797]" />
 
               <div className="flex items-center px-4 py-2">
                 <Briefcase className="w-5 h-5 text-gray-400 mr-3" />
@@ -148,7 +156,7 @@ function LandingPage() {
                 />
               </div>
 
-              <div className="hidden md:block w-px h-10 bg-[#979797]" />
+              <div className="hidden md:block w-[1px] h-10 bg-[#979797]" />
 
               <div className="flex items-center flex-1 px-4 py-2">
                 <MapPin className="w-5 h-5 text-gray-400 mr-3" />

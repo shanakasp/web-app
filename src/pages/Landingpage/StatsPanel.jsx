@@ -11,7 +11,8 @@ const StatsPanel = () => {
         <img
           src={Permanent}
           alt="Permanent Job"
-          className="w-15 h-15 text-emerald-600"
+          className="w-15 h-15 text-#049c64
+"
         />
       ), // Fixed the icon as an image
       value: "250+",
@@ -22,7 +23,8 @@ const StatsPanel = () => {
         <img
           src={Megaphone}
           alt="Job Ads"
-          className="w-15 h-15 text-emerald-600"
+          className="w-15 h-15 text-#049c64
+"
         />
       ),
       value: "3000+",
@@ -33,7 +35,8 @@ const StatsPanel = () => {
         <img
           src={Calendar1}
           alt="Job Ads (3 Days)"
-          className="w-15 h-15 text-emerald-600"
+          className="w-15 h-15 text-#049c64
+"
         />
       ), // Updated with correct image import
       value: "50+",
@@ -44,7 +47,8 @@ const StatsPanel = () => {
         <img
           src={Calendar2}
           alt="Job Ads (7 Days)"
-          className="w-15 h-15 text-emerald-600"
+          className="w-15 h-15 text-#049c64
+"
         />
       ),
       value: "150+",
@@ -55,7 +59,8 @@ const StatsPanel = () => {
         <img
           src={Calendar3}
           alt="Job Ads (30 Days)"
-          className="w-15 h-15 text-emerald-600"
+          className="w-15 h-15 text-#049c64
+"
         />
       ),
       value: "2000+",
@@ -74,10 +79,16 @@ const StatsPanel = () => {
               className="bg-[#fff9f7] bg-opacity-90 backdrop-blur-sm p-6 flex flex-col items-center justify-center hover:shadow-xl transition-shadow duration-300"
             >
               <div className="mb-4">{stat.icon}</div>
-              <div className="text-emerald-600 text-3xl font-bold mb-2">
+              <div
+                className="text-[#049c64]
+text-3xl font-bold mb-2"
+              >
                 {stat.value}
               </div>
-              <div className="text-gray-600 text-sm text-center">
+              <div
+                className="text-[#979797]
+text-sm text-center font-medium"
+              >
                 {stat.label}
               </div>
             </div>

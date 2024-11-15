@@ -158,8 +158,8 @@
 .firsttitle {
   margin-top: -5%;
   font-weight: bold;
-  font-size: 1.8rem; /* Slightly reduced font size */
-  line-height: 1.2; /* Adjust line height */
+  font-size: 1.8rem;
+  line-height: 1.2;
   text-align: center;
 }
 
