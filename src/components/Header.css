@@ -1,7 +1,7 @@
+/* General header styles */
 .header {
   position: fixed;
   top: 0;
-  padding-left: 5%;
   left: 0;
   right: 0;
   z-index: 50;
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2%;
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
@@ -19,6 +19,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation container */
 .nav {
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@
 .nav-items {
   list-style-type: none;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +38,6 @@
   color: rgb(0, 0, 0);
   font-weight: 400;
   transition: color 0.3s ease;
-  margin: 0 2rem;
 }
 
 .nav-items a:hover {
@@ -48,6 +48,7 @@
   color: #333333;
 }
 
+/* Login button styling */
 .nav-items .loginButton a {
   background-color: #049c64;
   color: white;
@@ -59,14 +60,15 @@
   background-color: #037249;
 }
 
+/* Menu toggle button */
 .nav__toggle {
   display: none;
   background-color: transparent;
   border: none;
-  position: absolute; /* Added position: absolute */
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Vertically centered */
-  right: 20px; /* Adjusted right position */
+  right: 20px;
+  transform: translateY(-50%);
   cursor: pointer;
   color: rgb(0, 0, 0);
 }
@@ -75,13 +77,10 @@
   color: #333;
 }
 
-@media (max-width: 768px) {
+/* Responsive styles for smaller screens */
+@media (max-width: 1300px) {
   .nav-items {
     display: none;
-  }
-
-  .nav--open .nav-items {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -94,12 +93,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .nav--open .nav-items a {
-    color: #333;
-  }
-
-  .nav--open .nav-items a:hover {
-    color: #049c64;
+  .nav--open .nav-items {
+    display: flex;
   }
 
   .nav__toggle {
@@ -107,6 +102,7 @@
   }
 }
 
+/* Active link styles */
 .nav-items a.active {
   color: #049c64 !important;
 }
