@@ -1,4 +1,3 @@
-import { Lock, Mail } from "lucide-react";
 import React from "react";
 import topRight from "../../Images/Ellipse 3.png";
 import bottomImage from "../../Images/RightBottom2.png";
@@ -7,6 +6,8 @@ import apple from "../../Images/apple.png";
 import bottomRight from "../../Images/bottomRight.png";
 import facebook from "../../Images/facebook.png";
 import google from "../../Images/google.png";
+import mailIcon from "../../Images/icons/email.png";
+import passwordIcon from "../../Images/icons/password.png";
 import logo from "../../Images/logo.png";
 const Index = () => {
   return (
@@ -113,10 +114,12 @@ const Index = () => {
                 <div className="relative">
                   <label className="text-gray-600 mb-2 block">Email</label>
                   <div className="relative">
-                    <Mail
-                      className="w-5 h-5 absolute left-3 top-3 text-[#049c64]
-0"
+                    <img
+                      src={mailIcon}
+                      alt="Mail Icon"
+                      className="w-5 h-5 absolute left-3 top-3"
                     />
+
                     <input
                       type="email"
                       placeholder="Enter your email address"
@@ -128,9 +131,10 @@ const Index = () => {
                 <div className="relative">
                   <label className="text-gray-600 mb-2 block">Password</label>
                   <div className="relative">
-                    <Lock
-                      className="w-5 h-5 absolute left-3 top-3 text-[#049c64]
-"
+                    <img
+                      src={passwordIcon}
+                      alt="Mail Icon"
+                      className="w-5 h-5 absolute left-3 top-3"
                     />
                     <input
                       type="password"
@@ -145,7 +149,8 @@ const Index = () => {
                     <input
                       type="checkbox"
                       id="remember"
-                      className="w-4 h-4 border-gray-300 border-solid rounded text-emerald-600 focus:ring-emerald-500"
+                      className="w-4 h-4 border-gray-300 border-solid rounded focus:ring-[#049c64] focus:ring-offset-0"
+                      style={{ accentColor: "#049c64" }}
                     />
                     <label htmlFor="remember" className="ml-2 text-gray-600">
                       Remember me

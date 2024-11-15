@@ -1,28 +1,26 @@
-import {
-  Briefcase,
-  Calendar,
-  Lock,
-  Mail,
-  MapPin,
-  Phone,
-  User,
-} from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import React from "react";
 import topRight from "../../Images/Ellipse 3.png";
+import bottomCenter from "../../Images/EllipseBottomOne.png";
 import topImage from "../../Images/TopRight2.png";
 import topImage3 from "../../Images/TopRight3.png";
 import topImage4 from "../../Images/Topright4.png";
 import apple from "../../Images/apple.png";
 import bottomRight from "../../Images/cricle100.png";
+import dots from "../../Images/dots.png";
 import facebook from "../../Images/facebook.png";
 import google from "../../Images/google.png";
-
-import dots from "../../Images/dots.png";
+import expIcon from "../../Images/icons/Business Time.png";
+import calenderIcon from "../../Images/icons/Calendar.png";
+import locationIcon from "../../Images/icons/Location.png";
+import userIcon from "../../Images/icons/Name.png";
+import mailIcon from "../../Images/icons/email.png";
+import pwIcon from "../../Images/icons/password.png";
+import user from "../../Images/icons/user.png";
 import logo from "../../Images/logo.png";
 import topImage2 from "../../Images/register2.png";
 import topImage6 from "../../Images/topRight5.png";
 import topImage7 from "../../Images/topRight7.png";
-
 const Index = () => {
   return (
     <div
@@ -44,7 +42,7 @@ const Index = () => {
       <img
         src={bottomRight}
         alt="Bottom Right Image"
-        className="absolute -bottom-14 right-0.5 hidden md:block"
+        className="absolute -bottom-44 right-0.5 hidden md:block"
         style={{
           width: "26%",
           height: "auto",
@@ -57,6 +55,17 @@ const Index = () => {
         className="absolute bottom-20 right-[5%] hidden md:block"
         style={{
           width: "5%",
+          height: "auto",
+          objectFit: "cover",
+        }}
+      />
+
+      <img
+        src={bottomCenter}
+        alt="Bottom Right Image"
+        className="absolute -bottom-[88.2%] right-[20%] hidden md:block"
+        style={{
+          width: "60%",
           height: "auto",
           objectFit: "cover",
         }}
@@ -218,11 +227,16 @@ const Index = () => {
 
               <form className="space-y-4">
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className="text-[#3333333] mb-2 block">
                     First Name <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <User className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <img
+                      src={userIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
+
                     <input
                       type="text"
                       placeholder="Enter your First Name"
@@ -232,11 +246,15 @@ const Index = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className=" mb-2 block">
                     Last Name <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <User className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <img
+                      src={userIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
                     <input
                       type="text"
                       placeholder="Enter your Last Name"
@@ -246,11 +264,15 @@ const Index = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className="mb-2 block">
                     Email Address <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <Mail className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <img
+                      src={mailIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
                     <input
                       type="email"
                       placeholder="Enter your Email Address"
@@ -260,15 +282,15 @@ const Index = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className="mb-2 block">
                     Mobile Number <span className="text-red-500">*</span>
                   </label>
                   <div className="flex gap-2">
                     <select className="pl-3 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent w-24">
-                      <option>+91</option>
+                      <option className="#979797">+91</option>
                     </select>
                     <div className="relative flex-1">
-                      <Phone className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                      <Phone className="w-5 h-5 absolute left-3 top-3.5 icon-green" />
                       <input
                         type="tel"
                         placeholder="Enter your Mobile Number"
@@ -279,26 +301,37 @@ const Index = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className=" mb-2 block">
                     Gender <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <User className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
-                    <select className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none">
-                      <option value="">Select Gender</option>
+                    <img
+                      src={user}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
+                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
+                      <option value="" className="text-[#979797]">
+                        Select Gender
+                      </option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                       <option value="other">Other</option>
                     </select>
+                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className="mb-2 block">
                     Age <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <Calendar className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <img
+                      src={calenderIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
                     <input
                       type="number"
                       placeholder="Enter your Age"
@@ -307,53 +340,72 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                <div className="relative mb-4">
+                  <label className="mb-2 block">
                     Overall Exp. in Years{" "}
                     <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <Briefcase className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
-                    <select className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none">
+                    <img
+                      src={expIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
+                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
                       <option value="">Select your Experience</option>
                       <option value="0-1">0-1 years</option>
                       <option value="1-3">1-3 years</option>
                       <option value="3-5">3-5 years</option>
                       <option value="5+">5+ years</option>
                     </select>
+                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
-                <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                <div className="relative mb-4">
+                  <label className=" mb-2 block">
                     Residing State <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <MapPin className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
-                    <select className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none">
+                    <img
+                      src={locationIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
+                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
                       <option value="">Select Residing State</option>
                     </select>
+                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className="mb-2 block">
                     Current Location <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <MapPin className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
-                    <select className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none">
+                    <img
+                      src={locationIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
+                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
                       <option value="">Select Location</option>
                     </select>
+                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className="mb-2 block">
                     Password <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <Lock className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <img
+                      src={pwIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
                     <input
                       type="password"
                       placeholder="Enter Password"
@@ -363,11 +415,15 @@ const Index = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block">
+                  <label className=" mb-2 block">
                     Confirm Password <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <Lock className="w-5 h-5 absolute left-3 top-3 text-gray-400" />
+                    <img
+                      src={pwIcon}
+                      alt="User Icon"
+                      className="w-5 h-5 absolute left-3 top-3.5 "
+                    />
                     <input
                       type="password"
                       placeholder="Enter Confirm Password"
@@ -377,7 +433,7 @@ const Index = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-gray-600 block">
+                  <label className="block">
                     Send Notifications <span className="text-red-500">*</span>
                   </label>
                   <div className="flex gap-4">
@@ -385,7 +441,7 @@ const Index = () => {
                       <input
                         type="radio"
                         name="notifications"
-                        className="w-4 h-4 text-emerald-600"
+                        className="w-4 h-4 accent-[#049c64] focus:ring-[#049c64] focus:ring-offset-0"
                       />
                       <span>Yes</span>
                     </label>
@@ -393,7 +449,7 @@ const Index = () => {
                       <input
                         type="radio"
                         name="notifications"
-                        className="w-4 h-4 text-emerald-600"
+                        className="w-4 h-4 accent-[#049c64] focus:ring-[#049c64] focus:ring-offset-0"
                       />
                       <span>No</span>
                     </label>
@@ -416,18 +472,19 @@ const Index = () => {
                   />
                 </div>
 
-                <div className="flex items-start gap-2">
+                <div className="flex items-start gap-2 [&>input]:accent-[#049c64]">
                   <input
                     type="checkbox"
-                    className="mt-1 w-4 h-4 text-emerald-600 rounded"
+                    className="w-4 h-4 checked:bg-[#049c64] checked:border-[#049c64] focus:ring-[#049c64] focus:ring-offset-0 mt-0.5"
+                    style={{ accentColor: "#049c64" }}
                   />
-                  <span className="text-sm text-gray-600">
+                  <span className="text-sm ">
                     I agree to{" "}
-                    <a href="#" className="text-emerald-600">
+                    <a href="#" className="text-[#049c64] hover:underline">
                       Terms and Conditions
                     </a>{" "}
                     &{" "}
-                    <a href="#" className="text-emerald-600">
+                    <a href="#" className="text-[#049c64] hover:underline">
                       Privacy Policy
                     </a>{" "}
                     governing the use
