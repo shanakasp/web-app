@@ -6,25 +6,126 @@ const Index = () => {
     <div
       className="min-h-screen w-full p-4 md:p-8 flex items-center justify-center"
       style={{
-        background: "linear-gradient(to right, #059669 50%, #dadaea 50%)",
+        background: "linear-gradient(to right, #049D65 50%, #dadaea 50%)",
       }}
     >
-      <div className="w-full max-w-5xl  rounded-3xl shadow-xl overflow-hidden">
+      <div
+        className="w-full max-w-6xl rounded-3xl overflow-hidden"
+        style={{
+          boxShadow: "0 8px 10px rgba(0, 0, 0, 0.3)", // Dark and highly spread shadow
+        }}
+      >
         <div className="flex flex-col md:flex-row">
           {/* Left Section - Full width on mobile, half on desktop */}
-          <div className="relative bg-emerald-500 p-8 md:p-12 md:w-1/2">
-            {/* Geometric Patterns - Hidden on very small screens */}
-            <div className="hidden sm:block absolute top-8 left-8"></div>
+          <div
+            className="relative p-8 md:p-12 md:w-1/2 overflow-hidden"
+            style={{
+              background: "#45AE89",
+            }}
+          >
+            {/* Dot Grid Pattern Top */}
+            <div className="absolute top-8 left-8">
+              <div className="grid grid-cols-6 gap-2">
+                {[...Array(24)].map((_, i) => (
+                  <div
+                    key={`top-${i}`}
+                    className="w-1.5 h-1.5 rounded-full"
+                    style={{
+                      background: "rgba(255, 255, 255, 0.3)", // Reduced opacity
+                      boxShadow: "0 0 10px rgba(255, 255, 255, 0.2)", // Reduced opacity
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
 
-            {/* Main content */}
-            <div className="relative h-full flex flex-col justify-center py-8 md:py-0 opacity-80">
-              <div className="hidden sm:block"></div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4 text-center md:text-left">
+            {/* Elongated Pill Shapes */}
+            <div className="absolute -top-4 right-12">
+              <div
+                className="w-16 h-48 rounded-full transform rotate-12"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%)", // Added opacity
+                  backdropFilter: "blur(8px)",
+                }}
+              />
+              <div
+                className="w-16 h-48 rounded-full transform -rotate-12 translate-x-12 -translate-y-8"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%)", // Added opacity
+                  backdropFilter: "blur(8px)",
+                }}
+              />
+            </div>
+
+            {/* Small Circle with Ring */}
+            <div className="absolute top-12 right-8">
+              <div
+                className="w-8 h-8 rounded-full"
+                style={{
+                  background: "rgba(255,255,255,0.2)", // Added opacity
+                  boxShadow: "0 0 20px rgba(255,255,255,0.1)", // Added opacity
+                }}
+              />
+              <div className="absolute -top-1 -left-1 w-10 h-10 rounded-full border-2 border-white opacity-20" />
+            </div>
+
+            {/* Bottom Dot Grid */}
+            <div className="absolute bottom-12 left-12">
+              <div className="grid grid-cols-6 gap-2">
+                {[...Array(24)].map((_, i) => (
+                  <div
+                    key={`bottom-${i}`}
+                    className="w-1.5 h-1.5 rounded-full"
+                    style={{
+                      background: "rgba(255, 255, 255, 0.3)", // Reduced opacity
+                      boxShadow: "0 0 10px rgba(255, 255, 255, 0.2)", // Reduced opacity
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Cross Mark */}
+            <div className="absolute bottom-32 left-1/2">
+              <div className="w-6 h-6 relative" style={{ opacity: 0.3 }}>
+                <div className="absolute w-6 h-0.5 bg-white top-1/2 left-0 transform -translate-y-1/2 rotate-45"></div>
+                <div className="absolute w-6 h-0.5 bg-white top-1/2 left-0 transform -translate-y-1/2 -rotate-45"></div>
+              </div>
+            </div>
+
+            {/* Progress Circle */}
+            <div className="absolute bottom-16 right-16">
+              <div
+                className="w-24 h-24 rounded-full border-4 border-white opacity-20"
+                style={{
+                  borderRightColor: "transparent",
+                  transform: "rotate(45deg)",
+                }}
+              />
+              <div
+                className="absolute -top-1 -left-1 w-6 h-6 rounded-full"
+                style={{
+                  background: "rgba(255,255,255,0.3)", // Added opacity
+                  boxShadow: "0 0 20px rgba(255,255,255,0.2)", // Added opacity
+                }}
+              />
+            </div>
+
+            {/* Main Content */}
+            <div className="relative h-full flex flex-col justify-center py-8 md:py-0">
+              <h1
+                className="text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4 text-center md:text-left"
+                style={{
+                  textShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                }}
+              >
                 Step into
                 <br />
                 Your Future
               </h1>
-              <p className="text-white text-lg md:text-xl text-center md:text-left">
+              <p className="text-white text-lg md:text-xl text-center md:text-left opacity-90">
                 Every Journey Starts with a First Click!
               </p>
             </div>
