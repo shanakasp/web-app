@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontSize: {
         xxs: "0.625rem", // Custom size for xxs
+        xxxs: "0.45rem", // Custom size for xxs
       },
     },
   },
