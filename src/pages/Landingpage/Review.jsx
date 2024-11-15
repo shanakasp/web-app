@@ -82,8 +82,7 @@ const ReviewCarousel = () => {
                     position === 2
                       ? "right-0 translate-x-1/4 scale-90 opacity-50 z-0"
                       : ""
-                  }
-                `}
+                  }`}
                 style={{
                   width: isCenter ? "60%" : "40%",
                 }}
@@ -140,7 +139,7 @@ const ReviewCarousel = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-colors ${
-                currentIndex === index ? "bg-emerald-500" : "bg-gray-300"
+                currentIndex === index ? "bg-[#049c64]" : "bg-gray-300"
               }`}
             />
           ))}

@@ -20,7 +20,7 @@ const JobSearch = () => {
   const paginationNumbers = [1, 2, 3, 4, "...", 10, 11];
 
   return (
-    <div className="max-w-7xl mx-auto py-[7%] border-t-2">
+    <div className="max-w-7xl mx-auto py-[6%] border-t-2">
       <hr></hr>
       <div className="sm:grid sm:grid-cols-12 gap-4 mt-4">
         {/* Search bar */}
