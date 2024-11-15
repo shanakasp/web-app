@@ -21,7 +21,7 @@ const JobSearch = () => {
 
   return (
     <div className="max-w-full  sm:p-10 mt-10">
-      <div className="w-7xl mx-auto py-10 px-[7%]">
+      <div className="w-7xl mx-auto py-6 px-[7%]">
         <hr className="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200" />
 
         <div className="sm:grid sm:grid-cols-12 gap-4 mt-6">
