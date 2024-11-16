@@ -55,7 +55,7 @@ const LeftJobList = ({ onSelectJob }) => {
   }, []);
 
   return (
-    <div className="max-h-[calc(100vh-300px)] overflow-y-auto border rounded-lg custom-scrollbar">
+    <div className="max-h-[calc(100vh-200px)] overflow-y-auto border rounded-lg custom-scrollbar">
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
@@ -86,7 +86,8 @@ const LeftJobList = ({ onSelectJob }) => {
         <div
           key={job.id}
           onClick={() => onSelectJob(job)}
-          className="bg-[#fff9f7] border border-gray-200 border-solid p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[##979797
+          className="bg-[#fff9f7] border border-gray-200 border-solid px-2 py-1 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64]
+
 ] relative group"
         >
           <div className="flex justify-between items-start">

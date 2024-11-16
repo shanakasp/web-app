@@ -74,14 +74,14 @@ const Jobs = () => {
           )
         )}
 
-        <div className="text-gray-700 font-medium text-right">
+        <div className="text-gray-700 font-medium text-right md:text-sm xl:text-base">
           36 Jobs Search
         </div>
       </div>
 
       {/* Main Content */}
       <div className="flex flex-col sm:flex-row w-full gap-4 px-[5%]">
-        <div className="w-full sm:w-1/3">
+        <div className="w-full h-full sm:w-1/3">
           <LeftJobList onSelectJob={setSelectedJob} />
         </div>
         <div className="w-full sm:w-2/3">
