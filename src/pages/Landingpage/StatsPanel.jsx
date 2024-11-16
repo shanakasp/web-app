@@ -71,7 +71,7 @@ const StatsPanel = () => {
   return (
     <div>
       {" "}
-      <div className="relative z-10 w-full bg-[#fff9f7] pb-5 ">
+      <div className="relative z-40 w-full bg-[#fff9f7] pb-5  ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-gray-300 shadow-lg py-3">
           {stats.map((stat, index) => (
             <div
