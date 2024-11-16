@@ -123,18 +123,19 @@ function LandingPage() {
             />
 
             {/* Text content */}
-            <div className="rightContent relative z-10 px-2  md:px-0 lg:pt-10 xl:pt-10">
-              <p className="firsttitle text-2xl lg:text-xl md:text-base mt-6 lg:mt-4 md:mt-2">
+            <div className="rightContent relative z-10 px-1 flex flex-col items-center justify-center mt-[12%]">
+              <p className="firsttitle text-2xl lg:text-xl md:text-base">
                 Effortless Job Search Across Leading <br /> Companies
               </p>
-              <p className="secondtitle text-lg lg:text-sm md:text-xs mt-4 lg:mt-3 md:mt-2 ">
+              <p className="secondtitle text-lg lg:text-sm md:text-xs  text-center">
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
             </div>
 
             {/* Search feature at the bottom */}
-            <div className="bg-[#fff9f7] rounded-md shadow-md pl-3 py-3 flex flex-col md:flex-row items-center gap-2 z-20 w-[620px] lg:w-[450px] md:w-[350px] absolute right-5 lg:right-7 md:right-4 xl-top-[82%] lg:top-[82%] md:top-[70%] -ml-2">
+            <div className="bg-[#fff9f7] rounded-md shadow-md pl-3 py-3 flex flex-col md:flex-row items-center gap-2 z-20 w-[620px] lg:w-[450px] md:w-[350px] absolute right-6 lg:right-8 md:right-4 xl:top-[82%] lg:top-[82%] md:top-[70%] -xl:ml-[2%]">
+              {/* Search Role */}
               <div className="flex items-center flex-1">
                 <Search className="w-7 h-6 text-gray-400 mr-3 lg:w-5 lg:h-5 md:w-4 md:h-4" />
                 <input
@@ -144,27 +145,33 @@ function LandingPage() {
                 />
               </div>
 
+              {/* Divider */}
               <div className="hidden md:block w-[0.7px] h-10 bg-[#979797]" />
 
+              {/* Experience */}
               <div className="flex items-center px-4 py-2">
-                <Briefcase className=" text-gray-400 mr-3 lg:w-4 lg:h-4 md:w-3 md:h-3" />
+                <Briefcase className="text-gray-400 mr-3 lg:w-4 lg:h-4 md:w-3 md:h-3" />
                 <input
                   type="text"
                   placeholder="Exp."
-                  className="w-5 outline-none text-gray-600 text-base lg:text-sm md:text-xs"
-                />
-              </div>
-
-              <div className="hidden md:block w-[1px] h-10 bg-[#979797]" />
-
-              <div className="flex items-center flex-1 px-4 py-2">
-                <MapPin className="w-7 h-5 text-gray-400 mr-3 lg:w-4 lg:h-4 md:w-3 md:h-3" />
-                <input
-                  type="text"
-                  placeholder="Location"
                   className="w-10 outline-none text-gray-600 text-base lg:text-sm md:text-xs"
                 />
               </div>
+
+              {/* Divider */}
+              <div className="hidden md:block w-[1px] h-10 bg-[#979797]" />
+
+              {/* Location */}
+              <div className="flex items-center flex-1 px-4 py-2">
+                <MapPin className="w-6 h-5 text-gray-400 mr-3 lg:w-6 lg:h-4 md:w-3 md:h-3" />
+                <input
+                  type="text"
+                  placeholder="Location"
+                  className="w-12 outline-none text-gray-600 text-base lg:text-sm md:text-xs"
+                />
+              </div>
+
+              {/* Search Button */}
               <div className="mr-1">
                 <button className="bg-[#049c64] p-3 lg:p-2 md:p-1 rounded-md hover:bg-emerald-500 transition-colors">
                   <Search className="w-8 h-8 text-white lg:w-6 lg:h-6 md:w-5 md:h-5" />
