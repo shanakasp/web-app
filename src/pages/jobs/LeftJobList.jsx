@@ -55,19 +55,44 @@ const LeftJobList = ({ onSelectJob }) => {
   }, []);
 
   return (
-    <div className=" max-h-[calc(100vh-300px)] overflow-y-auto border rounded-lg ">
+    <div className="max-h-[calc(100vh-300px)] overflow-y-auto border rounded-lg custom-scrollbar">
+      <style>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #049c64;
+          border-radius: 4px;
+          opacity: 0.7;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #037c50;
+        }
+
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #979797
+ #f1f1f1;
+        }
+      `}</style>
       {jobs.map((job) => (
         <div
           key={job.id}
           onClick={() => onSelectJob(job)}
-          className="bg-[#fff9f7] border border-gray-200 border-solid p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
+          className="bg-[#fff9f7] border border-gray-200 border-solid p-4 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[##979797
+] relative group"
         >
           <div className="flex justify-between items-start">
             <div className="space-y-1">
               <h3 className="font-medium text-lg text-gray-900">{job.title}</h3>
-              <p className=" font-medium text-sm text-gray-600">
-                {job.company}
-              </p>
+              <p className="font-medium text-sm text-gray-600">{job.company}</p>
             </div>
             <div className="flex flex-col items-end gap-2">
               <button className="text-gray-400 hover:text-[#049c64]">
@@ -83,16 +108,16 @@ const LeftJobList = ({ onSelectJob }) => {
             <div className="flex items-center text-sm gap-4 text-[#979797]">
               <div className="flex items-center gap-2">
                 <Briefcase className="h-4 w-4" />
-                <span className="text-lg">{job.experience}</span>
+                <span className="text-base">{job.experience}</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span className="text-lg">{job.location}</span>
+                <span className="text-base">{job.location}</span>
               </div>
             </div>
 
             <div className="mt-3 space-y-3">
-              <div className="flex items-start gap-2 text-sm ">
+              <div className="flex items-start gap-2 text-sm">
                 <MessageSquare className="h-4 w-4 mt-1 flex-shrink-0 text-[#979797]" />
                 <p className="line-clamp-2">
                   {job.description}
@@ -103,32 +128,30 @@ const LeftJobList = ({ onSelectJob }) => {
               </div>
             </div>
 
-            <div className="flex items-center text-sm  gap-2">
+            <div className="flex items-center text-sm gap-2">
               <img src={UserIcon} alt="User Icon" className="h-5 w-5" />
-              <span className="text-lg">{job.salary}</span>
+              <span className="text-sm text-gray-600">{job.salary}</span>
             </div>
           </div>
 
           <div className="mt-3 pt-3 border-t border-gray-200">
-            <div className="flex justify-between text-xs ">
+            <div className="flex justify-between text-xs">
               <div className="flex gap-1">
-                <span className="text-sm text-[#979797]">
+                <span className="text-xs text-[#979797]">
                   Job ID: #{job.id}
                 </span>
                 <span className="mx-2 text-[#979797]">|</span>
-                <span className="text-sm text-[#979797]">
+                <span className="text-xs text-[#979797]">
                   CCID: #{job.ccid}
                 </span>
               </div>
-            </div>{" "}
+            </div>
             <div className="flex justify-between items-center w-full text-xs mt-4">
-              {/* Left Section */}
               <div className="flex items-center gap-2">
                 <span>Posted On: {job.postedOn}</span>
               </div>
 
-              {/* Right Section */}
-              <div className="flex items-center gap-2 ">
+              <div className="flex items-center gap-2">
                 <span>CC Update date</span>
                 <div className="flex items-center gap-2 px-2 py-1 rounded text-[#049c64] border border-[#049c64] border-solid">
                   <img src={ImageCalender} alt="icon" className="h-4 w-4" />

@@ -29,7 +29,7 @@ function LandingPage() {
     <div>
       <Header isScrolled={isHeaderScrolled} />
       <div className="heroSection">
-        <div className="absolute top-0 left-0 w-4/5 h-[90%] -z-10">
+        <div className="absolute top-0 left-0 w-4/5 h-[100%] -z-10">
           <img
             src={myImage}
             alt="background"
