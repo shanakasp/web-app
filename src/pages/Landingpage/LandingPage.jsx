@@ -123,11 +123,11 @@ function LandingPage() {
             />
 
             {/* Text content */}
-            <div className="rightContent relative z-10 px-1 flex flex-col items-center justify-center mt-[12%]">
+            <div className="rightContent relative z-10 px-1 flex flex-col items-center justify-center mt-[12%] -ml-[3%]">
               <p className="firsttitle text-2xl lg:text-xl md:text-base">
                 Effortless Job Search Across Leading <br /> Companies
               </p>
-              <p className="secondtitle text-lg lg:text-sm md:text-xs  text-center">
+              <p className="secondtitle text-lg lg:text-sm md:text-xs ml-[5%] p-2 text-left">
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
