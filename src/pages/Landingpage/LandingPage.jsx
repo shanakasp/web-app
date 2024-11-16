@@ -1,14 +1,10 @@
 import { Briefcase, MapPin, Search } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import frameImage7 from "../../Images/Ellipse 66.png";
-import frameImage9 from "../../Images/Ellipse 67.png";
-import frameImage8 from "../../Images/Ellipse 69.png";
 import frameImage from "../../Images/Frame.png";
-import frameImage6 from "../../Images/Rectangle 14.png";
+import frameImage6 from "../../Images/LRight.png";
 import frameImage2 from "../../Images/Vector.png";
 import myImage from "../../Images/heroBackground.png";
-import frameImage4 from "../../Images/rightheaderimage.png";
 import Header from "../../components/Header";
 import "./LandingPage.css";
 import Review from "./Review";
@@ -41,8 +37,8 @@ function LandingPage() {
           />
         </div>
 
-        <div className="content">
-          <div className="left">
+        <div className="content flex flex-col lg:flex-row items-center lg:items-start">
+          <div className="left w-full lg:w-1/2 p-4">
             <img src={frameImage} alt="star" className="star" />
             <div className="relative">
               <div className="headerTitle text-5xl md:text-7xl font-bold z-50 relative">
@@ -69,7 +65,7 @@ function LandingPage() {
               designed to match your career goals
             </div>
 
-            <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-xl hover:bg-emerald-500 transition-colors mt-[23%]">
+            <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-xl hover:bg-emerald-500 transition-colors mt-[15%]">
               <span
                 onClick={() => navigate("/jobs")}
                 className="cursor-pointer  "
@@ -93,88 +89,72 @@ function LandingPage() {
               </div>
             </button>
           </div>
-
-          <div className="right flex flex-col relative max-w-[642px] h-[733px] w-[733px] mx-auto lg:max-w-[500px] lg:h-[600px] lg:w-[600px] md:max-w-[400px] md:h-[500px] md:w-[400px]">
-            {/* Background images */}
-            <img
-              src={frameImage6}
-              alt="next"
-              className="rightbackgroundimage1 absolute"
-            />
-            <img
-              src={frameImage7}
-              alt="next"
-              className="rightbackgroundimage7 absolute"
-            />
-            <img
-              src={frameImage4}
-              alt="next"
-              className="rightbackgroundimage2 absolute"
-            />
-            <img
-              src={frameImage8}
-              alt="next"
-              className="rightbackgroundimage8 absolute"
-            />
-            <img
-              src={frameImage9}
-              alt="next"
-              className="rightbackgroundimage9 absolute"
-            />
-
-            {/* Text content */}
-            <div className="rightContent relative z-10 px-1 flex flex-col items-center justify-center mt-[12%] -ml-[3%]">
-              <p className="firsttitle text-2xl lg:text-xl md:text-base">
-                Effortless Job Search Across Leading <br /> Companies
-              </p>
-              <p className="secondtitle text-lg lg:text-sm md:text-xs ml-[5%] p-2 text-left">
+          <div
+            className="flex flex-col items-center justify-between w-full h-full xl:w-[642px] xl:h-[733px] rounded-3xl p-6 relative"
+            style={{
+              backgroundImage: `url(${frameImage6})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              overflow: "hidden",
+            }}
+          >
+            {/* Illustration and Heading */}
+            <div className="text-center mb-auto flex flex-col items-center pt-[30%]">
+              <div className="relative w-full h-36 sm:h-40 md:h-48 flex items-center justify-center">
+                {/* Add any SVG or images here if necessary */}
+              </div>
+              <h1 className="text-black font-bold text-lg sm:text-lg md:text-lg xl:text-3xl mt-4">
+                Effortless Job Search Across Leading Companies
+              </h1>
+              <p className="text-gray-700 mt-2 text-lg sm:text-lg md:text-lg lg:text-lg px-2 sm:px-4 font-medium">
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
             </div>
 
-            {/* Search feature at the bottom */}
-            <div className="bg-[#fff9f7] rounded-md shadow-md pl-3 py-3 flex flex-col md:flex-row items-center gap-2 z-20 w-[620px] lg:w-[450px] md:w-[350px] absolute right-6 lg:right-8 md:right-4 xl:top-[82%] lg:top-[82%] md:top-[70%] -xl:ml-[2%]">
+            {/* Search Fields */}
+            <div className="bg-[#fff9f7] rounded-md shadow-md py-3 px-2 sm:px-4 flex flex-col md:flex-row items-center gap-2 z-20 mt-auto max-w-[700px] mx-auto">
               {/* Search Role */}
               <div className="flex items-center flex-1">
-                <Search className="w-7 h-6 text-gray-400 mr-3 lg:w-5 lg:h-5 md:w-4 md:h-4" />
+                <Search className="w-4 h-5 sm:w-6 sm:h-6 text-gray-400 mr-2 sm:mr-3" />
                 <input
                   type="text"
                   placeholder="Search Role"
-                  className="w-20 outline-none text-gray-600 text-base lg:text-sm md:text-xs"
+                  className="flex-grow outline-none text-gray-600 text-xs sm:text-sm md:text-base"
                 />
               </div>
 
               {/* Divider */}
-              <div className="hidden md:block w-[0.7px] h-10 bg-[#979797]" />
+              <div className="hidden md:block w-[1px] h-8 md:h-10 bg-[#979797]" />
 
               {/* Experience */}
-              <div className="flex items-center px-4 py-2">
-                <Briefcase className="text-gray-400 mr-3 lg:w-4 lg:h-4 md:w-3 md:h-3" />
+              <div className="flex items-center px-2 sm:px-4 py-2">
+                <Briefcase className="w-4 h-5 sm:w-4 sm:h-6 text-gray-400 mr-2 sm:mr-3" />
                 <input
                   type="text"
                   placeholder="Exp."
-                  className="w-10 outline-none text-gray-600 text-base lg:text-sm md:text-xs"
+                  className="w-14 sm:w-16 outline-none text-gray-600 text-xs sm:text-sm md:text-base"
                 />
               </div>
 
               {/* Divider */}
-              <div className="hidden md:block w-[1px] h-10 bg-[#979797]" />
+              <div className="hidden md:block w-[1px] h-8 md:h-10 bg-[#979797]" />
 
               {/* Location */}
-              <div className="flex items-center flex-1 px-4 py-2">
-                <MapPin className="w-6 h-5 text-gray-400 mr-3 lg:w-6 lg:h-4 md:w-3 md:h-3" />
+              <div className="flex items-center flex-1 px-2 sm:px-4 py-2">
+                <MapPin className="w-4 h-5 sm:w-6 sm:h-6 text-gray-400 mr-2 sm:mr-3" />
                 <input
                   type="text"
                   placeholder="Location"
-                  className="w-12 outline-none text-gray-600 text-base lg:text-sm md:text-xs"
+                  className="w-14 sm:w-16 outline-none text-gray-600 text-xs sm:text-sm md:text-base"
                 />
               </div>
 
               {/* Search Button */}
-              <div className="mr-1">
-                <button className="bg-[#049c64] p-3 lg:p-2 md:p-1 rounded-md hover:bg-emerald-500 transition-colors">
-                  <Search className="w-8 h-8 text-white lg:w-6 lg:h-6 md:w-5 md:h-5" />
+              <div>
+                <button className="bg-[#049c64] p-2 sm:p-3 rounded-md hover:bg-emerald-500 transition-colors">
+                  <Search className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" />
                 </button>
               </div>
             </div>
