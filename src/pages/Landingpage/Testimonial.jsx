@@ -3,10 +3,10 @@ import testimonila from "../../Images/testimonial.png";
 function Testimonial() {
   return (
     <div>
-      <span className="items-center pt-12 flex text-4xl justify-center font-semibold opacity-80">
+      <span className="items-center pt-12 flex text-2xl justify-center font-semibold opacity-80">
         Testimonial
       </span>
-      <p className="items-center flex justify-center mt-4 p-3">
+      <p className="items-center flex justify-center mt-4 p-3 text-base">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>

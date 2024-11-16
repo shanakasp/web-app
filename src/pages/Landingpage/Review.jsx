@@ -47,7 +47,7 @@ const ReviewCarousel = () => {
     return [...Array(5)].map((_, index) => (
       <span
         key={index}
-        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl ${
+        className={`text-lg ${
           index < rating ? "text-yellow-400" : "text-gray-200"
         }`}
       >
@@ -63,7 +63,7 @@ const ReviewCarousel = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-8 bg-[#fff9f7] from-green-50/50 -z-10">
+    <div className="max-w-4xl mx-auto px-2 sm:px-6 md:px-8  bg-[#fff9f7] from-green-50/50 -z-10">
       <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {getVisibleReviews().map((index, position) => {
@@ -88,26 +88,26 @@ const ReviewCarousel = () => {
                 }}
               >
                 <div
-                  className="bg-[#fff9f7] border border-gray-200 border-solid p-4 sm:p-6 md:p-8 transform transition-transform duration-500"
+                  className="bg-[#fff9f7] border border-gray-200 border-solid p-3  transform transition-transform duration-500"
                   style={{
                     boxShadow:
                       "0 4px 8px rgba(16, 185, 129, 0.1), 0 -8px 8px rgba(16, 185, 129, 0.1)",
                   }}
                 >
-                  <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
+                  <div className="flex flex-col items-center text-center mb-3 ">
                     <img
                       src={reviews[index].avatar}
                       alt={reviews[index].name}
                       className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-gray-300 mb-3"
                     />
-                    <h3 className="text-base  font-semibold mb-1">
+                    <h3 className="text-sm  font-semibold mb-1">
                       {reviews[index].name}
                     </h3>
-                    <p className="text-sm  text-gray-500">
+                    <p className="text-xs  text-gray-500">
                       {reviews[index].username}
                     </p>
                   </div>
-                  <p className="text-sm  text-gray-600 text-center mb-6 leading-relaxed line-clamp-6">
+                  <p className="text-xs  text-gray-600 text-center mb-6 leading-relaxed line-clamp-6">
                     {reviews[index].text}
                   </p>
                   <div className="flex justify-center space-x-1">
@@ -133,12 +133,12 @@ const ReviewCarousel = () => {
           <ChevronRight className="w-6 h-6 text-gray-600" />
         </button>
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center mt-6 gap-2 z-30">
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex justify-center gap-2 z-30">
           {reviews.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors ${
+              className={`w-2 h-2 rounded-full transition-colors ${
                 currentIndex === index ? "bg-[#049c64]" : "bg-gray-300"
               }`}
             />
