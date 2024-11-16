@@ -63,7 +63,7 @@ const JobDetail = () => {
         {/* Right side with action buttons */}
         <div className="flex gap-2 shrink-0">
           <button
-            className="px-6 py-1 bg-white border-2 border-[#049c64]
+            className="px-6 py-1 bg-white border-2 text-xs border-[#049c64]
  border-solid text-[#049c64]
  rounded-full hover:bg-emerald-50 font-medium"
           >
