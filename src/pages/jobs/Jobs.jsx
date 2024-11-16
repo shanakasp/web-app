@@ -66,7 +66,7 @@ const Jobs = () => {
           (filter) => (
             <button
               key={filter}
-              className="flex items-center justify-center gap-2 px-4 py-2 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50 md:text-xxs xl:text-base"
+              className="flex items-center justify-center gap-2 px-4 py-2 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50 md:text-xs xl:text-base"
             >
               {filter}
               <ChevronDown className="h-4 w-4" />
@@ -80,11 +80,11 @@ const Jobs = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col sm:flex-row w-full gap-4 px-[5%]">
-        <div className="w-full h-full sm:w-1/3">
+      <div className="flex flex-col lg:flex-row w-full gap-4 px-[5%]">
+        <div className="w-full h-full lg:w-1/3">
           <LeftJobList onSelectJob={setSelectedJob} />
         </div>
-        <div className="w-full sm:w-2/3">
+        <div className="w-full lg:w-2/3">
           <JobDetail job={selectedJob} />
         </div>
       </div>
