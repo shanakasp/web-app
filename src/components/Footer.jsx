@@ -47,7 +47,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-xl italic mb-4 font-sansita">
               Apps
             </h3>
-            <p className="text-lg leading-relaxed">
+            <p className="text-base leading-relaxed">
               Download the Careers Central app for your Desktop or Mobile
               devices.
             </p>
@@ -55,7 +55,7 @@ const Footer = () => {
 
           {/* Contact Us section */}
           <div>
-            <h3 className="text-white font-semibold text-2xl italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-xl italic mb-4 font-sansita">
               Contact Us
             </h3>
             <p className="text-base leading-relaxed">

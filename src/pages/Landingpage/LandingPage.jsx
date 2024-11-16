@@ -46,11 +46,15 @@ function LandingPage() {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 pt-[7%] pb-[10%]">
+        <div className="container mx-auto px-4 pt-[7%] pb-[10%] lg:pl-[8%]">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 space-y-6 pl-[3%]">
-              <img src={frameImage} alt="star" className="w-16 md:w-20 mb-4 " />
+              <img
+                src={frameImage}
+                alt="star"
+                className="w-16 md:w-20 mb-4 relative left-[60%]"
+              />
 
               <div className="relative">
                 <h1 className="text-5xl font-bold leading-tight">
@@ -104,13 +108,13 @@ function LandingPage() {
                 backgroundImage: `url(${backimgr})`, // Ensure backimgr contains a valid image URL
               }}
             >
-              <div className="relative   pt-20 px-4">
-                <div className="space-y-6 md:space-y-8 pt-10">
+              <div className="relative md:pt-[20%]   lg:pt-[48%] px-4">
+                <div className="space-y-6 md:space-y-8 ">
                   <div className="text-center">
-                    <h2 className="text-lg font-bold text-gray-800  pt-14">
+                    <h2 className="text-lg font-bold text-gray-800  ">
                       Effortless Job Search Across Leading Companies
                     </h2>
-                    <p className="text-gray-600 text-sm font-medium pt-6">
+                    <p className="text-gray-600 text-sm font-medium lg:pt-[5%]">
                       Search by role, experience, and location to find
                       opportunities that align with your skills and aspirations.
                     </p>
