@@ -79,10 +79,94 @@ const LeftJobList = ({ onSelectJob }) => {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
       },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
+      },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
+      },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
+      },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
+      },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
+      },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
+      },
     ]);
   }, []);
   return (
-    <div className="max-h-[calc(122vh)] overflow-y-auto border rounded-lg custom-scrollbar">
+    <div className="max-h-[calc(105vh)] overflow-y-auto border rounded-lg custom-scrollbar">
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
