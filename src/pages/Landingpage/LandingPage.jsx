@@ -100,14 +100,14 @@ function LandingPage() {
             }}
           >
             {/* Illustration and Heading */}
-            <div className="text-center mb-auto flex flex-col items-center pt-[30%]">
+            <div className="flex flex-col items-center justify-center text-center mb-auto pt-[25%] px-4 sm:px-6 md:px-8 ">
               <div className="relative w-full h-36 sm:h-40 md:h-48 flex items-center justify-center">
                 {/* Add any SVG or images here if necessary */}
               </div>
-              <h1 className="text-black font-bold text-lg sm:text-lg md:text-lg xl:text-3xl mt-4">
+              <h1 className="text-[#333333] opacity-90 font-bold text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 md:px-8 text-center">
                 Effortless Job Search Across Leading Companies
               </h1>
-              <p className="text-gray-700 mt-2 text-lg sm:text-lg md:text-lg lg:text-lg px-2 sm:px-4 font-medium">
+              <p className="text-gray-600 mt-2 text-base sm:text-lg md:text-lg lg:text-xl max-w-full sm:max-w-2xl md:max-w-4xl lg:max-w-2xl px-4 sm:px-6 md:px-8 font-medium text-center">
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
