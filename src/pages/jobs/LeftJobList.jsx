@@ -54,7 +54,7 @@ const LeftJobList = ({ onSelectJob }) => {
     ]);
   }, []);
   return (
-    <div className="max-h-[calc(100vh-200px)] overflow-y-auto border rounded-lg custom-scrollbar">
+    <div className="max-h-[calc(100vh)] overflow-y-auto border rounded-lg custom-scrollbar">
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;

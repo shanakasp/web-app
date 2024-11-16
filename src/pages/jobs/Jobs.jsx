@@ -66,7 +66,7 @@ const Jobs = () => {
           (filter) => (
             <button
               key={filter}
-              className="flex items-center justify-center gap-2 px-4 py-2 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50 md:text-xs xl:text-base"
+              className="flex items-center justify-center gap-2 px-4 py-2 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50 md:text-xs xl:text-base lg:text-xs"
             >
               {filter}
               <ChevronDown className="h-4 w-4" />
