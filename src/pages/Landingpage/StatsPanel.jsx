@@ -101,7 +101,7 @@ const StatsPanel = () => {
           <div className="space-y-4">
             <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
-                <h2 className="text-lg font-medium">
+                <h2 className="text-lg font-medium lg:text-base">
                   Number of Jobs by Location
                 </h2>
                 <select className="border border-gray-300 rounded-md px-2 py-1 text-xs text-gray-700 bg-[#fff9f7]">
@@ -110,7 +110,7 @@ const StatsPanel = () => {
                   <option>Last 3 Months</option>
                 </select>
               </div>
-              <div className="grid grid-cols-4 gap-4 p-4 bg-[#fff9f7] text-xs">
+              <div className="grid grid-cols-4 gap-4 p-4 bg-[#fff9f7] text-xxs">
                 {[
                   { location: "Ahmedabad", count: 10 },
                   { location: "Bengaluru", count: 5 },
@@ -135,7 +135,7 @@ const StatsPanel = () => {
                       (index + 1) % 4 === 0 ? "border-r-2" : "" // Adds right border to the last item in each row
                     }`}
                   >
-                    <span className="text-xxxs xl:text-xxs font-medium">
+                    <span className="text-xxxs xl:text-xxs lg:text-xxxs font-medium">
                       {job.location}: {job.count}
                     </span>
                   </div>
@@ -145,7 +145,7 @@ const StatsPanel = () => {
 
             <div className="flex flex-col bg-[#fff9f7] rounded-lg  border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
-                <h2 className="text-lg font-medium">
+                <h2 className="text-lg font-medium lg:text-base">
                   Number of Jobs by Experience
                 </h2>
                 <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
@@ -192,7 +192,7 @@ const StatsPanel = () => {
           {/* Middle Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-lg font-medium">
+              <h2 className="text-lg lg:text-base font-medium">
                 Number of Jobs by Industry
               </h2>
               <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
@@ -246,7 +246,7 @@ const StatsPanel = () => {
           {/* Right Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-lg font-medium">
+              <h2 className="text-lg lg:text-base font-medium">
                 Number of Jobs by Function
               </h2>
               <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
