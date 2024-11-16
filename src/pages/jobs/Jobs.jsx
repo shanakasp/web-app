@@ -48,7 +48,7 @@ const Jobs = () => {
         </div>
         {/* Search Button */}
         <div className="sm:col-span-1  sm:pl-2">
-          <button className="w-full lg:text-sm bg-white border border-[#049c64] border-solid text-[#049c64] xl:px-4 py-2 rounded-md hover:bg-emerald-50">
+          <button className="w-full lg:text-sm xl:text-base px-2 bg-white border border-[#049c64] border-solid text-[#049c64] xl:px-2 py-2 rounded-md hover:bg-emerald-50">
             Search
           </button>
         </div>
