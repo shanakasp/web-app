@@ -100,21 +100,21 @@ function LandingPage() {
             }}
           >
             {/* Illustration and Heading */}
-            <div className="flex flex-col items-center justify-center text-center mb-auto pt-[25%] px-4 sm:px-6 md:px-8 ">
+            <div className="flex flex-col items-center justify-center text-center mb-auto pt-[35%] px-4 sm:px-6 md:px-8  ">
               <div className="relative w-full h-36 sm:h-40 md:h-48 flex items-center justify-center">
                 {/* Add any SVG or images here if necessary */}
               </div>
-              <h1 className="text-[#333333] opacity-90 font-bold text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 md:px-8 text-center">
+              <h1 className="text-[#333333] opacity-90 font-bold text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-2xl mt-4 max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 md:px-8 text-center">
                 Effortless Job Search Across Leading Companies
               </h1>
-              <p className="text-gray-600 mt-2 text-base sm:text-lg md:text-lg lg:text-xl max-w-full sm:max-w-2xl md:max-w-4xl lg:max-w-2xl px-4 sm:px-6 md:px-8 font-medium text-center">
+              <p className="text-gray-600 mt-[3%] text-base sm:text-base md:text-base lg:text-lg max-w-full sm:max-w-2xl md:max-w-2xl lg:max-w-2xl px-4 sm:px-6 md:px-8 font-medium text-left">
                 Search by role, experience, and location to find opportunities
                 that align with your skills and aspirations.
               </p>
             </div>
 
             {/* Search Fields */}
-            <div className="bg-[#fff9f7] rounded-md shadow-md py-3 px-2 sm:px-4 flex flex-col md:flex-row items-center gap-2 z-20 mt-auto max-w-[700px] mx-auto">
+            <div className="bg-[#fff9f7] rounded-md shadow-md py-3 px-2 sm:px-4 flex flex-col md:flex-row items-center gap-2 z-20 mt-auto max-w-full mx-auto sm:max-w-2xl md:max-w-2xl lg:max-w-2xl sm:-pl-[15%]">
               {/* Search Role */}
               <div className="flex items-center flex-1">
                 <Search className="w-4 h-5 sm:w-6 sm:h-6 text-gray-400 mr-2 sm:mr-3" />
