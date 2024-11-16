@@ -51,10 +51,38 @@ const LeftJobList = ({ onSelectJob }) => {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
       },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+      },
+      {
+        id: "12346",
+        ccid: "120001",
+        title: "Delivery Head",
+        company: "Tata Consultancy Services Ltd",
+        experience: "15-20 Yrs",
+        location: "Mumbai, Pune",
+        salary: "$150 - $400",
+        department: "Finance",
+        postedOn: "2024 Aug 12",
+        ccUpdateDate: "2024 sep 15",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+      },
     ]);
   }, []);
   return (
-    <div className="max-h-[calc(100vh)] overflow-y-auto border rounded-lg custom-scrollbar">
+    <div className="max-h-[calc(122vh)] overflow-y-auto border rounded-lg custom-scrollbar">
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
@@ -84,14 +112,14 @@ const LeftJobList = ({ onSelectJob }) => {
         <div
           key={job.id}
           onClick={() => onSelectJob(job)}
-          className="bg-[#fff9f7] border border-gray-200 border-solid px-2 py-1 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
+          className="bg-[#fff9f7] border border-gray-200 border-solid px-2 py-2 cursor-pointer hover:bg-[#f1fff9] hover:border-l-4 hover:border-l-[#049c64] relative group"
         >
           <div className="flex justify-between items-start">
             <div className="space-y-0.5">
-              <h3 className="font-medium text-sm sm:text-base md:text-sm lg:text-base text-gray-900">
+              <h3 className="font-medium text-sm  text-gray-900">
                 {job.title}
               </h3>
-              <p className="font-medium text-xs sm:text-sm md:text-xs lg:text-xs text-gray-600">
+              <p className="font-medium text-xxs text-gray-600">
                 {job.company}
               </p>
             </div>
@@ -99,32 +127,28 @@ const LeftJobList = ({ onSelectJob }) => {
               <button className="text-gray-400 hover:text-[#049c64]">
                 <Bookmark className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-3.5 md:w-3.5" />
               </button>
-              <span className="px-2 py-0.5 text-xs md:text-[11px] lg:text-xs text-white bg-[#049c64] rounded-md">
+              <span className="px-2 py-0.5 text-xxxs  text-white bg-[#049c64] rounded-md">
                 {job.department}
               </span>
             </div>
           </div>
 
           <div className="mt-2 sm:mt-3 md:mt-2 space-y-2">
-            <div className="flex items-center text-xs md:text-[11px] lg:text-xs gap-3 text-[#979797]">
+            <div className="flex items-center text-xs  gap-3 text-[#979797]">
               <div className="flex items-center gap-1">
                 <Briefcase className="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-3 md:w-3" />
-                <span className="text-xs sm:text-sm md:text-[11px] lg:text-xs">
-                  {job.experience}
-                </span>
+                <span className="text-xxs ">{job.experience}</span>
               </div>
               <div className="flex items-center gap-1">
                 <MapPin className="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-3 md:w-3" />
-                <span className="text-xs sm:text-sm md:text-[11px] lg:text-xs">
-                  {job.location}
-                </span>
+                <span className="text-xxs ">{job.location}</span>
               </div>
             </div>
 
             <div className="mt-2 space-y-2">
               <div className="flex items-start gap-1">
                 <MessageSquare className="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-3 md:w-3 mt-0.5 flex-shrink-0 text-[#979797]" />
-                <p className="text-xs md:text-[11px] lg:text-xs line-clamp-2">
+                <p className="text-xxs line-clamp-2">
                   {job.description}
                   <button className="text-[#049c64] hover:underline ml-1">
                     Read More
@@ -137,34 +161,32 @@ const LeftJobList = ({ onSelectJob }) => {
               <img
                 src={UserIcon}
                 alt="User Icon"
-                className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-3.5 md:w-3.5"
+                className="h-2.5 w-2.5 sm:h-4 sm:w-4 md:h-3.5 md:w-3.5"
               />
-              <span className="text-xs md:text-[11px] lg:text-xs text-gray-600">
-                {job.salary}
-              </span>
+              <span className="text-xxs text-gray-600">{job.salary}</span>
             </div>
           </div>
 
           <div className="mt-2 pt-2 border-t border-gray-200">
             <div className="flex justify-between text-[10px]">
               <div className="flex gap-1">
-                <span className="text-[10px] md:text-[9px] lg:text-[10px] text-[#979797]">
+                <span className="text-xxs text-[#979797]">
                   Job ID: #{job.id}
                 </span>
-                <span className="mx-1 text-[#979797]">|</span>
-                <span className="text-[10px] md:text-[9px] lg:text-[10px] text-[#979797]">
+                <span className="mx-0.5 text-[#979797]">|</span>
+                <span className="text-xxs text-[#979797]">
                   CCID: #{job.ccid}
                 </span>
               </div>
             </div>
-            <div className="flex justify-between items-center w-full text-[10px] md:text-[9px] lg:text-[10px] mt-2">
+            <div className="flex justify-between items-center w-full text-[10px] md:text-[9px] lg:text-[9px] mt-2">
               <div className="flex items-center gap-1">
                 <span>Posted On: {job.postedOn}</span>
               </div>
 
               <div className="flex items-center gap-1">
                 <span>CC Update date</span>
-                <div className="flex items-center gap-1 px-1.5 py-0.5 rounded text-[#049c64] border border-[#049c64] border-solid">
+                <div className="flex items-center gap-1 px-1.5 py-0.5 rounded text-[#049c64] border border-[#049c64] border-solid  lg:text-[9px]">
                   <img
                     src={ImageCalender}
                     alt="icon"

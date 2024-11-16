@@ -9,7 +9,7 @@ const JobDetail = () => {
       <div className="flex justify-between items-center px-4">
         {" "}
         {/* Added padding here */}
-        <h1 className="text-2xl font-bold text-[#333333]-gray-900">
+        <h1 className="text-xl font-bold text-[#333333]-gray-900">
           Delivery Head - Customer Service Operations (15-20 yrs)
         </h1>
         <div className="flex gap-2 shrink-0">
@@ -24,7 +24,7 @@ const JobDetail = () => {
       <div className="flex justify-end my-4 px-4">
         {" "}
         {/* Added padding here as well */}
-        <button className="inline-flex items-center px-4 py-2 text-xxs bg-[#049c64] text-white hover:bg-emerald-600 gap-2">
+        <button className="inline-flex items-center px-3 py-1 text-xxxs bg-[#049c64] text-white hover:bg-emerald-600 gap-2">
           <BsLightningCharge className="h-4 w-4" />
           Easy Apply
         </button>
@@ -43,16 +43,16 @@ const JobDetail = () => {
             />
           </div>
           <div>
-            <h2 className="text-xl font-medium text-[#333333-700] mt-1">
+            <h2 className="text-base font-medium text-[#333333-700] mt-1">
               Tata Consultancy Services Ltd
             </h2>
             <div className="mt-2">
               <div className="flex items-center gap-2">
-                <span className="inline-flex items-center px-2 py-1 bg-[#049c64] text-white rounded text-sm">
-                  <Star className="h-3 w-3 ml-1 fill-white mr-2" /> 3.7
+                <span className="inline-flex items-center px-2 py-1 bg-[#049c64] text-white rounded text-xxs">
+                  <Star className="h-2 w-2 ml-1 fill-white mr-2" /> 3.7
                 </span>
 
-                <span className="text-[#979797] text-xs">
+                <span className="text-[#979797] text-xxs">
                   Based on 81.7k Reviews
                 </span>
               </div>
@@ -74,7 +74,7 @@ const JobDetail = () => {
 
       {/* Location and Experience */}
       <div className="flex flex-wrap gap-4 text-[#979797] mt-4 px-2">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-sm">
           <span className="text-[#979797]">
             <svg
               className="h-5 w-5"
@@ -92,7 +92,7 @@ const JobDetail = () => {
           </span>
           15-20 Yrs
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-sm">
           <span className="text-[#979797]">
             <svg
               className="h-5 w-5"
@@ -120,7 +120,7 @@ const JobDetail = () => {
 
       {/* Job Description */}
       <div className="mt-6">
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-gray-600 leading-relaxed text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -130,7 +130,7 @@ const JobDetail = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div className="mt-6 flex justify-center items-center flex-wrap gap-4">
+      <div className="mt-6 flex justify-center items-center flex-wrap gap-4 text-xs">
         <button className="inline-flex items-center px-6 py-2 text-[#049c64] rounded-md hover:bg-[#049c64] hover:text-white transition-all">
           <span>Read More</span>
           <ChevronDown className="h-3 w-3 ml-2" />{" "}
@@ -142,34 +142,34 @@ const JobDetail = () => {
 
       <div className="mt-6 p-4 rounded-lg">
         <div className="mt-6 flex justify-between items-center gap-4">
-          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-lg w-80 flex items-center gap-2">
+          <div className="bg-emerald-100 p-3 rounded-lg text-[#049c64] font-medium text-sm w-80 flex items-center gap-2">
             <img
               src={salaryIcon}
               alt="Salary Icon"
-              className="h-5 w-5 text-[#049c64]"
+              className="h-4 w-4 text-[#049c64]"
             />
             <span>Salary: $40,000 - $60,000</span>
           </div>
-          <div className="text-sm text-[#979797] text-right">
+          <div className="text-xs text-[#979797] text-right">
             <div>2024 August 25</div>
             <div className="ml-2">45d</div>
           </div>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-4">
-          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-lg w-50 flex items-center gap-2">
+        <div className="mt-4 flex flex-wrap gap-5">
+          <div className="bg-emerald-100 pl-3 py-2 pr-2 rounded-lg text-[#049c64] font-medium text-sm w-50 flex items-center gap-2">
             <img
               src={userIcon}
               alt="Salary Icon"
-              className="h-5 w-5 text-[#049c64]"
+              className="h-4 w-4 text-[#049c64]"
             />{" "}
             Job ID: #12345
           </div>
-          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-lg w-50 flex items-center gap-2">
+          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-sm w-50 flex items-center gap-2">
             <img
               src={userIcon}
               alt="Salary Icon"
-              className="h-5 w-5 text-[#049c64]"
+              className="h-4 w-4 text-[#049c64]"
             />{" "}
             CCID: #120001
           </div>
