@@ -14,6 +14,10 @@ import WaveDesign from "./Wavedesign";
 function LandingPage() {
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
   const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/jobs");
+  };
   useEffect(() => {
     const handleScroll = () => {
       setIsHeaderScrolled(window.pageYOffset > 0);
@@ -65,13 +69,11 @@ function LandingPage() {
               designed to match your career goals
             </div>
 
-            <button className="flex items-center space-x-3 bg-[#049c64] text-white px-8 py-4 rounded-full text-xl hover:bg-emerald-500 transition-colors mt-[15%]">
-              <span
-                onClick={() => navigate("/jobs")}
-                className="cursor-pointer  "
-              >
-                Start Your Search
-              </span>
+            <button
+              onClick={handleClick}
+              className="flex items-center space-x-3 bg-[#049c64] hover:bg-emerald-500 text-white px-8 py-4 rounded-full text-xl transition-colors mt-[15%]"
+            >
+              <span>Start Your Search</span>
               <div className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-white">
                 <svg
                   className="w-6 h-6"

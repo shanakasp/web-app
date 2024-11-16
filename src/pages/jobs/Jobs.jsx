@@ -15,35 +15,35 @@ const Jobs = () => {
         {/* Search Role */}
         <div className="sm:col-span-7 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
-            <Search className="h-5 w-5 lg:h-4 lg:w-4 lg:-mt-2 text-[#049c64]" />
+            <Search className="h-5 w-5 lg:h-4 lg:w-4  text-[#049c64]" />
           </div>
           <input
             type="text"
             placeholder="Search Role"
-            className="lg:text-sm w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
+            className=" lg:text-base w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
           />
         </div>
         {/* Search By CCID */}
         <div className="sm:col-span-2 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
-            <Search className="h-5 w-5 lg:h-4 lg:w-4 lg:-mt-2 text-[#049c64]" />
+            <Search className="h-5 w-5 lg:h-4 lg:w-4  text-[#049c64]" />
           </div>
           <input
             type="text"
             placeholder="Search By CCID"
-            className="lg:text-sm w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
+            className="lg:text-base w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
           />
         </div>
         {/* Location */}
         <div className="sm:col-span-2 relative">
           <div className="absolute inset-y-0 left-3 flex items-center">
-            <MapPin className="h-5 w-5 lg:h-4 lg:w-4 lg:-mt-2 text-[#049c64]" />{" "}
+            <MapPin className="h-5 w-5 lg:h-4 lg:w-4  text-[#049c64]" />{" "}
             {/* Location Icon */}
           </div>
           <input
             type="text"
             placeholder="Location"
-            className="lg:text-sm w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
+            className="lg:text-base w-full pl-10 pr-3 py-2 bg-emerald-100 border-0 rounded-md focus:ring-2 focus:ring-emerald-500 placeholder-[#049c64] font-medium"
           />
         </div>
         {/* Search Button */}
