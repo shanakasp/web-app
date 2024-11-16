@@ -63,7 +63,7 @@ const ReviewCarousel = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-8 bg-[#fff9f7] from-green-50/50 -z-10">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-8 bg-[#fff9f7] from-green-50/50 -z-10">
       <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px]">
         <div className="absolute inset-0 flex items-center justify-center">
           {getVisibleReviews().map((index, position) => {
@@ -100,14 +100,14 @@ const ReviewCarousel = () => {
                       alt={reviews[index].name}
                       className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-gray-300 mb-3"
                     />
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1">
+                    <h3 className="text-base  font-semibold mb-1">
                       {reviews[index].name}
                     </h3>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-500">
+                    <p className="text-sm  text-gray-500">
                       {reviews[index].username}
                     </p>
                   </div>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-600 text-center mb-6 leading-relaxed line-clamp-6">
+                  <p className="text-sm  text-gray-600 text-center mb-6 leading-relaxed line-clamp-6">
                     {reviews[index].text}
                   </p>
                   <div className="flex justify-center space-x-1">

@@ -56,13 +56,13 @@ const Header = () => {
         </button>
 
         <ul
-          className={`list-none flex xl:gap-6 m-0 p-0 text-sm sm:text-base xl:text-lg transition-all duration-300
+          className={`list-none flex xl:gap-6 m-0 p-0 text-base  transition-all duration-300
           ${isMenuOpen ? "flex" : "hidden"} 
           xl:flex flex-col xl:flex-row items-start xl:items-center 
           absolute xl:relative top-12 xl:top-0 right-0 
           bg-white xl:bg-transparent p-6 xl:p-0 
           rounded-lg shadow-lg xl:shadow-none 
-          min-w-[300px] xl:min-w-0
+          min-w-[400px] xl:min-w-0
           ${isScrolled ? "text-gray-800" : "text-black"}`}
         >
           <li className="w-full xl:w-auto">

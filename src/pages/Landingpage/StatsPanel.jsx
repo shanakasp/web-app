@@ -83,10 +83,10 @@ const StatsPanel = () => {
                   {stat.icon}
                 </div>
               </div>
-              <div className="text-[#049c64] text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4">
+              <div className="text-[#049c64] text-sm  font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4">
                 {stat.value}
               </div>
-              <div className="text-[#979797] text-xs sm:text-sm md:text-base lg:text-sm text-center font-medium">
+              <div className="text-[#979797] text-xs  text-center font-medium">
                 {stat.label}
               </div>
             </div>
@@ -101,16 +101,16 @@ const StatsPanel = () => {
           <div className="space-y-4">
             <div className="flex flex-col bg-[#fff9f7] rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
-                <h2 className="text-lg font-medium lg:text-base">
+                <h2 className="text-sm font-medium ">
                   Number of Jobs by Location
                 </h2>
-                <select className="border border-gray-300 rounded-md px-2 py-1 text-xs text-gray-700 bg-[#fff9f7]">
+                <select className="border border-gray-300 rounded-md px-2 py-1 text-xxs text-gray-700 bg-[#fff9f7]">
                   <option>This Month</option>
                   <option>Last Month</option>
                   <option>Last 3 Months</option>
                 </select>
               </div>
-              <div className="grid grid-cols-4 gap-4 p-4 bg-[#fff9f7] text-xxs">
+              <div className="grid grid-cols-4 gap-4 px-4 pb-4 bg-[#fff9f7] text-xxxs">
                 {[
                   { location: "Ahmedabad", count: 10 },
                   { location: "Bengaluru", count: 5 },
@@ -135,7 +135,7 @@ const StatsPanel = () => {
                       (index + 1) % 4 === 0 ? "border-r-2" : "" // Adds right border to the last item in each row
                     }`}
                   >
-                    <span className="text-xxxs xl:text-xxs lg:text-xxxs font-medium">
+                    <span className="text-xxxs  font-medium">
                       {job.location}: {job.count}
                     </span>
                   </div>
@@ -145,18 +145,18 @@ const StatsPanel = () => {
 
             <div className="flex flex-col bg-[#fff9f7] rounded-lg  border border-gray-300 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center justify-between p-4">
-                <h2 className="text-lg font-medium lg:text-base">
+                <h2 className="text-sm font-medium ">
                   Number of Jobs by Experience
                 </h2>
-                <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
+                <select className="border border-gray-300 rounded-md p-1 text-xxs text-gray-700 bg-[#fff9f7]">
                   <option>This Month</option>
                   <option>Last Month</option>
                   <option>Last 3 Months</option>
                 </select>
               </div>
-              <div className="p-4 bg-[#fff9f7]">
+              <div className="px-4 pb-4 bg-[#fff9f7]">
                 <div className="w-full border-b border-gray-300">
-                  <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
+                  <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xs">
                     <div className="p-3 font-medium text-left">Experience</div>
                     <div className="p-3 font-medium text-center">
                       No. of Job Ads
@@ -177,8 +177,8 @@ const StatsPanel = () => {
                           index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
                         }`}
                       >
-                        <div className="p-3 text-sm text-left">{item.exp}</div>
-                        <div className="p-3 text-sm text-center">
+                        <div className="p-3 text-xxs text-left">{item.exp}</div>
+                        <div className="p-3 text-xxs text-center">
                           {item.count}
                         </div>
                       </div>
@@ -192,18 +192,18 @@ const StatsPanel = () => {
           {/* Middle Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-lg lg:text-base font-medium">
+              <h2 className="text-sm  font-medium">
                 Number of Jobs by Industry
               </h2>
-              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
+              <select className="border border-gray-300 rounded-md p-1 text-xxs text-gray-700 bg-[#fff9f7]">
                 <option>This Month</option>
                 <option>Last Month</option>
                 <option>Last 3 Months</option>
               </select>
             </div>
-            <div className="p-4 bg-[#fff9f7]">
+            <div className="px-4 pb-4 bg-[#fff9f7]">
               <div className="w-full border-b border-gray-300">
-                <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
+                <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xs">
                   <div className="p-3 font-medium text-left">Industry</div>
                   <div className="p-3 font-medium text-center">
                     No. of Job Ads
@@ -230,10 +230,10 @@ const StatsPanel = () => {
                         index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
                       }`}
                     >
-                      <div className="p-3 text-sm text-left">
+                      <div className="p-3 text-xxs text-left">
                         {item.industry}
                       </div>
-                      <div className="p-3 text-sm text-center">
+                      <div className="p-3 text-xxs text-center">
                         {item.count}
                       </div>
                     </div>
@@ -246,18 +246,18 @@ const StatsPanel = () => {
           {/* Right Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-lg lg:text-base font-medium">
+              <h2 className="text-sm  font-medium">
                 Number of Jobs by Function
               </h2>
-              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7]">
+              <select className="border border-gray-300 rounded-md p-1 text-sm text-gray-700 bg-[#fff9f7] text-xxs">
                 <option>This Month</option>
                 <option>Last Month</option>
                 <option>Last 3 Months</option>
               </select>
             </div>
-            <div className="p-4 bg-[#fff9f7]">
+            <div className="px-4 pb-4 bg-[#fff9f7]">
               <div className="w-full border-b border-gray-300">
-                <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg">
+                <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xs">
                   <div className="p-3 font-medium text-left">Function</div>
                   <div className="p-3 font-medium text-center">
                     No. of Job Ads
@@ -277,8 +277,10 @@ const StatsPanel = () => {
                         index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
                       }`}
                     >
-                      <div className="p-3 text-sm text-left">{item.salary}</div>
-                      <div className="p-3 text-sm text-center">
+                      <div className="p-3 text-xxs text-left">
+                        {item.salary}
+                      </div>
+                      <div className="p-3 text-xxs text-center">
                         {item.count}
                       </div>
                     </div>
