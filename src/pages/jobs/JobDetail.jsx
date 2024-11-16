@@ -140,7 +140,7 @@ const JobDetail = () => {
 
       <div className="border-b-2 box-border mt-4"></div>
 
-      <div className="mt-6 p-4 rounded-lg">
+      <div className="mt-6 py-4 rounded-lg">
         <div className="mt-6 flex justify-between items-center gap-4">
           <div className="bg-emerald-100 p-3 rounded-lg text-[#049c64] font-medium text-sm w-80 flex items-center gap-2">
             <img

@@ -91,14 +91,12 @@ const Jobs = () => {
 
       {/* Pagination */}
       <div className="flex items-center justify-between mt-6 px-[5%]">
-        <span className="text-base sm:text-xl text-gray-600">
-          1 - 12 of 100
-        </span>
-        <div className="flex gap-3 sm:gap-5">
+        <span className="text-sm  text-gray-600">1 - 12 of 100</span>
+        <div className="flex gap-3 xs:gap-6">
           {[1, 2, 3, 4, "....", 10, 11].map((page, index) => (
             <button
               key={index}
-              className={`w-8 h-8 flex items-center justify-center rounded ${
+              className={`w-6 h-6 flex items-center justify-center rounded ${
                 page === 1
                   ? "bg-[#049c64] text-white"
                   : "text-gray-600 hover:bg-gray-100"
@@ -107,7 +105,7 @@ const Jobs = () => {
               {page}
             </button>
           ))}
-          <button className="w-8 h-8 flex items-center justify-center rounded text-gray-600 hover:bg-gray-100">
+          <button className="w-6 h-6 flex items-center justify-center rounded text-gray-600 hover:bg-gray-100">
             <ChevronDown className="h-4 w-4 rotate-270" />
           </button>
         </div>

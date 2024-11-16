@@ -20,7 +20,7 @@ const LeftJobList = ({ onSelectJob }) => {
         postedOn: "2024 Aug 12",
         ccUpdateDate: "2024 sep 15",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
       },
       // Duplicate entries for demonstration
       {
@@ -35,7 +35,7 @@ const LeftJobList = ({ onSelectJob }) => {
         postedOn: "2024 Aug 12",
         ccUpdateDate: "2024 sep 15",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
       },
       {
         id: "12346",
@@ -49,7 +49,7 @@ const LeftJobList = ({ onSelectJob }) => {
         postedOn: "2024 Aug 12",
         ccUpdateDate: "2024 sep 15",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
       },
       {
         id: "12346",
@@ -63,7 +63,7 @@ const LeftJobList = ({ onSelectJob }) => {
         postedOn: "2024 Aug 12",
         ccUpdateDate: "2024 sep 15",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
       },
       {
         id: "12346",
@@ -77,7 +77,7 @@ const LeftJobList = ({ onSelectJob }) => {
         postedOn: "2024 Aug 12",
         ccUpdateDate: "2024 sep 15",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...",
       },
     ]);
   }, []);
