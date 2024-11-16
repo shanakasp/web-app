@@ -144,7 +144,7 @@ const StatsPanel = () => {
             </div>
 
             <div className="flex flex-col bg-[#fff9f7] rounded-lg  border border-gray-300 hover:shadow-md transition-shadow duration-200">
-              <div className="flex items-center justify-between p-4">
+              <div className="flex items-center justify-between px-4 py-6">
                 <h2 className="text-sm font-medium ">
                   Number of Jobs by Experience
                 </h2>
