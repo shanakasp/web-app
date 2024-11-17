@@ -12,7 +12,7 @@ const Index = () => {
   };
 
   return (
-    <div className="max-w-full pt-[5%]  ">
+    <div className="max-w-full mt-[12%] lg:mt-[6%] xl:mt-[4%] sm:mt-[8%] ">
       <div className="w-6xl  mx-auto px-[7%] ">
         <hr class="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 mt-3" />
         {/* Navigation Tabs */}
@@ -21,7 +21,7 @@ const Index = () => {
             <div className="flex gap-2 justify-center">
               <button
                 onClick={() => handleTabClick("profile")}
-                className={`px-4 pt-2 border-b-2 text-lg font-medium ${
+                className={`px-4 pt-2 border-b-2 text-base font-medium ${
                   activeTab === "profile"
                     ? "border-emerald-500 border-solid text-[#049c64] bg-emerald-100"
                     : "border-none text-[#979797]" // Non-selected button color
@@ -31,7 +31,7 @@ const Index = () => {
               </button>
               <button
                 onClick={() => handleTabClick("savedJobs")}
-                className={`px-4 pt-2 border-b-2 text-lg font-medium ${
+                className={`px-4 pt-2 border-b-2 text-base font-medium ${
                   activeTab === "savedJobs"
                     ? "border-emerald-500 border-solid text-[#049c64] bg-emerald-100"
                     : "border-none text-[#979797]" // Non-selected button color

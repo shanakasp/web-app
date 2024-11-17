@@ -15,9 +15,9 @@ const ProfileDetails = () => {
           <img
             src={userImg}
             alt="Profile"
-            className="w-12 h-12 rounded-full sm:w-16 sm:h-16"
+            className="w-10 h-10 rounded-full sm:w-12 sm:h-12"
           />
-          <h2 className="text-lg font-semibold sm:text-xl">Phill Forden</h2>
+          <h2 className="text-sm font-semibold sm:text-sm">Phill Forden</h2>
         </div>
 
         {/* Second Part: Overall Experience */}
@@ -33,9 +33,9 @@ const ProfileDetails = () => {
         </div>
 
         {/* Final Part: Edit Button */}
-        <div className="flex justify-end sm:ml-auto -mr-[1%]">
-          <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
-            <img src={pen} alt="Edit" className="w-4 h-4" />
+        <div className="flex justify-end sm:ml-auto -mr-[1%] text-xs">
+          <button className="flex items-center gap-2 px-2 py-1 text-white bg-[#049c64] rounded-md">
+            <img src={pen} alt="Edit" className="w-2 h-2" />
             Edit
           </button>
         </div>
@@ -44,54 +44,54 @@ const ProfileDetails = () => {
       {/* Personal Information */}
       <div className="mb-4 sm:mb-6 border border-[#049c64] rounded-md p-3">
         <div className="flex items-center justify-between">
-          <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
-            <Info className="text-gray-600" />
+          <h3 className="flex items-center gap-2 text-base font-medium sm:text-base">
+            <Info className="text-gray-600 w-5 h-5" />
             <span className="text-gray-600">Personal Information</span>
           </h3>
           <div>
-            <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
-              <img src={pen} alt="Edit" className="w-4 h-4" />
+            <button className="flex items-center gap-2 px-2 py-1 text-white text-xs bg-[#049c64] rounded-md">
+              <img src={pen} alt="Edit" className="w-2 h-2" />
               Edit
             </button>
           </div>
         </div>
 
-        <div className="py-4 rounded-lg relative sm:p-6">
+        <div className="py-4 rounded-lg relative sm:p-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
             {/* First Name */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">First Name</p>
-              <p className="font-medium">Phill</p>
+              <p className="text-xs text-gray-600 mb-1">First Name</p>
+              <p className="font-medium text-xs">Phill</p>
             </div>
 
             {/* Last Name */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Last Name</p>
-              <p className="font-medium">Forden</p>
+              <p className="text-xs text-gray-600 mb-1">Last Name</p>
+              <p className="font-medium text-xs">Forden</p>
             </div>
 
             {/* Age */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Age</p>
-              <p className="font-medium">26 Years</p>
+              <p className="text-xs text-gray-600 mb-1">Age</p>
+              <p className="font-medium text-xs">26 Years</p>
             </div>
 
             {/* Email Address */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Email Address</p>
-              <p className="font-medium">phillforden01@gmail.com</p>
+              <p className="text-xs text-gray-600 mb-1">Email Address</p>
+              <p className="font-medium text-xs">phillforden01@gmail.com</p>
             </div>
 
             {/* Phone Number */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Phone Number</p>
-              <p className="font-medium">+49 1478 51478547</p>
+              <p className="text-xs text-gray-600 mb-1">Phone Number</p>
+              <p className="font-medium text-xs">+49 1478 51478547</p>
             </div>
 
             {/* Gender */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Gender</p>
-              <p className="font-medium">Male</p>
+              <p className="text-xs text-gray-600 mb-1">Gender</p>
+              <p className="font-medium text-xs">Male</p>
             </div>
           </div>
         </div>
@@ -101,75 +101,77 @@ const ProfileDetails = () => {
       <div className="mb-4 sm:mb-6 border border-[#049c64] rounded-md p-3">
         <div className="flex items-center justify-between">
           <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
-            <MapPin className="text-gray-600" />
-            <span className="text-gray-600">Location Information</span>
+            <MapPin className="text-gray-600 w-5 h-5" />
+            <span className="text-gray-600 text-base">
+              Location Information
+            </span>
           </h3>
           <div>
-            <button className="flex items-left gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
-              <img src={pen} alt="Edit" className="w-4 h-4" />
+            <button className="flex items-center gap-2 px-2 py-1 text-white text-xs bg-[#049c64] rounded-md">
+              <img src={pen} alt="Edit" className="w-2 h-2" />
               Edit
             </button>
           </div>
         </div>
-        <div className="p-4 relative sm:p-6">
+        <div className="p-4 relative sm:p-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
             {/* Country */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Country</p>
-              <p className="font-medium">Germany</p>
+              <p className=" text-gray-600 mb-1 text-xs">Country</p>
+              <p className="font-medium text-xs">Germany</p>
             </div>
 
             {/* City */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">City</p>
-              <p className="font-medium">Berlin</p>
+              <p className="text-xs text-gray-600 mb-1">City</p>
+              <p className="font-medium text-xs">Berlin</p>
             </div>
 
             {/* Zip Code */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Zip Code</p>
-              <p className="font-medium">10094</p>
+              <p className="text-xs text-gray-600 mb-1">Zip Code</p>
+              <p className="font-medium text-xs">10094</p>
             </div>
 
             {/* Street */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Street</p>
-              <p className="font-medium">Berliner Stralie</p>
+              <p className="text-xs text-gray-600 mb-1">Street</p>
+              <p className="font-medium text-xs">Berliner Stralie</p>
             </div>
 
             {/* House Number */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">House Number</p>
-              <p className="font-medium">24</p>
+              <p className="text-xs text-gray-600 mb-1">House Number</p>
+              <p className="font-medium text-xs">24</p>
             </div>
 
             {/* Apartment */}
             <div>
-              <p className="text-sm text-gray-600 mb-1">Apartment</p>
-              <p className="font-medium">3A</p>
+              <p className="text-xs text-gray-600 mb-1">Apartment</p>
+              <p className="font-medium text-xs">3A</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className=" border border-[#049c64] rounded-lg sm:p-6 mb-[5%]">
-        <div className="flex items-center justify-between mb-2">
-          <h3 className="flex items-center gap-2 text-base font-medium sm:text-lg">
-            <img src={Payment} alt="Description" className="w-5 h-5 " />
+      <div className=" border border-[#049c64] rounded-lg p-4 mb-[5%]">
+        <div className="flex items-center justify-between mb-2 ">
+          <h3 className="flex items-center gap-2 text-base font-medium sm:text-base">
+            <img src={Payment} alt="Description" className="w-4 h-4 " />
             <span className="text-gray-600">Account Information</span>
           </h3>
           <div className="-mr-[1%]">
-            <button className="flex items-left gap-2 px-4 py-2 text-white bg-[#049c64] rounded-md">
-              <img src={pen} alt="Edit" className="w-4 h-4" />
+            <button className="flex items-center gap-2 px-2 py-1 text-white text-xs bg-[#049c64] rounded-md">
+              <img src={pen} alt="Edit" className="w-2 h-2" />
               Edit
             </button>
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 p-2">
           {/* Account 01 */}
           <div className="flex items-center">
-            <div className="flex items-center gap-3 font-medium">
-              <img src={visa} alt="Description" className="w-8 h-8 rounded" />
+            <div className="flex items-center gap-3 font-medium text-xs">
+              <img src={visa} alt="Description" className="w-6 h-6 rounded" />
               <div className="flex flex-col">
                 <span className="text-[#979797]">Account 01</span>
                 <div className="flex items-center gap-2">
@@ -178,11 +180,11 @@ const ProfileDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="ml-auto lg:ml-[15%]">
+            <div className="ml-auto lg:ml-[10%]">
               <button className="text-red-500 border border-red-500 p-1 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-3 w-3"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -198,8 +200,8 @@ const ProfileDetails = () => {
 
           {/* Account 02 */}
           <div className="flex items-center">
-            <div className="flex items-center gap-3 font-medium">
-              <img src={visa} alt="Description" className="w-8 h-8 rounded" />
+            <div className="flex items-center gap-3 font-medium text-xs">
+              <img src={visa} alt="Description" className="w-6 h-6 rounded" />
               <div className="flex flex-col">
                 <span className="text-[#979797]">Account 02</span>
                 <div className="flex items-center gap-2">
@@ -208,11 +210,11 @@ const ProfileDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="ml-auto lg:ml-[15%]">
+            <div className="ml-auto lg:ml-[10%]">
               <button className="text-red-500 border border-red-500 p-1 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-3 w-3"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

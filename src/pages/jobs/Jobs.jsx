@@ -20,7 +20,7 @@ const Jobs = () => {
   }, []);
 
   return (
-    <div className="max-w-full mt-[15%] lg:mt-[6%] xl:mt-[4%]">
+    <div className="max-w-full mt-[12%] lg:mt-[6%] xl:mt-[4%] sm:mt-[8%] ">
       <hr className="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 mt-4" />
 
       {/* Search Section */}

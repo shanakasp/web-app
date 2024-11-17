@@ -20,7 +20,7 @@ const JobSearch = () => {
   const paginationNumbers = [1, 2, 3, 4, "...", 10, 11];
 
   return (
-    <div className="max-w-full md:mt-[6%] sm:mt-[10%] lg:mt-[6%] xl:mt-[4%]">
+    <div className="max-w-full mt-[12%] lg:mt-[6%] xl:mt-[4%] sm:mt-[8%] ">
       <div className="w-7xl mx-auto  px-[7%]">
         <hr className="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200" />
 
