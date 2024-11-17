@@ -113,7 +113,7 @@ function LandingPage() {
                     <h2 className="text-base font-bold text-gray-800 mb-1 sm:mb-2">
                       Effortless Job Search Across Leading Companies
                     </h2>
-                    <p className="text-gray-600 text-xs font-medium">
+                    <p className="text-gray-600 text-xxs font-medium">
                       Search by role, experience, and location to find
                       opportunities that align with your skills and aspirations.
                     </p>

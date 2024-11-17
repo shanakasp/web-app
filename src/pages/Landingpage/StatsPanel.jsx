@@ -158,7 +158,7 @@ const StatsPanel = () => {
                 <div className="w-full border-b border-gray-300">
                   <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xxs">
                     <div className="p-3 font-medium text-left">Experience</div>
-                    <div className="p-3 font-medium pl-10 text-center">
+                    <div className="p-3 font-medium pl-12 text-center">
                       No. of Job Ads
                     </div>
                   </div>
@@ -180,7 +180,7 @@ const StatsPanel = () => {
                         <div className="p-3 text-xxxs text-left">
                           {item.exp}
                         </div>
-                        <div className="p-3 text-xxxs pl-10 text-center">
+                        <div className="p-3 text-xxxs pl-12 text-center">
                           {item.count}
                         </div>
                       </div>
@@ -207,7 +207,7 @@ const StatsPanel = () => {
               <div className="w-full border-b border-gray-300">
                 <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xxs">
                   <div className="p-3 font-medium text-left">Industry</div>
-                  <div className="p-3 font-medium text-center">
+                  <div className="p-3 font-medium text-center pl-12">
                     No. of Job Ads
                   </div>
                 </div>
@@ -235,7 +235,7 @@ const StatsPanel = () => {
                       <div className="p-3 text-xxxs text-left">
                         {item.industry}
                       </div>
-                      <div className="p-3 text-xxxs text-center">
+                      <div className="p-3 text-xxxs text-center pl-12">
                         {item.count}
                       </div>
                     </div>
@@ -248,7 +248,7 @@ const StatsPanel = () => {
           {/* Right Column */}
           <div className="flex flex-col bg-fff9f7 rounded-lg shadow-sm border border-gray-300 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-xs  font-medium">
+              <h2 className="text-xs  font-medium ">
                 Number of Jobs by Function
               </h2>
               <select className="border border-gray-300 rounded-md p-1 text-xxxs text-gray-700 bg-[#fff9f7] text-xxs">
@@ -261,7 +261,7 @@ const StatsPanel = () => {
               <div className="w-full border-b border-gray-300">
                 <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xxs">
                   <div className="p-3 font-medium text-left">Function</div>
-                  <div className="p-3 font-medium text-center">
+                  <div className="p-3 font-medium text-center pl-12">
                     No. of Job Ads
                   </div>
                 </div>
@@ -282,7 +282,7 @@ const StatsPanel = () => {
                       <div className="p-3 text-xxxs text-left">
                         {item.salary}
                       </div>
-                      <div className="p-3 text-xxxs text-center">
+                      <div className="p-3 text-xxxs text-center pl-12">
                         {item.count}
                       </div>
                     </div>

@@ -7,15 +7,15 @@ import twitterIcon from "../Images/Twitter Circled.png";
 import facebookIcon from "../Images/fb.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#172b4d] text-[#979797] font-poppins">
-      <div className="max-w-5xl mx-auto  py-2 opacity-90 px-4">
+    <footer className="bg-[#172b4d] text-[#979797] font-poppins pb-2">
+      <div className="max-w-4xl mx-auto  py-2 opacity-90 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Find your way section */}
           <div>
-            <h3 className="text-white font-semibold text-base italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-sm italic mb-4 font-sansita">
               Find your way
             </h3>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-2 text-xxs">
               <li>
                 <a href="/" className="hover:text-white transition-colors">
                   Home
@@ -44,10 +44,10 @@ const Footer = () => {
 
           {/* Apps section */}
           <div>
-            <h3 className="text-white font-semibold text-base italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-sm italic mb-4 font-sansita">
               Apps
             </h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-xxs leading-relaxed">
               Download the Careers Central app for your Desktop or Mobile
               devices.
             </p>
@@ -55,19 +55,19 @@ const Footer = () => {
 
           {/* Contact Us section */}
           <div>
-            <h3 className="text-white font-semibold text-base italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-sm italic mb-4 font-sansita">
               Contact Us
             </h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-xxs leading-relaxed">
               Need anything? Get in touch and we can help.
             </p>
           </div>
 
           {/* Newsletter section */}
           <div>
-            <span className="text-base leading-relaxed opacity-90">
+            <span className="text-sm leading-relaxed opacity-90">
               Subscribe to our{" "}
-              <span className="italic font-sansita text-white opacity-100 text-base ml-1">
+              <span className="italic font-sansita text-white opacity-100 text-sm ml-1">
                 Newsletter
               </span>
             </span>
@@ -75,10 +75,10 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your Email ID"
-                className="bg-transparent outline-none w-full text-sm placeholder-[#979797] text-[#979797]"
+                className="bg-transparent outline-none w-full text-xs placeholder-[#979797] text-[#979797]"
               />
               <button className="ml-2 text-white hover:text-gray-300 transition-colors">
-                <ArrowRight className="w-6 h-6" />
+                <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>
@@ -91,11 +91,11 @@ const Footer = () => {
               <img
                 src={CopyrightIcon}
                 alt="Instagram"
-                className="w-4 h-4 mr-2"
+                className="w-3 h-3 mr-1"
               />{" "}
               {/* Increased size */}
             </a>
-            <span className="text-sm">
+            <span className="text-xxxs">
               Careers Central 2024. All Rights Reserved
             </span>
           </div>
