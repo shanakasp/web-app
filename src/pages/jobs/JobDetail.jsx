@@ -9,7 +9,7 @@ const JobDetail = () => {
       <div className="flex justify-between items-center px-4">
         {" "}
         {/* Added padding here */}
-        <h1 className="text-xl font-bold text-[#333333]-gray-900">
+        <h1 className="text-base font-bold text-[#333333]-gray-900">
           Delivery Head - Customer Service Operations (15-20 yrs)
         </h1>
         <div className="flex gap-2 shrink-0">
@@ -43,7 +43,7 @@ const JobDetail = () => {
             />
           </div>
           <div>
-            <h2 className="text-base font-medium text-[#333333-700] mt-1">
+            <h2 className="text-sm font-medium text-[#333333-700] mt-1">
               Tata Consultancy Services Ltd
             </h2>
             <div className="mt-2">
@@ -120,7 +120,7 @@ const JobDetail = () => {
 
       {/* Job Description */}
       <div className="mt-6">
-        <p className="text-gray-600 leading-relaxed text-sm">
+        <p className="text-gray-600 leading-relaxed text-xs">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -140,9 +140,9 @@ const JobDetail = () => {
 
       <div className="border-b-2 box-border mt-4"></div>
 
-      <div className="mt-6 py-4 rounded-lg">
+      <div className=" py-4 rounded-lg">
         <div className="mt-6 flex justify-between items-center gap-4">
-          <div className="bg-emerald-100 p-3 rounded-lg text-[#049c64] font-medium text-sm w-80 flex items-center gap-2">
+          <div className="bg-emerald-100 p-3 rounded-lg text-[#049c64] font-medium text-xs w-80 flex items-center gap-2">
             <img
               src={salaryIcon}
               alt="Salary Icon"
@@ -150,14 +150,14 @@ const JobDetail = () => {
             />
             <span>Salary: $40,000 - $60,000</span>
           </div>
-          <div className="text-xs text-[#979797] text-right">
+          <div className="text-xxs text-[#979797] text-right">
             <div>2024 August 25</div>
             <div className="ml-2">45d</div>
           </div>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-5">
-          <div className="bg-emerald-100 pl-3 py-2 pr-2 rounded-lg text-[#049c64] font-medium text-sm w-50 flex items-center gap-2">
+          <div className="bg-emerald-100 pl-3 py-1 pr-2 rounded-lg text-[#049c64] font-medium text-xs w-50 flex items-center gap-2">
             <img
               src={userIcon}
               alt="Salary Icon"
@@ -165,7 +165,7 @@ const JobDetail = () => {
             />{" "}
             Job ID: #12345
           </div>
-          <div className="bg-emerald-100 p-4 rounded-lg text-[#049c64] font-medium text-sm w-50 flex items-center gap-2">
+          <div className="bg-emerald-100 p-3 rounded-lg text-[#049c64] font-medium text-xs w-50 flex items-center gap-2">
             <img
               src={userIcon}
               alt="Salary Icon"
