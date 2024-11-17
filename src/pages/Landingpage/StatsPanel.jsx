@@ -158,7 +158,7 @@ const StatsPanel = () => {
                 <div className="w-full border-b border-gray-300">
                   <div className="grid grid-cols-2 bg-sky-950 text-white rounded-t-lg text-xxs">
                     <div className="p-3 font-medium text-left">Experience</div>
-                    <div className="p-3 font-medium text-center">
+                    <div className="p-3 font-medium pl-10 text-center">
                       No. of Job Ads
                     </div>
                   </div>
@@ -180,7 +180,7 @@ const StatsPanel = () => {
                         <div className="p-3 text-xxxs text-left">
                           {item.exp}
                         </div>
-                        <div className="p-3 text-xxxs text-center">
+                        <div className="p-3 text-xxxs pl-10 text-center">
                           {item.count}
                         </div>
                       </div>

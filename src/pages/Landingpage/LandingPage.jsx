@@ -123,7 +123,7 @@ function LandingPage() {
                   <div className="bg-[#fff9f7] rounded-lg shadow-md p-2 space-y-2 sm:space-y-0 sm:flex sm:items-center">
                     {/* Search Role */}
                     <div className="flex items-center w-full sm:w-auto sm:flex-[3]">
-                      <Search className="w-4 h-4 text-gray-400 mr-2 flex-shrink-0" />
+                      <Search className="w-4 h-4 text-gray-400 mr-1 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Search Role"
