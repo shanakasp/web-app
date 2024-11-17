@@ -13,34 +13,37 @@ import logo from "../../Images/logo.png";
 const Index = () => {
   return (
     <div
-      className="min-h-screen w-full p-2 md:p-5 flex items-center justify-center"
+      className="min-h-screen w-full p-2 md:p-4 flex items-center justify-center"
       style={{
         background: "linear-gradient(to right, #049D65 50%, #E0E1EF 50%)",
+        overflow: "hidden", // Prevent scrolling at higher zoom levels
       }}
     >
+      {/* Top right background image */}
       <img
         src={topRight}
         alt="Top Right Image"
-        className="absolute top-0 right-0"
+        className="absolute top-0 right-0 hidden md:block"
         style={{
-          width: "22%",
+          width: "16%", // Reduced size for better fit
           height: "auto",
           objectFit: "cover",
         }}
       />
+      {/* Bottom right background image */}
       <img
         src={bottomRight}
         alt="Bottom Right Image"
         className="absolute bottom-0 right-0 hidden md:block"
         style={{
-          width: "25%",
+          width: "18%", // Reduced size for better fit
           height: "auto",
           objectFit: "cover",
         }}
       />
 
       <div
-        className="w-full xl:max-w-[950px] mx-auto rounded-2xl overflow-hidden"
+        className="w-full lg:max-w-[900px] lg:max-h-[600px] mx-auto rounded-2xl overflow-hidden"
         style={{
           boxShadow: "0 6px 8px rgba(0, 0, 0, 0.2)",
         }}
@@ -48,7 +51,7 @@ const Index = () => {
         <div className="flex flex-col md:flex-row">
           {/* Left Section */}
           <div
-            className="relative p-4 md:p-6 md:w-1/2 overflow-hidden"
+            className="relative p-3 md:p-5 md:w-1/2 overflow-hidden"
             style={{
               background: "#45AE89",
             }}
@@ -56,9 +59,9 @@ const Index = () => {
             <img
               src={topImage}
               alt="Top Image"
-              className="absolute top-0 left-1/2 transform -translate-x-1/2"
+              className="absolute top-0 left-1/2 transform -translate-x-1/2 hidden md:block"
               style={{
-                width: "70%",
+                width: "65%", // Adjusted for better fit
                 height: "auto",
                 objectFit: "cover",
               }}
@@ -67,17 +70,17 @@ const Index = () => {
             <img
               src={bottomImage}
               alt="Bottom Image"
-              className="absolute bottom-0 left-10 xl:ml-4"
+              className="absolute bottom-0 left-8 xl:ml-4 hidden md:block"
               style={{
-                width: "75%",
+                width: "70%", // Adjusted for better fit
                 height: "auto",
                 objectFit: "cover",
               }}
             />
 
-            <div className="relative h-full flex flex-col justify-center py-4 xl:px-[8%] md:py-0">
+            <div className="relative h-full flex flex-col justify-center py-3 lg:px-[15%] xl:px-[6%] md:py-0">
               <h1
-                className="text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight mb-3 text-center md:text-left"
+                className="text-xl md:text-2xl lg:text-4xl text-white font-bold leading-tight mb-2 text-center md:text-left"
                 style={{
                   textShadow: "0 3px 6px rgba(0,0,0,0.1)",
                 }}
@@ -86,32 +89,32 @@ const Index = () => {
                 <br />
                 Your Future
               </h1>
-              <p className="text-white text-md md:text-lg text-center md:text-left opacity-90">
+              <p className="text-white text-sm md:text-md text-center md:text-left opacity-80">
                 Every Journey Starts with a First Click!
               </p>
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="relative p-4 md:p-6 md:w-1/2 bg-[#f5f6fa]">
+          <div className="relative p-3 md:p-5 md:w-1/2 bg-[#f5f6fa]">
             <div className="max-w-sm mx-auto relative">
-              <div className="text-center mb-4 md:mb-6">
+              <div className="text-center mb-4 md:mb-5">
                 <div className="flex flex-col items-center">
                   <img
                     src={logo}
                     alt="Careers Central"
-                    className="w-auto h-auto max-w-[200px]"
+                    className="w-auto h-auto max-w-[180px]" // Reduced max width for smaller view
                   />
                 </div>
               </div>
 
-              <h2 className="text-md md:text-lg font-semibold text-center mb-4 md:mb-6">
+              <h2 className="text-sm md:text-md font-semibold text-center mb-3 md:mb-4">
                 Welcome Back. We're Here to Help You Succeed!
               </h2>
 
-              <form className="space-y-4">
+              <form className="space-y-3">
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block text-sm">
+                  <label className="text-gray-600 mb-1 block text-xs md:text-sm">
                     Email
                   </label>
                   <div className="relative">
@@ -122,14 +125,14 @@ const Index = () => {
                     />
                     <input
                       type="email"
-                      placeholder="Enter your email address"
-                      className="w-full pl-8 pr-3 py-2 text-sm border border-gray-200 border-solid rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      placeholder="Enter Email Address"
+                      className="w-full pl-8 pr-3 py-1.5 text-xs md:text-sm placeholder:text-xxs border border-gray-200 border-solid rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-600 mb-2 block text-sm">
+                  <label className="text-gray-600 mb-1 block text-xxs md:text-sm">
                     Password
                   </label>
                   <div className="relative">
@@ -141,12 +144,12 @@ const Index = () => {
                     <input
                       type="password"
                       placeholder="******************"
-                      className="w-full pl-8 pr-3 py-2 text-sm border border-gray-200 border-solid rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-8 pr-3 py-2 text-xs md:text-sm border border-gray-200 border-solid rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     />
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-1 sm:space-y-0 text-sm">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-1 sm:space-y-0 text-xs sm:text-sm">
                   <div className="flex items-center">
                     <input
                       type="checkbox"
