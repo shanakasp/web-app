@@ -100,66 +100,65 @@ function LandingPage() {
                 </button>
               </div>
             </div>
-
-            {/* Right Content */}
             <div
-              className="w-full lg:w-1/3 bg-cover bg-center bg-no-repeat h-[350px]  shadow-lg rounded-2xl  "
+              className="w-full lg:w-1/3 bg-cover bg-center bg-no-repeat h-[280px] sm:h-[350px] shadow-lg rounded-2xl"
               style={{
-                backgroundImage: `url(${backimgr})`, // Ensure backimgr contains a valid image URL
+                backgroundImage: `url(${backimgr})`,
               }}
             >
-              <div className="relative md:pt-[24%] xl:pt-[38%]  lg:pt-[48%] px-4">
-                <div className="space-y-6 md:space-y-8 ">
-                  <div className="text-center">
-                    <h2 className="text-base font-bold text-gray-800  ">
+              <div className="h-full flex flex-col justify-end p-3 sm:p-4">
+                <div className="space-y-3 sm:space-y-6">
+                  {/* Header Content */}
+                  <div className="text-center px-2">
+                    <h2 className="text-base font-bold text-gray-800 mb-1 sm:mb-2">
                       Effortless Job Search Across Leading Companies
                     </h2>
-                    <p className="text-gray-600 text-xs font-medium lg:pt-[5%]">
+                    <p className="text-gray-600 text-xs font-medium">
                       Search by role, experience, and location to find
                       opportunities that align with your skills and aspirations.
                     </p>
                   </div>
 
                   {/* Search Form */}
-                  <div className="bg-[#fff9f7] rounded-lg shadow-md h-8 md:h-10 flex items-center px-2 ">
+                  <div className="bg-[#fff9f7] rounded-lg shadow-md p-2 space-y-2 sm:space-y-0 sm:flex sm:items-center">
                     {/* Search Role */}
-                    <div className="flex items-center flex-1">
-                      <Search className="w-5 h-5 text-gray-400 mr-1" />
+                    <div className="flex items-center w-full sm:w-auto sm:flex-[3]">
+                      <Search className="w-4 h-4 text-gray-400 mr-2 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Search Role"
-                        className="w-full bg-transparent outline-none text-gray-600 text-xxxs"
+                        className="w-full bg-transparent outline-none text-gray-600 text-[10px]"
                       />
                     </div>
 
-                    {/* Divider */}
-                    <div className="hidden md:block w-px h-6 bg-gray-300" />
+                    {/* Divider - Visible only on larger screens */}
+                    <div className="hidden sm:block w-px h-6 bg-gray-300 mx-2" />
 
                     {/* Experience */}
-                    <div className="flex items-center mr-1 px-1">
-                      <Briefcase className="w-3 h-4 text-gray-400 m-1 " />
+                    <div className="flex items-center w-full sm:w-12">
+                      <Briefcase className="w-3 h-3 text-gray-400 mr-1 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Exp"
-                        className="w-4 bg-transparent outline-none text-gray-600 text-xxxs "
+                        className="w-4 bg-transparent outline-none text-gray-600 text-[10px]"
                       />
                     </div>
 
-                    {/* Divider */}
-                    <div className="hidden md:block w-px h-6 bg-gray-300" />
+                    {/* Divider - Visible only on larger screens */}
+                    <div className="hidden sm:block w-px h-6 bg-gray-300 mx-2" />
 
                     {/* Location */}
-                    <div className="flex items-center flex-1 ml-1">
-                      <MapPin className="w-3 h-5 text-gray-400 mr-1" />
+                    <div className="flex items-center w-full sm:w-auto sm:flex-[2]">
+                      <MapPin className="w-3 h-4 text-gray-400 mr-1 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Location"
-                        className="w-full bg-transparent outline-none text-gray-600 text-xxxs"
+                        className="w-full bg-transparent outline-none text-gray-600 text-[10px]"
                       />
                     </div>
 
                     {/* Search Button */}
-                    <button className="w-full md:w-auto bg-[#049c64] hover:bg-emerald-500 text-white px-4 py-2 rounded-md transition-colors">
+                    <button className="w-full sm:w-auto bg-[#049c64] hover:bg-emerald-500 text-white px-2 py-2 rounded-md transition-colors mt-2 sm:mt-0 sm:ml-2">
                       <Search className="w-4 h-4 mx-auto" />
                     </button>
                   </div>
