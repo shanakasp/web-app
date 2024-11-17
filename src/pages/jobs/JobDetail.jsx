@@ -5,7 +5,7 @@ import userIcon from "../../Images/Checked Identification Documents.png";
 import salaryIcon from "../../Images/Money Bag.png";
 const JobDetail = () => {
   return (
-    <div className="max-w-7xl bg-[#fff9f7] rounded-lg shadow-lg p-6 border">
+    <div className="max-w-7xl bg-[#fff9f7] rounded-lg shadow-lg p-2 border">
       <div className="flex justify-between items-center px-4">
         {" "}
         {/* Added padding here */}
@@ -21,10 +21,10 @@ const JobDetail = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-end my-4 px-4">
+      <div className="flex justify-end my-1 px-4">
         {" "}
         {/* Added padding here as well */}
-        <button className="inline-flex items-center px-3 py-1 text-xxxs bg-[#049c64] text-white hover:bg-emerald-600 gap-2">
+        <button className="inline-flex items-center px-3 py-1 text-xxxxs xl:text-xxs bg-[#049c64] text-white hover:bg-emerald-600 gap-2">
           <BsLightningCharge className="h-4 w-4" />
           Easy Apply
         </button>
@@ -35,7 +35,7 @@ const JobDetail = () => {
       <div className="flex flex-col lg:flex-row justify-between items-start gap-4 my-4 px-2">
         {/* Left side with title and company info */}
         <div className="flex items-start gap-4">
-          <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center shrink-0">
+          <div className="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center shrink-0">
             <img
               src="/api/placeholder/64/64"
               alt="Company logo"
@@ -74,10 +74,10 @@ const JobDetail = () => {
 
       {/* Location and Experience */}
       <div className="flex flex-wrap gap-4 text-[#979797] mt-4 px-2">
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex items-center gap-2 text-xs">
           <span className="text-[#979797]">
             <svg
-              className="h-5 w-5"
+              className="h-4 w-4"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -92,10 +92,10 @@ const JobDetail = () => {
           </span>
           15-20 Yrs
         </div>
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex items-center gap-2 text-xs">
           <span className="text-[#979797]">
             <svg
-              className="h-5 w-5"
+              className="h-4 w-4"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

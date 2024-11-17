@@ -20,7 +20,7 @@ const Jobs = () => {
   }, []);
 
   return (
-    <div className="max-w-full sm:p-10 mt-10">
+    <div className="max-w-full mt-[15%] lg:mt-[6%] xl:mt-[4%]">
       <hr className="relative left-1/2 right-1/2 -mx-[49vw] w-[98vw] border-t-2 border-gray-200 mt-4" />
 
       {/* Search Section */}
@@ -70,7 +70,7 @@ const Jobs = () => {
 
       {/* Filters Section */}
       <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 mb-6 items-center w-full mt-3 px-[5%] overflow-x-auto">
-        <button className="flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-[#049c64] text-[#049c64] font-medium md:text-sm xl:text-base whitespace-nowrap">
+        <button className="flex items-center justify-center gap-2 px-3 py-2 rounded-full border border-[#049c64] text-[#049c64] font-medium text-xs  whitespace-nowrap">
           <img src={Filter} alt="Filter" className="h-4 w-4" />
           Filter
         </button>
@@ -79,7 +79,7 @@ const Jobs = () => {
           (filter) => (
             <button
               key={filter}
-              className="flex items-center justify-center gap-2 px-4 py-2 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50 md:text-xs xl:text-base lg:text-xs whitespace-nowrap"
+              className="flex items-center justify-center gap-2 px-3 py-1 bg-fff9f7 border border-gray-300 border-solid rounded-full hover:bg-gray-50 md:text-xs xl:text-base lg:text-xxs whitespace-nowrap"
             >
               {filter}
               <ChevronDown className="h-4 w-4" />
@@ -94,17 +94,24 @@ const Jobs = () => {
 
       {/* Main Content */}
       <div className="flex flex-col lg:flex-row w-full gap-4 px-[5%] min-h-screen">
+        {/* Left Panel */}
         <div
-          className={`${isMobile ? "w-full" : "w-1/3"} h-full overflow-y-auto`}
+          className={`${
+            isMobile ? "w-full" : "w-1/3"
+          } flex-grow h-full overflow-hidden`}
         >
-          <div className="sticky top-0">
+          <div className="sticky top-0 h-full">
             <LeftJobList onSelectJob={setSelectedJob} />
           </div>
         </div>
+
+        {/* Right Panel */}
         <div
-          className={`${isMobile ? "w-full" : "w-2/3"} h-full overflow-y-auto`}
+          className={`${
+            isMobile ? "w-full" : "w-2/3"
+          } flex-grow h-full overflow-hidden`}
         >
-          <div className="sticky top-0">
+          <div className="sticky top-0 h-full">
             <JobDetail job={selectedJob} />
           </div>
         </div>
@@ -112,12 +119,12 @@ const Jobs = () => {
 
       {/* Pagination */}
       <div className="flex flex-col sm:flex-row items-center justify-between mt-6 mb-2 px-[5%] gap-4">
-        <span className="text-sm text-gray-600">1 - 12 of 100</span>
+        <span className="text-xs text-gray-600">1 - 12 of 100</span>
         <div className="flex gap-3 xs:gap-6 overflow-x-auto">
           {[1, 2, 3, 4, "....", 10, 11].map((page, index) => (
             <button
               key={index}
-              className={`w-6 h-6 flex items-center justify-center rounded ${
+              className={`w-5 h-5 flex items-center justify-center rounded ${
                 page === 1
                   ? "bg-[#049c64] text-white"
                   : "text-gray-600 hover:bg-gray-100"
@@ -126,7 +133,7 @@ const Jobs = () => {
               {page}
             </button>
           ))}
-          <button className="w-6 h-6 flex items-center justify-center rounded text-gray-600 hover:bg-gray-100">
+          <button className="w-4 h-4 flex items-center justify-center rounded text-gray-600 hover:bg-gray-100">
             <ChevronDown className="h-4 w-4 rotate-270" />
           </button>
         </div>
