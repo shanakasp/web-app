@@ -9,6 +9,7 @@ module.exports = {
       fontSize: {
         xxs: "0.625rem", // Custom size for xxs
         xxxs: "0.5rem", // Custom size for xxs
+        xxxxs: "0.4rem",
         nav: "900px",
       },
     },
