@@ -247,7 +247,7 @@ const LeftJobList = ({ onSelectJob }) => {
                 alt="User Icon"
                 className="h-2.5 w-2.5 sm:h-4 sm:w-4 md:h-3.5 md:w-3.5"
               />
-              <span className="text-xxs text-gray-600">{job.salary}</span>
+              <span className="text-xs text-gray-600">{job.salary}</span>
             </div>
           </div>
 

@@ -8,14 +8,14 @@ import facebookIcon from "../Images/fb.png";
 const Footer = () => {
   return (
     <footer className="bg-[#172b4d] text-[#979797] font-poppins">
-      <div className="max-w-5xl mx-auto  py-12 opacity-90 px-4">
+      <div className="max-w-5xl mx-auto  py-4 opacity-90 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Find your way section */}
           <div>
-            <h3 className="text-white font-semibold text-xl italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-base italic mb-4 font-sansita">
               Find your way
             </h3>
-            <ul className="space-y-2 text-base">
+            <ul className="space-y-2 text-xs">
               <li>
                 <a href="/" className="hover:text-white transition-colors">
                   Home
@@ -44,10 +44,10 @@ const Footer = () => {
 
           {/* Apps section */}
           <div>
-            <h3 className="text-white font-semibold text-xl italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-base italic mb-4 font-sansita">
               Apps
             </h3>
-            <p className="text-base leading-relaxed">
+            <p className="text-sm leading-relaxed">
               Download the Careers Central app for your Desktop or Mobile
               devices.
             </p>
@@ -55,10 +55,10 @@ const Footer = () => {
 
           {/* Contact Us section */}
           <div>
-            <h3 className="text-white font-semibold text-xl italic mb-4 font-sansita">
+            <h3 className="text-white font-semibold text-base italic mb-4 font-sansita">
               Contact Us
             </h3>
-            <p className="text-base leading-relaxed">
+            <p className="text-sm leading-relaxed">
               Need anything? Get in touch and we can help.
             </p>
           </div>
@@ -67,7 +67,7 @@ const Footer = () => {
           <div>
             <span className="text-base leading-relaxed opacity-90">
               Subscribe to our{" "}
-              <span className="italic font-sansita text-white opacity-100 text-xl ml-1">
+              <span className="italic font-sansita text-white opacity-100 text-base ml-1">
                 Newsletter
               </span>
             </span>
@@ -75,7 +75,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your Email ID"
-                className="bg-transparent outline-none w-full text-base placeholder-[#979797] text-[#979797]"
+                className="bg-transparent outline-none w-full text-sm placeholder-[#979797] text-[#979797]"
               />
               <button className="ml-2 text-white hover:text-gray-300 transition-colors">
                 <ArrowRight className="w-6 h-6" />
@@ -91,11 +91,11 @@ const Footer = () => {
               <img
                 src={CopyrightIcon}
                 alt="Instagram"
-                className="w-6 h-6 mr-2"
+                className="w-4 h-4 mr-2"
               />{" "}
               {/* Increased size */}
             </a>
-            <span className="text-base">
+            <span className="text-sm">
               Careers Central 2024. All Rights Reserved
             </span>
           </div>
@@ -103,19 +103,19 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="flex space-x-4">
             <a href="#">
-              <img src={facebookIcon} alt="Facebook" className="w-7 h-7" />{" "}
+              <img src={facebookIcon} alt="Facebook" className="w-5 h-5" />{" "}
               {/* Increased size */}
             </a>
             <a href="#">
-              <img src={linkedinIcon} alt="LinkedIn" className="w-7 h-7" />{" "}
+              <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5" />{" "}
               {/* Increased size */}
             </a>
             <a href="#">
-              <img src={twitterIcon} alt="Twitter" className="w-7 h-7" />{" "}
+              <img src={twitterIcon} alt="Twitter" className="w-5 h-5" />{" "}
               {/* Increased size */}
             </a>
             <a href="#">
-              <img src={instagramIcon} alt="Instagram" className="w-7 h-7" />{" "}
+              <img src={instagramIcon} alt="Instagram" className="w-5 h-5" />{" "}
               {/* Increased size */}
             </a>
           </div>

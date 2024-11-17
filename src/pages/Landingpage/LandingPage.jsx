@@ -46,18 +46,18 @@ function LandingPage() {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 pt-[7%] pb-[10%] lg:pl-[8%]">
+        <div className="container mx-auto px-4 pt-[5%] pb-[10%] lg:pl-[8%]">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 space-y-6 pl-[3%]">
               <img
                 src={frameImage}
                 alt="star"
-                className="w-16 md:w-20 mb-4 relative left-[60%]"
+                className="w-12 md:w-12  relative left-[60%]"
               />
 
               <div className="relative">
-                <h1 className="text-5xl font-bold leading-tight">
+                <h1 className="text-4xl font-bold leading-tight">
                   Unlock your Next <br />
                   <span className="text-[#049c64] relative z-10">
                     Career
@@ -71,7 +71,7 @@ function LandingPage() {
                 />
               </div>
 
-              <p className="md:text-sm  text-gray-700 max-w-2xl">
+              <p className="md:text-xs  text-gray-700 max-w-2xl">
                 Tailored opportunities across industries and skill levels,{" "}
                 <br></br>
                 designed to match your career goals
@@ -108,13 +108,13 @@ function LandingPage() {
                 backgroundImage: `url(${backimgr})`, // Ensure backimgr contains a valid image URL
               }}
             >
-              <div className="relative md:pt-[20%]   lg:pt-[48%] px-4">
+              <div className="relative md:pt-[24%]   lg:pt-[48%] px-4">
                 <div className="space-y-6 md:space-y-8 ">
                   <div className="text-center">
-                    <h2 className="text-lg font-bold text-gray-800  ">
+                    <h2 className="text-base font-bold text-gray-800  ">
                       Effortless Job Search Across Leading Companies
                     </h2>
-                    <p className="text-gray-600 text-sm font-medium lg:pt-[5%]">
+                    <p className="text-gray-600 text-xs font-medium lg:pt-[5%]">
                       Search by role, experience, and location to find
                       opportunities that align with your skills and aspirations.
                     </p>
@@ -128,7 +128,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Search Role"
-                        className="w-full bg-transparent outline-none text-gray-600 text-sm md:text-xs"
+                        className="w-full bg-transparent outline-none text-gray-600 text-xs md:text-xs"
                       />
                     </div>
 
@@ -141,7 +141,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Exp"
-                        className="w-5 bg-transparent outline-none text-gray-600 text-sm md:text-xs"
+                        className="w-5 bg-transparent outline-none text-gray-600 text-xxs "
                       />
                     </div>
 
@@ -154,13 +154,13 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Location"
-                        className="w-full bg-transparent outline-none text-gray-600 text-sm md:text-xs"
+                        className="w-full bg-transparent outline-none text-gray-600 text-xxs "
                       />
                     </div>
 
                     {/* Search Button */}
                     <button className="w-full md:w-auto bg-[#049c64] hover:bg-emerald-500 text-white p-3 rounded-md transition-colors">
-                      <Search className="w-5 h-5 mx-auto" />
+                      <Search className="w-4 h-4 mx-auto" />
                     </button>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ function LandingPage() {
       </section>
 
       {/* Wave Design Section */}
-      <div className="-mt-[4%]">
+      <div className="-mt-[8%]">
         {" "}
         <WaveDesign />
       </div>

@@ -20,7 +20,7 @@ const JobSearch = () => {
   const paginationNumbers = [1, 2, 3, 4, "...", 10, 11];
 
   return (
-    <div className="max-w-full  sm:p-10 mt-10">
+    <div className="max-w-full  sm:p-10 mt-8">
       <div className="w-7xl mx-auto py-6 px-[7%]">
         <hr className="relative left-1/2 right-1/2 -mx-[51vw] w-screen border-t-2 border-gray-200" />
 
@@ -49,12 +49,12 @@ const JobSearch = () => {
 
         {/* Frequently Searched */}
         <div className="border-2 mt-6 p-4">
-          <h2 className="text-lg font-medium mb-4">Frequently Searched</h2>
+          <h2 className="text-base font-medium mb-4">Frequently Searched</h2>
           <div className="flex flex-wrap gap-3">
             {frequentSearches.map((item, index) => (
               <button
                 key={index}
-                className="px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded-md text-blue-500"
+                className="text-sm px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded-md text-blue-500"
               >
                 {item.text}
               </button>
@@ -64,13 +64,16 @@ const JobSearch = () => {
 
         {/* Search Results */}
         <div className="border-2 mt-4 p-4">
-          <h2 className="text-lg font-medium mb-4 relative inline-block">
+          <h2 className="text-base font-medium mb-4 relative inline-block">
             Search Results
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#111111] opacity-70"></span>
           </h2>
 
           {searchResults.map((company, index) => (
-            <div key={index} className="p-3 hover:bg-gray-50 rounded-md">
+            <div
+              key={index}
+              className="p-3 hover:bg-gray-50 rounded-md text-sm"
+            >
               {company}
             </div>
           ))}
@@ -78,14 +81,12 @@ const JobSearch = () => {
 
         {/* Pagination */}
         <div className="mt-6 flex items-center justify-between">
-          <span className="text-base sm:text-xl text-gray-600">
-            1 - 12 of 100
-          </span>
-          <div className="flex items-center gap-2">
+          <span className="text-sm  text-gray-600">1 - 12 of 100</span>
+          <div className="flex items-center gap-4 text-sm">
             {paginationNumbers.map((num, index) => (
               <button
                 key={index}
-                className={`w-8 h-8 flex items-center justify-center ${
+                className={`w-4 h-4 flex items-center justify-center ${
                   typeof num === "number" && num === 1
                     ? "bg-blue-50 text-blue-600"
                     : "hover:bg-gray-100"
@@ -94,7 +95,7 @@ const JobSearch = () => {
                 {num}
               </button>
             ))}
-            <button className="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded-md">
+            <button className="w-4 h-4 flex items-center justify-center hover:bg-gray-100 rounded-md">
               <ChevronRight size={20} />
             </button>
           </div>
