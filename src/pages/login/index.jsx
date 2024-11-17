@@ -78,9 +78,9 @@ const Index = () => {
               }}
             />
 
-            <div className="relative h-full flex flex-col justify-center py-3 lg:px-[15%] xl:px-[6%] md:py-0">
+            <div className="relative h-full flex flex-col justify-center py-3 lg:px-[15%] xl:pl-[15%] md:py-0  sm:px-[15%] ">
               <h1
-                className="text-xl md:text-2xl lg:text-4xl text-white font-bold leading-tight mb-2 text-center md:text-left"
+                className=" md:text-2xl lg:text-4xl sm:text-2xl text-white font-bold leading-tight mb-2 text-center md:text-left"
                 style={{
                   textShadow: "0 3px 6px rgba(0,0,0,0.1)",
                 }}
