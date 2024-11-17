@@ -46,7 +46,7 @@ function LandingPage() {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 pt-[5%] pb-[10%] lg:pl-[8%]">
+        <div className="container mx-auto px-4 pt-[10%] pb-[10%] lg:pl-[8%]">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 space-y-6 pl-[3%]">
@@ -103,12 +103,12 @@ function LandingPage() {
 
             {/* Right Content */}
             <div
-              className="w-full lg:w-1/3 bg-cover bg-center bg-no-repeat h-[400px]  shadow-lg rounded-2xl  "
+              className="w-full lg:w-1/3 bg-cover bg-center bg-no-repeat h-[350px]  shadow-lg rounded-2xl  "
               style={{
                 backgroundImage: `url(${backimgr})`, // Ensure backimgr contains a valid image URL
               }}
             >
-              <div className="relative md:pt-[24%]   lg:pt-[48%] px-4">
+              <div className="relative md:pt-[24%] xl:pt-[38%]  lg:pt-[48%] px-4">
                 <div className="space-y-6 md:space-y-8 ">
                   <div className="text-center">
                     <h2 className="text-base font-bold text-gray-800  ">
@@ -128,7 +128,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Search Role"
-                        className="w-full bg-transparent outline-none text-gray-600 text-xs md:text-xs"
+                        className="w-full bg-transparent outline-none text-gray-600 text-xxs "
                       />
                     </div>
 
@@ -141,7 +141,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Exp"
-                        className="w-5 bg-transparent outline-none text-gray-600 text-xxs "
+                        className="w-5 bg-transparent outline-none text-gray-600 text-xxxs "
                       />
                     </div>
 
@@ -150,11 +150,11 @@ function LandingPage() {
 
                     {/* Location */}
                     <div className="flex items-center flex-1">
-                      <MapPin className="w-5 h-5 text-gray-400 mr-2" />
+                      <MapPin className="w-5 h-5 text-gray-400 mr-1" />
                       <input
                         type="text"
                         placeholder="Location"
-                        className="w-full bg-transparent outline-none text-gray-600 text-xxs "
+                        className="w-full bg-transparent outline-none text-gray-600 text-xxxs "
                       />
                     </div>
 
