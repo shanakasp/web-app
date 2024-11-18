@@ -177,10 +177,10 @@ const StatsPanel = () => {
                           index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
                         }`}
                       >
-                        <div className="p-3 text-xxxs text-left xl:text-xxs">
+                        <div className="p-2 text-xxxs text-left xl:text-xxs">
                           {item.exp}
                         </div>
-                        <div className="p-3 text-xxxs pl-12 text-center xl:text-xxs">
+                        <div className="p-2 text-xxxs pl-12 text-center xl:text-xxs">
                           {item.count}
                         </div>
                       </div>
@@ -232,10 +232,10 @@ const StatsPanel = () => {
                         index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
                       }`}
                     >
-                      <div className="p-3 text-xxxs xl:text-xxs text-left">
+                      <div className="p-2.5 text-xxxs xl:text-xxs text-left">
                         {item.industry}
                       </div>
-                      <div className="p-3 text-xxxs  xl:text-xxs text-center pl-12">
+                      <div className="p-2.5 text-xxxs  xl:text-xxs text-center pl-12">
                         {item.count}
                       </div>
                     </div>
@@ -279,10 +279,10 @@ const StatsPanel = () => {
                         index % 2 === 0 ? "bg-white" : "bg-[#fff9f7]"
                       }`}
                     >
-                      <div className="p-3 text-xxxs xl:text-xxs text-left">
+                      <div className="p-2.5 text-xxxs xl:text-xxs text-left">
                         {item.salary}
                       </div>
-                      <div className="p-3 text-xxxs xl:text-xxs text-center pl-12">
+                      <div className="p-2.2 text-xxxs xl:text-xxs text-center pl-12">
                         {item.count}
                       </div>
                     </div>
