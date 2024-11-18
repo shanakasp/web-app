@@ -24,7 +24,7 @@ import topImage7 from "../../Images/topRight7.png";
 const Index = () => {
   return (
     <div
-      className="min-h-screen w-full px-4 pt-[10%]  md:p-8 flex items-center justify-center"
+      className="min-h-screen w-full px-4 pt-[10%] lg:p-12 md:p-8 flex items-center justify-center"
       style={{
         background: "linear-gradient(to right, #049D65 50%, #E0E1EF 50%)",
       }}
@@ -52,7 +52,7 @@ const Index = () => {
       <img
         src={dots}
         alt="Bottom Right Image"
-        className="absolute bottom-20 right-[5%] hidden md:block"
+        className="absolute -bottom-10 right-[5%] hidden md:block"
         style={{
           width: "5%",
           height: "auto",
@@ -62,10 +62,10 @@ const Index = () => {
 
       <img
         src={bottomCenter}
-        alt="Bottom Right Image"
-        className="absolute -bottom-[88.2%] right-[20%] hidden md:block"
+        alt="Bottom Center Image"
+        className="absolute lg:top-[214%] lg:right-[30%] hidden md:block xl:top-[93.3%]  "
         style={{
-          width: "60%",
+          width: "20%",
           height: "auto",
           objectFit: "cover",
         }}
@@ -85,115 +85,98 @@ const Index = () => {
               background: "#45AE89",
             }}
           >
-            <img
-              src={topImage}
-              alt="Top Image"
-              className="absolute top-10 left-1/2 transform -translate-x-1/2"
-              style={{
-                width: "70%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
+            <div className="hidden md:block absolute top-10 left-1/2 transform -translate-x-1/2 w-[70%]">
+              <img
+                src={topImage}
+                alt="Top Image"
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-            <img
-              src={topImage2}
-              alt="Top Image2"
-              className="absolute top-[21%] left-[30%] transform -translate-x-1/2"
-              style={{
-                width: "25%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
+            {/* Top left cluster */}
+            <div className="hidden md:block absolute top-[18%] left-[30%] transform -translate-x-1/2 w-1/4">
+              <img
+                src={topImage2}
+                alt="Top Image 2"
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-            <img
-              src={topImage3}
-              alt="Top Image2"
-              className="absolute top-[33%] left-[75%] transform -translate-x-1/2"
-              style={{
-                width: "27%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
+            {/* Top right image */}
+            <div className="hidden md:block absolute top-[28%] left-[75%] transform -translate-x-1/2 w-[27%]">
+              <img
+                src={topImage3}
+                alt="Top Image 3"
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-            <img
-              src={topImage4}
-              alt="Top Image2"
-              className="absolute top-[41%] left-[30%] transform -translate-x-1/2"
-              style={{
-                width: "15%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src={topImage2}
-              alt="Top Image2"
-              className="absolute top-[64%] left-[12.5%] transform -translate-x-1/2"
-              style={{
-                width: "25%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
+            {/* Middle left image */}
+            <div className="hidden md:block absolute top-[36%] left-[30%] transform -translate-x-1/2 w-[15%]">
+              <img
+                src={topImage4}
+                alt="Top Image 4"
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-            <img
-              src={topImage6}
-              alt="Top Image2"
-              className="absolute top-[68%] left-[65.5%] transform -translate-x-1/2"
-              style={{
-                width: "25%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src={topImage3}
-              alt="Bottom Image"
-              className="absolute -bottom-[5.5%] left-10"
-              style={{
-                width: "27%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src={topImage4}
-              alt="Top Image2"
-              className="absolute top-[80%] left-[19%] transform -translate-x-1/2"
-              style={{
-                width: "12%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
+            {/* Middle cluster */}
+            <div className="hidden md:block absolute top-[60%] left-[12.5%] transform -translate-x-1/2 w-1/4">
+              <img
+                src={topImage2}
+                alt="Top Image 2 Repeat"
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-            <img
-              src={topImage7}
-              alt="Top Image2"
-              className="absolute top-[82%] left-[18%] transform -translate-x-1/2"
-              style={{
-                width: "15%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src={topImage2}
-              alt="Top Image2"
-              className="absolute top-[85%] left-[70%] transform -translate-x-1/2"
-              style={{
-                width: "25%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
+            {/* Middle right image */}
+            <div className="hidden md:block absolute top-[70%] left-[65.5%] transform -translate-x-1/2 w-1/4">
+              <img
+                src={topImage6}
+                alt="Top Image 6"
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-            <div className="relative h-full flex flex-col justify-center py-8 xl:px-[12%] md:py-0 mt-[15%]">
+            {/* Bottom left image */}
+            <div className="hidden md:block absolute -bottom-[3.5%] left-10 w-[27%]">
+              <img
+                src={topImage3}
+                alt="Bottom Image"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Bottom small image */}
+            <div className="hidden md:block absolute top-[80%] left-[19%] transform -translate-x-1/2 w-[12%]">
+              <img
+                src={topImage4}
+                alt="Top Image 4 Repeat"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Bottom left cluster */}
+            <div className="hidden md:block absolute top-[82%] left-[18%] transform -translate-x-1/2 w-[15%]">
+              <img
+                src={topImage7}
+                alt="Top Image 7"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Bottom right image */}
+            <div className="hidden md:block absolute top-[87%] left-[70%] transform -translate-x-1/2 w-1/4">
+              <img
+                src={topImage2}
+                alt="Top Image 2 Final"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="relative h-full flex flex-col justify-center py-8 xl:px-[12%] md:py-0 ">
               <h1
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-tight mb-4 text-center md:text-left"
+                className="text-3xl md:text-5xl lg:text-4xl xl:text-7xl text-white font-bold leading-tight mb-4 text-center md:text-left"
                 style={{
                   textShadow: "0 4px 8px rgba(0,0,0,0.1)",
                 }}
@@ -202,7 +185,7 @@ const Index = () => {
                 <br />
                 Your Future
               </h1>
-              <p className="text-white text-lg md:text-xl text-center md:text-left opacity-90">
+              <p className="text-white text-base text-center md:text-left opacity-90">
                 Every Journey Starts with a First Click!
               </p>
             </div>
@@ -474,7 +457,7 @@ const Index = () => {
                     className="w-3 h-3 checked:bg-[#049c64] checked:border-[#049c64] focus:ring-[#049c64] focus:ring-offset-0 mt-0.5"
                     style={{ accentColor: "#049c64" }}
                   />
-                  <span className="text-xs ">
+                  <span className="text-xxs ">
                     I agree to{" "}
                     <a href="#" className="text-[#049c64] hover:underline">
                       Terms and Conditions
@@ -489,7 +472,7 @@ const Index = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#049c64] text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors lg:text-sm"
+                  className="w-full bg-[#049c64] text-white py-1 rounded-lg hover:bg-emerald-500 transition-colors lg:text-sm"
                 >
                   Create Account
                 </button>
@@ -502,13 +485,13 @@ const Index = () => {
 
                 <div className="flex justify-center space-x-4">
                   <button className="p-2 border border-gray-200 rounded-lg hover:bg-emerald-100">
-                    <img src={google} alt="Google" className="h-6 w-6" />
+                    <img src={google} alt="Google" className="h-4 w-4" />
                   </button>
                   <button className="p-2 border border-gray-200 rounded-lg hover:bg-emerald-100">
-                    <img src={facebook} alt="Facebook" className="h-6 w-6" />
+                    <img src={facebook} alt="Facebook" className="h-4 w-4" />
                   </button>
                   <button className="p-2 border border-gray-200 rounded-lg  hover:bg-emerald-100">
-                    <img src={apple} alt="GitHub" className="h-6 w-6" />
+                    <img src={apple} alt="GitHub" className="h-4 w-4" />
                   </button>
                 </div>
 
