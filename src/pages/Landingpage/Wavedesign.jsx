@@ -1,97 +1,102 @@
 import React from "react";
-import wave1 from "../../Images/Rectangle 16.png";
-import wave2 from "../../Images/Rectangle 18.png";
-import wave3 from "../../Images/Rectangle 19.png";
-import wave4 from "../../Images/Rectangle 20.png";
+import Wave from "react-wavify";
 
-const WaveDesign = () => {
+const AnimatedWaves = () => {
   return (
-    <div className="relative w-full -z-10">
-      {/* Wave backgrounds */}
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src={wave1}
-          alt="Wave 1"
-          className="w-full h-25 object-cover object-top"
-          style={{
-            animation: "wave1 8s infinite ease-in-out",
+    <div className="relative w-full h-32">
+      {" "}
+      {/* Reduced height of the container from h-48 to h-32 */}{" "}
+      {/* Fourth Wave now First (previously bottom) - 80% opacity */}
+      <div className="absolute inset-0 w-full h-full" style={{ opacity: 0.8 }}>
+        <Wave
+          fill="url(#gradient4)"
+          options={{
+            height: 10, // Height of the wave itself
+            amplitude: 10, // Amplitude of the wave
+            speed: 0.35, // Negative speed for right to left movement
+            points: 6,
           }}
-        />
+          className="h-full"
+        >
+          <defs>
+            <linearGradient id="gradient4" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stopColor="#FA9E9E" />
+              <stop offset="100%" stopColor="#FFBAB1" />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src={wave4}
-          alt="Wave 2"
-          className="w-full mt-3 h-25 object-cover object-top"
-          style={{
-            animation: "wave2 6s infinite ease-in-out",
+      {/* Third Wave now Second - 70% opacity */}
+      <div
+        className="absolute inset-0 w-full h-full mt-2"
+        style={{ opacity: 0.7 }}
+      >
+        <Wave
+          fill="url(#gradient3)"
+          options={{
+            height: 20, // Height of the wave itself
+            amplitude: 20, // Amplitude of the wave
+            speed: 0.25, // Negative speed for right to left movement
+            points: 5,
           }}
-        />
+          className="h-full"
+        >
+          <defs>
+            <linearGradient id="gradient3" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stopColor="#FF4BC5" />
+              <stop offset="100%" stopColor="#1A43AB" />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src={wave3}
-          alt="Wave 3"
-          className="w-full h-25 object-cover object-top"
-          style={{
-            animation: "wave3 7s infinite ease-in-out",
+      {/* Second Wave now Third - 60% opacity */}
+      <div
+        className="absolute inset-0 w-full h-full mt-4"
+        style={{ opacity: 0.6 }}
+      >
+        <Wave
+          fill="url(#gradient2)"
+          options={{
+            height: 15, // Height of the wave itself
+            amplitude: 15, // Amplitude of the wave
+            speed: 0.2, // Negative speed for right to left movement
+            points: 3,
           }}
-        />
+          className="h-full"
+        >
+          <defs>
+            <linearGradient id="gradient2" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stopColor="#172B4D" />
+              <stop offset="100%" stopColor="#FF4BC5" />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src={wave2}
-          alt="Wave 4"
-          className="w-full mt-10 h-15 object-cover object-top"
-          style={{
-            animation: "wave4 5s infinite ease-in-out",
+      {/* First Wave now Fourth (previously top) - 80% opacity */}
+      <div
+        className="absolute inset-0 w-full h-full mt-6"
+        style={{ opacity: 0.8 }}
+      >
+        <Wave
+          fill="url(#gradient1)"
+          options={{
+            height: 12, // Height of the wave itself
+            amplitude: 12, // Amplitude of the wave
+            speed: 0.3, // Negative speed for right to left movement
+            points: 4,
           }}
-        />
+          className="h-full"
+        >
+          <defs>
+            <linearGradient id="gradient1" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stopColor="#9AE5CA" />
+              <stop offset="100%" stopColor="#00AA6B" />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
-
-      <style jsx>{`
-        @keyframes wave1 {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(15px);
-          }
-        }
-
-        @keyframes wave2 {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-10px);
-          }
-        }
-
-        @keyframes wave3 {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(8px);
-          }
-        }
-
-        @keyframes wave4 {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-5px);
-          }
-        }
-      `}</style>
     </div>
   );
 };
 
-export default WaveDesign;
+export default AnimatedWaves;
