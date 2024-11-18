@@ -46,14 +46,25 @@ function LandingPage() {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 pt-[10%] pb-[10%] lg:pl-[8%]">
+        <div className="container mx-auto px-4 pt-[5%] pb-[15%] lg:pl-[8%]">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Left Content */}
-            <div className="w-full lg:w-1/2 space-y-6 pl-[3%]">
+            <div className="w-full lg:w-1/2 relative ">
               <img
                 src={frameImage}
                 alt="star"
-                className="w-12 md:w-12  relative left-[60%]"
+                className="w-12 md:w-12  relative left-[65%] top-5"
+              />
+              <img
+                src={frameImage}
+                alt="star"
+                className="w-12 md:w-12 relative left-[90%] "
+              />
+
+              <img
+                src={frameImage}
+                alt="star"
+                className="w-12 md:w-12  relative left-[80%] top-10"
               />
 
               <div className="relative">
