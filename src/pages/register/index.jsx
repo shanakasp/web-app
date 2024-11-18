@@ -1,4 +1,4 @@
-import { ChevronDown, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import React from "react";
 import topRight from "../../Images/Ellipse 3.png";
 import bottomCenter from "../../Images/EllipseBottomOne.png";
@@ -72,7 +72,7 @@ const Index = () => {
       />
 
       <div
-        className="w-full xl:max-w-[1400px] mx-auto rounded-3xl overflow-hidden "
+        className="w-full md:max-w-[800px] xl:max-w-[1200px] mx-auto rounded-3xl overflow-hidden "
         style={{
           boxShadow: "0 8px 10px rgba(0, 0, 0, 0.3)",
         }}
@@ -221,127 +221,126 @@ const Index = () => {
                 </div>
               </div>
 
-              <h2 className="text-xl font-semibold text-center mb-8">
+              <h2 className="text-xl lg:text-base sm:text-sm font-semibold text-center mb-8">
                 Welcome Back. We're Here to Help You Succeed!
               </h2>
 
               <form className="space-y-4">
                 <div className="relative">
-                  <label className="text-[#3333333] mb-2 block">
+                  <label className="text-[#3333333] mb-2 block lg:text-sm">
                     First Name <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={userIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-5 h-5 absolute left-3 top-1.5 "
                     />
 
                     <input
                       type="text"
                       placeholder="Enter your First Name"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                     />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className=" mb-2 block">
-                    Last Name <span className="text-red-500">*</span>
+                  <label className=" mb-2 block lg:text-sm">
+                    Last Name <span className="text-red-500 ">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={userIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-5 h-5 absolute left-3 top-1.5 "
                     />
                     <input
                       type="text"
                       placeholder="Enter your Last Name"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                     />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="mb-2 block">
+                  <label className="mb-2 block lg:text-sm">
                     Email Address <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={mailIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-5 h-5 absolute left-3 top-1.5 "
                     />
                     <input
                       type="email"
                       placeholder="Enter your Email Address"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                     />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="mb-2 block">
+                  <label className="mb-2 block lg:text-sm">
                     Mobile Number <span className="text-red-500">*</span>
                   </label>
-                  <div className="flex gap-2">
-                    <select className="pl-3 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent w-24">
-                      <option className="#979797">+91</option>
+                  <div className="flex gap-1">
+                    <select className=" lg:text-sm  border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent w-20">
+                      <option className="#979797 ">+91</option>
                     </select>
                     <div className="relative flex-1">
-                      <Phone className="w-5 h-5 absolute left-3 top-3.5 icon-green" />
+                      <Phone className="w-4 h-4 absolute left-3 top-1.5 icon-green" />
                       <input
                         type="tel"
                         placeholder="Enter your Mobile Number"
-                        className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                        className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                       />
                     </div>
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className=" mb-2 block">
+                  <label className=" mb-2 block lg:text-sm">
                     Gender <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={user}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-5 h-5 absolute left-3 top-1 "
                     />
-                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
-                      <option value="" className="text-[#979797]">
+                    <select className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs text-[#979797] ">
+                      <option value="" className="text-[#979797] lg:text-xs">
                         Select Gender
                       </option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                       <option value="other">Other</option>
                     </select>
-                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="mb-2 block">
-                    Age <span className="text-red-500">*</span>
+                  <label className="mb-2 block lg:text-sm">
+                    Age <span className="text-red-500 ">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={calenderIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-4 h-4 absolute left-3 top-2 "
                     />
                     <input
                       type="number"
                       placeholder="Enter your Age"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                     />
                   </div>
                 </div>
 
                 <div className="relative mb-4">
-                  <label className="mb-2 block">
+                  <label className="mb-2 block lg:text-sm">
                     Overall Exp. in Years{" "}
                     <span className="text-red-500">*</span>
                   </label>
@@ -349,91 +348,88 @@ const Index = () => {
                     <img
                       src={expIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-4 h-4 absolute left-3 top-1.5 "
                     />
-                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
+                    <select className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs text-[#979797] ">
                       <option value="">Select your Experience</option>
                       <option value="0-1">0-1 years</option>
                       <option value="1-3">1-3 years</option>
                       <option value="3-5">3-5 years</option>
                       <option value="5+">5+ years</option>
                     </select>
-                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative mb-4">
-                  <label className=" mb-2 block">
+                  <label className=" mb-2 block lg:text-sm">
                     Residing State <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={locationIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-4 h-4 absolute left-3 top-1.5 "
                     />
-                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
+                    <select className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs text-[#979797] ">
                       <option value="">Select Residing State</option>
                     </select>
-                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="mb-2 block">
+                  <label className="mb-2 block lg:text-sm">
                     Current Location <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={locationIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-4 h-4 absolute left-3 top-1.5 "
                     />
-                    <select className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent appearance-none text-[#979797]">
+                    <select className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-xs placeholder:text-xs text-[#979797] ">
                       <option value="">Select Location</option>
                     </select>
-                    <ChevronDown className="w-5 h-5 absolute right-3 top-3 text-gray-400 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className="mb-2 block">
+                  <label className="mb-2 block lg:text-sm">
                     Password <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={pwIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-4 h-4 absolute left-3 top-1.5 "
                     />
                     <input
                       type="password"
                       placeholder="Enter Password"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                     />
                   </div>
                 </div>
 
                 <div className="relative">
-                  <label className=" mb-2 block">
-                    Confirm Password <span className="text-red-500">*</span>
+                  <label className=" mb-2 block lg:text-sm">
+                    Confirm Password <span className="text-red-500 ">*</span>
                   </label>
                   <div className="relative">
                     <img
                       src={pwIcon}
                       alt="User Icon"
-                      className="w-5 h-5 absolute left-3 top-3.5 "
+                      className="w-4 h-4 absolute left-3 top-1.5 "
                     />
                     <input
                       type="password"
                       placeholder="Enter Confirm Password"
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="block">
+                  <label className=" mb-2 block lg:text-sm">
                     Send Notifications <span className="text-red-500">*</span>
                   </label>
                   <div className="flex gap-4">
@@ -441,23 +437,23 @@ const Index = () => {
                       <input
                         type="radio"
                         name="notifications"
-                        className="w-4 h-4 accent-[#049c64] focus:ring-[#049c64] focus:ring-offset-0"
+                        className="w-3 h-3 accent-[#049c64] focus:ring-[#049c64] focus:ring-offset-0"
                       />
-                      <span>Yes</span>
+                      <span className="lg:text-xs">Yes</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input
                         type="radio"
                         name="notifications"
-                        className="w-4 h-4 accent-[#049c64] focus:ring-[#049c64] focus:ring-offset-0"
+                        className="w-3 h-3 accent-[#049c64] focus:ring-[#049c64] focus:ring-offset-0"
                       />
-                      <span>No</span>
+                      <span className="lg:text-xs">No</span>
                     </label>
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-gray-600 block">
+                  <label className="text-gray-600 block lg:text-sm">
                     Captcha <span className="text-red-500">*</span>
                   </label>
                   <img
@@ -468,17 +464,17 @@ const Index = () => {
                   <input
                     type="text"
                     placeholder="Enter Captcha Code"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                    className="w-full pl-10 pr-4 py-1 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm placeholder:text-xs"
                   />
                 </div>
 
                 <div className="flex items-start gap-2 [&>input]:accent-[#049c64]">
                   <input
                     type="checkbox"
-                    className="w-4 h-4 checked:bg-[#049c64] checked:border-[#049c64] focus:ring-[#049c64] focus:ring-offset-0 mt-0.5"
+                    className="w-3 h-3 checked:bg-[#049c64] checked:border-[#049c64] focus:ring-[#049c64] focus:ring-offset-0 mt-0.5"
                     style={{ accentColor: "#049c64" }}
                   />
-                  <span className="text-sm ">
+                  <span className="text-xs ">
                     I agree to{" "}
                     <a href="#" className="text-[#049c64] hover:underline">
                       Terms and Conditions
@@ -493,7 +489,7 @@ const Index = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#049c64] text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors"
+                  className="w-full bg-[#049c64] text-white py-3 rounded-lg hover:bg-emerald-500 transition-colors lg:text-sm"
                 >
                   Create Account
                 </button>
@@ -516,7 +512,7 @@ const Index = () => {
                   </button>
                 </div>
 
-                <div className="text-center text-gray-600">
+                <div className="text-center text-gray-600  lg:text-xs">
                   Already have an account?
                   <a
                     href="/login"
