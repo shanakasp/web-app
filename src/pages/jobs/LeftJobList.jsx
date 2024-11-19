@@ -166,7 +166,7 @@ const LeftJobList = ({ onSelectJob }) => {
     ]);
   }, []);
   return (
-    <div className="max-h-[calc(90vh)] lg:max-h-[calc(100vh)] xl:max-h-[calc(85vh)] md:max-h-[calc(100vh)] sm:max-h-[calc(80vh)] overflow-y-auto border rounded-lg custom-scrollbar">
+    <div className="max-h-[calc(90vh)] lg:max-h-[calc(95vh)] xl:max-h-[calc(95vh)] md:max-h-[calc(86vh)] sm:max-h-[calc(80vh)] overflow-y-auto border rounded-lg custom-scrollbar">
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
