@@ -53,21 +53,21 @@ function LandingPage() {
               <img
                 src={frameImage}
                 alt="star"
-                className="w-12 md:w-12  relative left-[65%] top-5"
+                className="w-12 md:w-12  relative left-[65%] -top-10"
               />
               <img
                 src={frameImage}
                 alt="star"
-                className="w-12 md:w-12 relative left-[90%] "
+                className="w-12 md:w-12 relative left-[90%] -top-10 "
               />
 
               <img
                 src={frameImage}
                 alt="star"
-                className="w-12 md:w-12  relative left-[80%] top-10"
+                className="w-12 md:w-12  relative left-[80%] -top-5"
               />
 
-              <div className="relative">
+              <div className="relative -mt-20">
                 <h1 className="text-4xl font-bold leading-tight">
                   Unlock your Next <br />
                   <span className="text-[#049c64] relative z-10">
@@ -87,7 +87,7 @@ function LandingPage() {
                 <br></br>
                 designed to match your career goals
               </p>
-              <div className="pt-5">
+              <div className="pt-12">
                 <button
                   onClick={handleClick}
                   className="flex items-center space-x-3 bg-[#049c64] hover:bg-emerald-500 text-white px-8 py-2.5 rounded-full text-base  transition-colors pt-3"
@@ -112,12 +112,13 @@ function LandingPage() {
               </div>
             </div>
             <div
-              className="w-full lg:w-1/3 bg-cover bg-center bg-no-repeat h-[280px] sm:h-[350px] shadow-lg rounded-2xl"
+              className="w-full lg:w-1/3 xl:w-1/4 mg:w-1/5 bg-cover bg-center bg-no-repeat h-[280px] sm:h-[350px] shadow-lg rounded-2xl "
               style={{
                 backgroundImage: `url(${backimgr})`,
+                marginTop: "40px",
               }}
             >
-              <div className="h-full flex flex-col justify-end p-3 sm:p-4">
+              <div className="h-full flex flex-col justify-end p-3 sm:p-4 ">
                 <div className="space-y-3 sm:space-y-6">
                   {/* Header Content */}
                   <div className="text-center px-2">
@@ -181,7 +182,7 @@ function LandingPage() {
       </section>
 
       {/* Wave Design Section */}
-      <div className="-mt-[10%]">
+      <div className="-mt-[16%]">
         {" "}
         <WaveDesign />
       </div>

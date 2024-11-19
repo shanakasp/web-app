@@ -282,7 +282,7 @@ const StatsPanel = () => {
                       <div className="p-2.5 text-xxxs xl:text-xxs text-left">
                         {item.salary}
                       </div>
-                      <div className="p-2.2 text-xxxs xl:text-xxs text-center pl-12">
+                      <div className="p-2.5 text-xxxs  xl:text-xxs text-center pl-12">
                         {item.count}
                       </div>
                     </div>

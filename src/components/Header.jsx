@@ -56,7 +56,7 @@ const Header = () => {
         </button>
 
         <ul
-          className={`list-none flex lg:gap-6 m-0 p-0 text-sm transition-all duration-300
+          className={`list-none flex lg:gap-6 m-0 p-0 lg:text-xs xl:text-sm transition-all duration-300
           ${isMenuOpen ? "flex" : "hidden"} 
           lg:flex flex-col lg:flex-row items-start lg:items-center 
           absolute lg:relative top-12 lg:top-0 right-0 
