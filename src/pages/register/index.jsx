@@ -63,14 +63,8 @@ const Index = () => {
       <img
         src={bottomCenter}
         alt="Bottom Center Image"
-        className="absolute lg:top-[214%] lg:right-[30%] hidden md:block xl:top-[93.3%]  "
-        style={{
-          width: "20%",
-          height: "auto",
-          objectFit: "cover",
-        }}
+        className="absolute top-[234.5%] right-[23%] hidden md:block"
       />
-
       <div
         className="w-full md:max-w-[800px] xl:max-w-[1200px] mx-auto rounded-3xl overflow-hidden "
         style={{
