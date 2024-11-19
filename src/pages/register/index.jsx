@@ -41,7 +41,7 @@ const Index = () => {
       <img
         src={topRight}
         alt="Top Right Image"
-        className="absolute top-0 right-0 hidden md:block z-10"
+        className="absolute top-0 right-0 hidden md:block"
         style={{
           width: "22%",
           height: "auto",
@@ -71,7 +71,7 @@ const Index = () => {
         }}
       /> */}
       <div
-        className="w-full md:max-w-[800px] xl:max-w-[1200px] mx-auto rounded-3xl overflow-hidden z-50"
+        className="w-full md:max-w-[800px] xl:max-w-[1200px] mx-auto rounded-3xl overflow-hidden  z-20"
         style={{
           boxShadow: "0 -8px 10px rgba(0, 0, 0, 0.3)",
         }}
