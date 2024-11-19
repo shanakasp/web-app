@@ -1,13 +1,11 @@
 import { Phone } from "lucide-react";
 import React from "react";
 import topRight from "../../Images/Ellipse 3.png";
-import bottomCenter from "../../Images/EllipseBottomOne.png";
 import topImage from "../../Images/TopRight2.png";
 import topImage3 from "../../Images/TopRight3.png";
 import topImage4 from "../../Images/Topright4.png";
 import apple from "../../Images/apple.png";
-import bottomRight from "../../Images/cricle100.png";
-import dots from "../../Images/dots.png";
+import bottomLast from "../../Images/backdrop.png";
 import facebook from "../../Images/facebook.png";
 import google from "../../Images/google.png";
 import expIcon from "../../Images/icons/Business Time.png";
@@ -24,32 +22,45 @@ import topImage7 from "../../Images/topRight7.png";
 const Index = () => {
   return (
     <div
-      className="min-h-screen w-full px-4 pt-[10%] lg:p-12 md:p-8 flex items-center justify-center"
+      className="min-h-screen w-full px-4 p-[10%] lg:p-12 md:p-8 flex items-center justify-center relative min-h-screen"
       style={{
         background: "linear-gradient(to right, #049D65 50%, #E0E1EF 50%)",
       }}
     >
+      {" "}
+      <img
+        src={bottomLast}
+        alt="Bottom Right Image"
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 hidden md:block"
+        style={{
+          width: "90%",
+          height: "auto",
+          objectFit: "cover",
+        }}
+      />
       <img
         src={topRight}
         alt="Top Right Image"
-        className="absolute top-0 right-0 hidden md:block"
+        className="absolute top-0 right-0 hidden md:block z-10"
         style={{
           width: "22%",
           height: "auto",
           objectFit: "cover",
         }}
       />
-      <img
+      {/* <img
         src={bottomRight}
         alt="Bottom Right Image"
-        className="absolute -bottom-44 right-0.5 hidden md:block"
+        className="absolute bottom-0 right-0 hidden md:block"
         style={{
           width: "26%",
           height: "auto",
           objectFit: "cover",
+          position: "absolute",
+          right: "2rem", // Adjust this value to fine-tune horizontal positioning
         }}
-      />
-      <img
+      /> */}
+      {/* <img
         src={dots}
         alt="Bottom Right Image"
         className="absolute -bottom-10 right-[5%] hidden md:block"
@@ -58,17 +69,11 @@ const Index = () => {
           height: "auto",
           objectFit: "cover",
         }}
-      />
-
-      <img
-        src={bottomCenter}
-        alt="Bottom Center Image"
-        className="absolute top-[234.5%] right-[23%] hidden md:block"
-      />
+      /> */}
       <div
-        className="w-full md:max-w-[800px] xl:max-w-[1200px] mx-auto rounded-3xl overflow-hidden "
+        className="w-full md:max-w-[800px] xl:max-w-[1200px] mx-auto rounded-3xl overflow-hidden z-50"
         style={{
-          boxShadow: "0 8px 10px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0 -8px 10px rgba(0, 0, 0, 0.3)",
         }}
       >
         <div className="flex flex-col md:flex-row">
