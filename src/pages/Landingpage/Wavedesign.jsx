@@ -11,10 +11,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient4)"
           options={{
-            height: 10, // Height of the wave itself
-            amplitude: 10, // Amplitude of the wave
-            speed: 0.35, // Positive speed for left to right movement
-            points: 6,
+            height: 35, // Height of the wave itself
+            amplitude: 40, // Amplitude of the wave
+            speed: 0.142, // Positive speed for left to right movement
+            points: 5,
           }}
           className="h-full"
         >
@@ -34,10 +34,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient3)"
           options={{
-            height: 20, // Height of the wave itself
-            amplitude: 20, // Amplitude of the wave
-            speed: 0.25, // Positive speed for left to right movement
-            points: 5,
+            height: 35, // Height of the wave itself
+            amplitude: 40, // Amplitude of the wave
+            speed: 0.16, // Positive speed for left to right movement
+            points: 6,
           }}
           className="h-full"
         >
@@ -57,10 +57,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient2)"
           options={{
-            height: 15, // Height of the wave itself
-            amplitude: 15, // Amplitude of the wave
-            speed: 0.2, // Positive speed for left to right movement
-            points: 3,
+            height: 35, // Height of the wave itself
+            amplitude: 40, // Amplitude of the wave
+            speed: 0.17, // Positive speed for left to right movement
+            points: 4,
           }}
           className="h-full"
         >
@@ -80,10 +80,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient1)"
           options={{
-            height: 12, // Height of the wave itself
-            amplitude: 12, // Amplitude of the wave
-            speed: 0.3, // Positive speed for left to right movement
-            points: 4,
+            height: 35, // Height of the wave itself
+            amplitude: 40, // Amplitude of the wave
+            speed: -0.14, // Positive speed for left to right movement
+            points: 5,
           }}
           className="h-full"
         >
