@@ -1,10 +1,12 @@
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activePath, setActivePath] = useState(window.location.pathname);
+  const location = useLocation(); // Use React Router's location
+  const activePath = location.pathname; // Get the current path
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +21,6 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleNavClick = (path) => {
-    setActivePath(path);
-    setIsMenuOpen(false);
   };
 
   const isActive = (path) => {
@@ -70,7 +67,6 @@ const Header = () => {
               href="/"
               className={`block w-full lg:w-auto px-3 py-1 font-normal hover:text-emerald-600 transition-colors duration-300
                 ${isActive("/") ? "text-emerald-600" : ""}`}
-              onClick={() => handleNavClick("/")}
             >
               Home
             </a>
@@ -80,7 +76,6 @@ const Header = () => {
               href="/jobs"
               className={`block w-full lg:w-auto px-3 py-1 font-normal hover:text-emerald-600 transition-colors duration-300
                 ${isActive("/jobs") ? "text-emerald-600" : ""}`}
-              onClick={() => handleNavClick("/jobs")}
             >
               Jobs
             </a>
@@ -90,7 +85,6 @@ const Header = () => {
               href="/Search"
               className={`block w-full lg:w-auto px-3 py-1 font-normal hover:text-emerald-600 transition-colors duration-300
                 ${isActive("/Search") ? "text-emerald-600" : ""}`}
-              onClick={() => handleNavClick("/Search")}
             >
               iSearch
             </a>
@@ -100,7 +94,6 @@ const Header = () => {
               href="#services"
               className={`block w-full lg:w-auto px-3 py-1 font-normal hover:text-emerald-600 transition-colors duration-300
                 ${isActive("#services") ? "text-emerald-600" : ""}`}
-              onClick={() => handleNavClick("#services")}
             >
               About Us
             </a>
@@ -110,7 +103,6 @@ const Header = () => {
               href="#portfolio"
               className={`block w-full lg:w-auto px-3 py-1 font-normal hover:text-emerald-600 transition-colors duration-300
                 ${isActive("#portfolio") ? "text-emerald-600" : ""}`}
-              onClick={() => handleNavClick("#portfolio")}
             >
               Contact Us
             </a>
@@ -120,7 +112,6 @@ const Header = () => {
               href="/login"
               className={`block w-full lg:w-auto text-center lg:text-left bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-1 rounded transition-colors duration-300
                 ${isActive("/login") ? "bg-emerald-700" : ""}`}
-              onClick={() => handleNavClick("/login")}
             >
               Login
             </a>
