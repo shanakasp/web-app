@@ -16,7 +16,6 @@ const AnimatedWaves = () => {
             speed: 0.142, // Positive speed for left to right movement
             points: 3,
           }}
-          className="h-full"
         >
           <defs>
             <linearGradient id="gradient4" x1="0" x2="1" y1="0" y2="0">
@@ -39,7 +38,6 @@ const AnimatedWaves = () => {
             speed: 0.122, // Positive speed for left to right movement
             points: 5,
           }}
-          className="h-full"
         >
           <defs>
             <linearGradient id="gradient3" x1="0" x2="1" y1="0" y2="0">
@@ -62,7 +60,6 @@ const AnimatedWaves = () => {
             speed: 0.112, // Positive speed for left to right movement
             points: 5,
           }}
-          className="h-full"
         >
           <defs>
             <linearGradient id="gradient2" x1="0" x2="1" y1="0" y2="0">
@@ -85,7 +82,6 @@ const AnimatedWaves = () => {
             speed: 0.102, // Positive speed for left to right movement
             points: 5,
           }}
-          className="h-full"
         >
           <defs>
             <linearGradient id="gradient1" x1="0" x2="1" y1="0" y2="0">
