@@ -118,8 +118,8 @@ function LandingPage() {
                 marginTop: "40px",
               }}
             >
-              <div className="h-full flex flex-col justify-end p-3 sm:p-4 ">
-                <div className="space-y-3 sm:space-y-6">
+              <div className="h-full flex flex-col justify-end lg:pb-4 sm:p-4 ">
+                <div className=" sm:space-y-6">
                   {/* Header Content */}
                   <div className="text-center px-2">
                     <h2 className="text-base font-bold text-gray-800 mb-1 sm:mb-2">
@@ -132,7 +132,7 @@ function LandingPage() {
                   </div>
 
                   {/* Search Form */}
-                  <div className="bg-[#fff9f7] rounded-lg shadow-md p-2 space-y-2 sm:space-y-0 sm:flex sm:items-center">
+                  <div className="bg-[#fff9f7] rounded-lg shadow-md px-2 py-1 space-y-2 sm:space-y-0 sm:flex sm:items-center">
                     {/* Search Role */}
                     <div className="flex items-center w-full sm:w-auto sm:flex-[3]">
                       <Search className="w-4 h-4 text-gray-400 mr-1 flex-shrink-0" />
@@ -171,7 +171,7 @@ function LandingPage() {
 
                     {/* Search Button */}
                     <button className="w-full sm:w-auto bg-[#049c64] hover:bg-emerald-500 text-white px-2 py-2 rounded-md transition-colors mt-2 sm:mt-0 sm:ml-2">
-                      <Search className="w-4 h-4 mx-auto" />
+                      <Search className="w-3 h-3 mx-auto" />
                     </button>
                   </div>
                 </div>
