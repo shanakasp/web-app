@@ -8,7 +8,7 @@ import facebookIcon from "../Images/fb.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#172b4d] text-[#979797] font-poppins pb-2">
+    <footer className="bg-[#172b4d] text-[#979797] font-poppins pb-2 xl:px-12">
       <div className="w-full max-w-4xl xl:max-w-7xl mx-auto py-2 px-4 opacity-90">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {/* Find your way section */}
