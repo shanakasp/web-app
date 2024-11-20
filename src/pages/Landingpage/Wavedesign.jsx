@@ -12,9 +12,9 @@ const AnimatedWaves = () => {
           fill="url(#gradient4)"
           options={{
             height: 45, // Height of the wave itself
-            amplitude: 30, // Amplitude of the wave
+            amplitude: 40, // Amplitude of the wave
             speed: 0.142, // Positive speed for left to right movement
-            points: 5,
+            points: 3,
           }}
           className="h-full"
         >
@@ -35,8 +35,8 @@ const AnimatedWaves = () => {
           fill="url(#gradient3)"
           options={{
             height: 45, // Height of the wave itself
-            amplitude: 25, // Amplitude of the wave
-            speed: 0.142, // Positive speed for left to right movement
+            amplitude: 40, // Amplitude of the wave
+            speed: 0.122, // Positive speed for left to right movement
             points: 5,
           }}
           className="h-full"
@@ -59,7 +59,7 @@ const AnimatedWaves = () => {
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.142, // Positive speed for left to right movement
+            speed: 0.112, // Positive speed for left to right movement
             points: 5,
           }}
           className="h-full"
@@ -82,8 +82,8 @@ const AnimatedWaves = () => {
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.142, // Positive speed for left to right movement
-            points: 4,
+            speed: 0.102, // Positive speed for left to right movement
+            points: 5,
           }}
           className="h-full"
         >
