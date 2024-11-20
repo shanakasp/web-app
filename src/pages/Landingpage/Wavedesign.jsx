@@ -6,14 +6,14 @@ const AnimatedWaves = () => {
     <div className="relative w-full h-32">
       {/* Fourth Wave now First (previously bottom) - 80% opacity */}
       <div
-        className="mt-2 absolute inset-0 w-full h-full"
+        className="mt-1 absolute inset-0 w-full h-full"
         style={{ opacity: 0.8 }}
       >
         <Wave
           fill="url(#gradient4)"
           options={{
             height: 35, // Height of the wave itself
-            amplitude: 40, // Amplitude of the wave
+            amplitude: 45, // Amplitude of the wave
             speed: 0.112, // Positive speed for left to right movement
             points: 4,
           }}
@@ -60,7 +60,7 @@ const AnimatedWaves = () => {
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.098, // Positive speed for left to right movement
+            speed: 0.13, // Positive speed for left to right movement
             points: 5,
           }}
         >
@@ -74,16 +74,13 @@ const AnimatedWaves = () => {
       </div>
 
       {/* First Wave now Fourth (previously top) - 80% opacity */}
-      <div
-        className="absolute inset-0 w-full h-full mt-3"
-        style={{ opacity: 0.8 }}
-      >
+      <div className="absolute inset-0 w-full h-full " style={{ opacity: 0.8 }}>
         <Wave
           fill="url(#gradient1)"
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.102, // Positive speed for left to right movement
+            speed: 0.095, // Positive speed for left to right movement
             points: 5,
           }}
         >
