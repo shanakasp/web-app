@@ -4,8 +4,6 @@ import Wave from "react-wavify";
 const AnimatedWaves = () => {
   return (
     <div className="relative w-full h-32">
-      {" "}
-      {/* Reduced height of the container from h-48 to h-32 */}{" "}
       {/* Fourth Wave now First (previously bottom) - 80% opacity */}
       <div className="absolute inset-0 w-full h-full" style={{ opacity: 0.8 }}>
         <Wave
@@ -13,7 +11,7 @@ const AnimatedWaves = () => {
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.142, // Positive speed for left to right movement
+            speed: 0.112, // Positive speed for left to right movement
             points: 3,
           }}
         >
@@ -25,9 +23,10 @@ const AnimatedWaves = () => {
           </defs>
         </Wave>
       </div>
+
       {/* Third Wave now Second - 70% opacity */}
       <div
-        className="absolute inset-0 w-full h-full mt-2"
+        className="absolute inset-0 w-full h-full mt-1"
         style={{ opacity: 0.7 }}
       >
         <Wave
@@ -35,7 +34,7 @@ const AnimatedWaves = () => {
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.122, // Positive speed for left to right movement
+            speed: 0.102, // Positive speed for left to right movement
             points: 5,
           }}
         >
@@ -47,9 +46,10 @@ const AnimatedWaves = () => {
           </defs>
         </Wave>
       </div>
+
       {/* Second Wave now Third - 60% opacity */}
       <div
-        className="absolute inset-0 w-full h-full mt-4"
+        className="absolute inset-0 w-full h-full mt-2"
         style={{ opacity: 0.6 }}
       >
         <Wave
@@ -57,7 +57,7 @@ const AnimatedWaves = () => {
           options={{
             height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.112, // Positive speed for left to right movement
+            speed: 0.098, // Positive speed for left to right movement
             points: 5,
           }}
         >
@@ -69,9 +69,10 @@ const AnimatedWaves = () => {
           </defs>
         </Wave>
       </div>
+
       {/* First Wave now Fourth (previously top) - 80% opacity */}
       <div
-        className="absolute inset-0 w-full h-full mt-6"
+        className="absolute inset-0 w-full h-full mt-3"
         style={{ opacity: 0.8 }}
       >
         <Wave
