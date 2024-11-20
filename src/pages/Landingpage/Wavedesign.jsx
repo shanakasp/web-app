@@ -11,8 +11,8 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient4)"
           options={{
-            height: 35, // Height of the wave itself
-            amplitude: 40, // Amplitude of the wave
+            height: 45, // Height of the wave itself
+            amplitude: 30, // Amplitude of the wave
             speed: 0.142, // Positive speed for left to right movement
             points: 5,
           }}
@@ -34,10 +34,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient3)"
           options={{
-            height: 35, // Height of the wave itself
-            amplitude: 40, // Amplitude of the wave
-            speed: 0.16, // Positive speed for left to right movement
-            points: 6,
+            height: 45, // Height of the wave itself
+            amplitude: 25, // Amplitude of the wave
+            speed: 0.142, // Positive speed for left to right movement
+            points: 5,
           }}
           className="h-full"
         >
@@ -57,10 +57,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient2)"
           options={{
-            height: 35, // Height of the wave itself
+            height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: 0.17, // Positive speed for left to right movement
-            points: 4,
+            speed: 0.142, // Positive speed for left to right movement
+            points: 5,
           }}
           className="h-full"
         >
@@ -80,10 +80,10 @@ const AnimatedWaves = () => {
         <Wave
           fill="url(#gradient1)"
           options={{
-            height: 35, // Height of the wave itself
+            height: 45, // Height of the wave itself
             amplitude: 40, // Amplitude of the wave
-            speed: -0.14, // Positive speed for left to right movement
-            points: 5,
+            speed: 0.142, // Positive speed for left to right movement
+            points: 4,
           }}
           className="h-full"
         >
