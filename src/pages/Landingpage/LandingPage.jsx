@@ -37,7 +37,7 @@ function LandingPage() {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
         {/* Background Image */}
-        <div className="absolute top-0 left-0 w-4/5 h-[120vh] -z-10">
+        <div className="absolute top-0 left-0 w-[85%] h-[120vh] -z-10">
           <img
             src={myImage}
             alt="background"
@@ -46,7 +46,7 @@ function LandingPage() {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 pt-[5%] pb-[15%] lg:pl-[8%]">
+        <div className="container mx-auto pl-4 pt-[5%] pb-[15%] lg:pl-[8%] pr-[-5%]">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 relative ">
