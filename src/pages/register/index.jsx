@@ -17,6 +17,7 @@ import pwIcon from "../../Images/icons/password.png";
 import user from "../../Images/icons/user.png";
 import logo from "../../Images/logo.png";
 import topImage2 from "../../Images/register2.png";
+import bottomRight from "../../Images/rightCenter10.png";
 import topImage6 from "../../Images/topRight5.png";
 import topImage7 from "../../Images/topRight7.png";
 const Index = () => {
@@ -31,7 +32,7 @@ const Index = () => {
       <img
         src={bottomLast}
         alt="Bottom Right Image"
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 hidden md:block"
+        className="absolute bottom-0 left-[49.8%] transform -translate-x-1/2 hidden md:block"
         style={{
           width: "90%",
           height: "auto",
@@ -41,25 +42,25 @@ const Index = () => {
       <img
         src={topRight}
         alt="Top Right Image"
-        className="absolute top-0 right-0 hidden md:block"
+        className="absolute top-0 right-0 hidden md:block w-[22%] xl:w-[18%]"
         style={{
-          width: "22%",
           height: "auto",
           objectFit: "cover",
         }}
       />
-      {/* <img
+      <img
         src={bottomRight}
-        alt="Bottom Right Image"
-        className="absolute bottom-0 right-0 hidden md:block"
+        alt="Center Right Image"
+        className="absolute hidden md:block w-[26%] xl:w-[18%]"
         style={{
-          width: "26%",
           height: "auto",
           objectFit: "cover",
-          position: "absolute",
-          right: "2rem", // Adjust this value to fine-tune horizontal positioning
+          right: 0, // Align to the right
+          top: "50%", // Position at 50% from the top
+          transform: "translateY(-50%)", // Adjust for vertical centering
+          position: "absolute", // Ensure absolute positioning
         }}
-      /> */}
+      />
       {/* <img
         src={dots}
         alt="Bottom Right Image"
