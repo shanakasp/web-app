@@ -37,7 +37,7 @@ function LandingPage() {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
         {/* Background Image */}
-        <div className="absolute top-0 left-0 w-[83%] h-[120vh] -z-10">
+        <div className="absolute top-0 left-0 w-[83%] h-[130vh] -z-10">
           <img
             src={myImage}
             alt="background"
@@ -47,7 +47,7 @@ function LandingPage() {
 
         {/* Main Content */}
         <div className="container mx-auto pl-4 pt-[5%] pb-[15%] lg:pl-[8%] pr-[-5%]">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 pl-[-2%]">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 pl-[-2%] pr-[4%]">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 relative ">
               <img
@@ -68,7 +68,7 @@ function LandingPage() {
               />
 
               <div className="relative -mt-20">
-                <h1 className="text-4xl font-bold leading-tight">
+                <h1 className="text-4xl font-bold leading-tight mb-3">
                   Unlock your Next <br />
                   <span className="text-[#049c64] relative z-10">
                     Career
@@ -112,7 +112,7 @@ function LandingPage() {
               </div>
             </div>
             <div
-              className="w-full lg:w-1/3 xl:w-1/4 mg:w-1/5 bg-cover bg-center bg-no-repeat h-[280px] sm:h-[350px] shadow-lg rounded-2xl "
+              className="w-full lg:w-1/3 xl:w-1/4 mg:w-1/5 bg-cover bg-center bg-no-repeat h-[280px] sm:h-[350px] shadow-lg rounded-2xl lg:ml-16 xl:ml-12"
               style={{
                 backgroundImage: `url(${backimgr})`,
                 marginTop: "40px",
@@ -139,7 +139,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Search Role"
-                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[10px]"
+                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[9px]"
                       />
                     </div>
 
@@ -152,7 +152,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Exp"
-                        className="w-4 bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[10px]"
+                        className="w-4 sm:w-12 bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[9px] "
                       />
                     </div>
 
@@ -165,7 +165,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Location"
-                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[10px]"
+                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[9px]"
                       />
                     </div>
 
