@@ -139,7 +139,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Search Role"
-                        className="w-full bg-transparent outline-none text-gray-600 text-[10px]"
+                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[10px]"
                       />
                     </div>
 
@@ -152,7 +152,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Exp"
-                        className="w-4 bg-transparent outline-none text-gray-600 text-[10px]"
+                        className="w-4 bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[10px]"
                       />
                     </div>
 
@@ -165,7 +165,7 @@ function LandingPage() {
                       <input
                         type="text"
                         placeholder="Location"
-                        className="w-full bg-transparent outline-none text-gray-600 text-[10px]"
+                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[10px]"
                       />
                     </div>
 
