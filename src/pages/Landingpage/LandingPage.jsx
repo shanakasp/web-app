@@ -188,7 +188,7 @@ function LandingPage() {
       </div>
 
       {/* Stats Panel */}
-      <div className="mt-8 md:mt-1  ">
+      <div className=" md:mt-1  ">
         <StatsPanel />
       </div>
 

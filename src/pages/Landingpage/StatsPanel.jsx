@@ -72,21 +72,21 @@ const StatsPanel = () => {
     <div>
       {" "}
       <div className="relative z-40 w-full bg-[#fff9f7] pb-5  ">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-gray-300 shadow-lg py-3">
+        <div className="flex overflow-x-auto sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-gray-300 shadow-lg py-3">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-[#fff9f7] bg-opacity-90 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col items-center justify-center hover:shadow-xl transition-shadow duration-300"
+              className="flex-shrink-0 w-40 sm:w-auto bg-[#fff9f7] bg-opacity-90 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col items-center justify-center hover:shadow-xl transition-shadow duration-300"
             >
               <div className="mb-2 sm:mb-3 md:mb-4 lg:mb-4 text-xs sm:text-base md:text-lg lg:text-xl">
                 <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-8">
                   {stat.icon}
                 </div>
               </div>
-              <div className="text-[#049c64] text-sm  font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4">
+              <div className="text-[#049c64] text-sm font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4">
                 {stat.value}
               </div>
-              <div className="text-[#979797] text-xs  text-center font-medium">
+              <div className="text-[#979797] text-xs text-center font-medium ">
                 {stat.label}
               </div>
             </div>
