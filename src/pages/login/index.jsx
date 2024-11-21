@@ -23,7 +23,7 @@ const Index = () => {
       <img
         src={topRight}
         alt="Top Right Image"
-        className="absolute top-0 right-0 hidden md:block"
+        className="absolute top-0 right-0 "
         style={{
           width: "16%", // Reduced size for better fit
           height: "auto",
@@ -34,7 +34,7 @@ const Index = () => {
       <img
         src={bottomRight}
         alt="Bottom Right Image"
-        className="absolute bottom-0 right-0 hidden md:block"
+        className="absolute bottom-0 right-0 "
         style={{
           width: "18%", // Reduced size for better fit
           height: "auto",
@@ -59,23 +59,12 @@ const Index = () => {
             <img
               src={topImage}
               alt="Top Image"
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 hidden md:block"
-              style={{
-                width: "65%", // Adjusted for better fit
-                height: "auto",
-                objectFit: "cover",
-              }}
+              className="w-2/3 hidden md:block h-auto object-cover absolute left-1/2 -translate-x-1/2 sm:left-auto sm:right-4 sm:top-4 sm:translate-x-0"
             />
-
             <img
               src={bottomImage}
               alt="Bottom Image"
-              className="absolute bottom-0 left-8 xl:ml-4 hidden md:block"
-              style={{
-                width: "70%", // Adjusted for better fit
-                height: "auto",
-                objectFit: "cover",
-              }}
+              className="w-2/3 h-auto hidden md:block object-cover absolute bottom-0 left-8 xl:ml-4 sm:left-4 sm:bottom-4"
             />
 
             <div className="relative h-full flex flex-col justify-center py-3 lg:px-[15%] xl:pl-[15%] md:py-0  sm:px-[15%] ">
@@ -89,7 +78,7 @@ const Index = () => {
                 <br />
                 Your Future
               </h1>
-              <p className="text-white text-sm md:text-md text-center md:text-left opacity-80">
+              <p className="text-white  text-sm md:text-md text-center md:text-left opacity-80">
                 Every Journey Starts with a First Click!
               </p>
             </div>

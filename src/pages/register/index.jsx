@@ -32,7 +32,7 @@ const Index = () => {
       <img
         src={bottomLast}
         alt="Bottom Right Image"
-        className="absolute bottom-0 left-[49.8%] transform -translate-x-1/2 hidden md:block"
+        className="absolute bottom-0 left-[49.8%] transform -translate-x-1/2 "
         style={{
           width: "90%",
           height: "auto",
@@ -42,7 +42,7 @@ const Index = () => {
       <img
         src={topRight}
         alt="Top Right Image"
-        className="absolute top-0 right-0 hidden md:block w-[22%] xl:w-[18%]"
+        className="absolute top-0 right-0  w-[22%] xl:w-[18%]"
         style={{
           height: "auto",
           objectFit: "cover",
@@ -51,7 +51,7 @@ const Index = () => {
       <img
         src={bottomRight}
         alt="Center Right Image"
-        className="absolute hidden md:block w-[26%] xl:w-[18%]"
+        className="absolute  w-[26%] xl:w-[18%]"
         style={{
           height: "auto",
           objectFit: "cover",
@@ -112,7 +112,7 @@ const Index = () => {
             </div>
 
             {/* Middle left image */}
-            <div className="hidden md:block absolute top-[36%] left-[30%] transform -translate-x-1/2 w-[15%]">
+            <div className="absolute top-[36%] left-[30%] transform -translate-x-1/2 w-[15%]">
               <img
                 src={topImage4}
                 alt="Top Image 4"
@@ -121,7 +121,7 @@ const Index = () => {
             </div>
 
             {/* Middle cluster */}
-            <div className="hidden md:block absolute top-[60%] left-[12.5%] transform -translate-x-1/2 w-1/4">
+            <div className="absolute top-[60%] left-[12.5%] transform -translate-x-1/2 w-1/4">
               <img
                 src={topImage2}
                 alt="Top Image 2 Repeat"
@@ -130,7 +130,7 @@ const Index = () => {
             </div>
 
             {/* Middle right image */}
-            <div className="hidden md:block absolute top-[70%] left-[65.5%] transform -translate-x-1/2 w-1/4">
+            <div className=" absolute top-[70%] left-[65.5%] transform -translate-x-1/2 w-1/4">
               <img
                 src={topImage6}
                 alt="Top Image 6"
