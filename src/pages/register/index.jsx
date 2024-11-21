@@ -112,7 +112,7 @@ const Index = () => {
             </div>
 
             {/* Middle left image */}
-            <div className="absolute top-[36%] left-[30%] transform -translate-x-1/2 w-[15%]">
+            <div className="hidden md:block  absolute top-[36%] left-[30%] transform -translate-x-1/2 w-[15%]">
               <img
                 src={topImage4}
                 alt="Top Image 4"
@@ -130,7 +130,7 @@ const Index = () => {
             </div>
 
             {/* Middle right image */}
-            <div className=" absolute top-[70%] left-[65.5%] transform -translate-x-1/2 w-1/4">
+            <div className="hidden md:block  absolute top-[70%] left-[65.5%] transform -translate-x-1/2 w-1/4">
               <img
                 src={topImage6}
                 alt="Top Image 6"
