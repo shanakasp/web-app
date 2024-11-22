@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import ProfileDetails from "./ProfileDetails"; // Assuming you have this component
-import SavedJobs from "./SavedJobs"; // Assuming you have this component
-
+import ProfileDetails from "./ProfileDetails";
+import SavedJobs from "./SavedJobs";
 const Index = () => {
   // State to track the active tab
   const [activeTab, setActiveTab] = useState("profile");
