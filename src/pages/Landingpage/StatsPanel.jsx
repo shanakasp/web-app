@@ -14,7 +14,7 @@ const StatsPanel = () => {
           className="w-15 h-15 text-#049c64
 "
         />
-      ), // Fixed the icon as an image
+      ),
       value: "250+",
       label: "Number of Companies",
     },
@@ -59,8 +59,7 @@ const StatsPanel = () => {
         <img
           src={Calendar3}
           alt="Job Ads (30 Days)"
-          className="w-15 h-15 text-#049c64
-"
+          className="w-10 h-3.5 md:w-12 md:h-6 lg:w-12 lg:h-8"
         />
       ),
       value: "2000+",

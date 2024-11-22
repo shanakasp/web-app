@@ -4,7 +4,6 @@ import Wave from "react-wavify";
 const AnimatedWaves = () => {
   return (
     <div className="relative w-full h-32">
-      {/* Fourth Wave now First (previously bottom) - 80% opacity */}
       <div
         className="mt-1 absolute inset-0 w-full h-full"
         style={{ opacity: 0.8 }}
@@ -27,7 +26,6 @@ const AnimatedWaves = () => {
         </Wave>
       </div>
 
-      {/* Third Wave now Second - 70% opacity */}
       <div
         className="absolute inset-0 w-full h-full mt-2"
         style={{ opacity: 0.7 }}
@@ -50,7 +48,6 @@ const AnimatedWaves = () => {
         </Wave>
       </div>
 
-      {/* Second Wave now Third - 60% opacity */}
       <div
         className="absolute inset-0 w-full h-full mt-2"
         style={{ opacity: 0.6 }}
@@ -73,7 +70,6 @@ const AnimatedWaves = () => {
         </Wave>
       </div>
 
-      {/* First Wave now Fourth (previously top) - 80% opacity */}
       <div className="absolute inset-0 w-full h-full " style={{ opacity: 0.8 }}>
         <Wave
           fill="url(#gradient1)"

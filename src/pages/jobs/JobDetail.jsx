@@ -8,7 +8,6 @@ const JobDetail = () => {
     <div className="max-w-7xl min-h-[calc(95vh)] bg-[#fff9f7] rounded-lg shadow-lg p-2 border max-h-[calc(90vh)] lg:max-h-[calc(95vh)] xl:max-h-[calc(92vh)] md:max-h-[calc(85vh)] sm:max-h-[calc(80vh)]">
       <div className="flex justify-between items-center px-4">
         {" "}
-        {/* Added padding here */}
         <h1 className="text-base font-bold text-[#333333]-gray-900">
           Delivery Head - Customer Service Operations (15-20 yrs)
         </h1>
@@ -23,7 +22,6 @@ const JobDetail = () => {
       </div>
       <div className="flex justify-end my-1 px-4">
         {" "}
-        {/* Added padding here as well */}
         <button className="inline-flex items-center px-3 py-1 text-xxxxs xl:text-xxs bg-[#049c64] text-white hover:bg-emerald-600 gap-2">
           <BsLightningCharge className="h-4 w-4" />
           Easy Apply
