@@ -118,10 +118,10 @@ function LandingPage() {
                 marginTop: "40px",
               }}
             >
-              <div className="h-full flex flex-col justify-end lg:pb-4 sm:p-4 ">
-                <div className=" sm:space-y-6">
+              <div className="h-full flex flex-col justify-end lg:pb-1 sm:p-4">
+                <div className="sm:space-y-6">
                   {/* Header Content */}
-                  <div className="text-center px-2">
+                  <div className="text-center px-2 ">
                     <h2 className="text-base font-bold text-gray-800 mb-1 sm:mb-2">
                       Effortless Job Search Across Leading Companies
                     </h2>
@@ -131,46 +131,46 @@ function LandingPage() {
                     </p>
                   </div>
 
-                  {/* Search Form */}
-                  <div className="bg-[#fff9f7] rounded-lg shadow-md px-2 py-1 space-y-2 sm:space-y-0 sm:flex sm:items-center">
+                  {/* Search Form - Now in single row */}
+                  <div className="bg-[#fff9f7] rounded-lg shadow-md p-2 m-1 flex items-center gap-1 sm:gap-2 ">
                     {/* Search Role */}
-                    <div className="flex items-center w-full sm:w-auto sm:flex-[3]">
-                      <Search className="w-4 h-4 text-gray-400 mr-1 flex-shrink-0" />
+                    <div className="flex items-center flex-1 min-w-0 sm:flex-[3]">
+                      <Search className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400 mr-1 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Search Role"
-                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[9px]"
+                        className="w-full bg-transparent outline-none text-gray-600 text-xs sm:text-[9px] xl:text-[8px] placeholder:text-xs sm:placeholder:text-[9px]"
                       />
                     </div>
 
-                    {/* Divider - Visible only on larger screens */}
-                    <div className="hidden sm:block w-px h-6 bg-gray-300 mx-2" />
+                    {/* Divider */}
+                    <div className="w-px h-4 sm:h-6 bg-gray-300" />
 
                     {/* Experience */}
-                    <div className="flex items-center w-full sm:w-12">
+                    <div className="flex items-center w-16 sm:w-12">
                       <Briefcase className="w-3 h-3 text-gray-400 mr-1 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Exp"
-                        className="w-4 sm:w-12 bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[9px] "
+                        className="w-full bg-transparent outline-none text-gray-600 text-xs sm:text-[9px] xl:text-[8px] placeholder:text-xs sm:placeholder:text-[9px]"
                       />
                     </div>
 
-                    {/* Divider - Visible only on larger screens */}
-                    <div className="hidden sm:block w-px h-6 bg-gray-300 mx-2" />
+                    {/* Divider */}
+                    <div className="w-px h-4 sm:h-6 bg-gray-300" />
 
                     {/* Location */}
-                    <div className="flex items-center w-full sm:w-auto sm:flex-[2]">
-                      <MapPin className="w-3 h-4 text-gray-400 mr-1 flex-shrink-0" />
+                    <div className="flex items-center flex-1 min-w-0 sm:flex-[2]">
+                      <MapPin className="w-3 h-3 sm:w-3 sm:h-4 text-gray-400 mr-1 flex-shrink-0" />
                       <input
                         type="text"
                         placeholder="Location"
-                        className="w-full bg-transparent outline-none text-gray-600 xl:text-[8px] lg:text-[9px]"
+                        className="w-full bg-transparent outline-none text-gray-600 text-xs sm:text-[9px] xl:text-[8px] placeholder:text-xs sm:placeholder:text-[9px]"
                       />
                     </div>
 
                     {/* Search Button */}
-                    <button className="w-full sm:w-auto bg-[#049c64] hover:bg-emerald-500 text-white px-2 py-2 rounded-md transition-colors mt-2 sm:mt-0 sm:ml-2">
+                    <button className="bg-[#049c64] hover:bg-emerald-500 text-white p-1.5 sm:px-2 sm:py-2 rounded-md transition-colors flex-shrink-0">
                       <Search className="w-3 h-3 mx-auto" />
                     </button>
                   </div>
