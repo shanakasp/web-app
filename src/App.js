@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Routes,
   useLocation,
-} from "react-router-dom"; // Importing necessary components from react-router-dom
+} from "react-router-dom";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import LandingPage from "./pages/Landingpage/LandingPage";
@@ -16,7 +16,6 @@ import Profile from "./pages/userprofile/index.jsx";
 function AppContent() {
   const location = useLocation(); // Get the current location/pathname
 
-  // Check if the current route is the login page
   const showHeaderAndFooter =
     location.pathname !== "/login" && location.pathname !== "/register";
 
