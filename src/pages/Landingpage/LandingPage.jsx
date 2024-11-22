@@ -182,8 +182,7 @@ function LandingPage() {
       </section>
 
       {/* Wave Design Section */}
-      <div className="-mt-[16%]">
-        {" "}
+      <div className="-mt-[19%] sm:-mt-[16%]">
         <WaveDesign />
       </div>
 
