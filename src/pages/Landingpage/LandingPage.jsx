@@ -132,7 +132,7 @@ function LandingPage() {
                   </div>
 
                   {/* Search Form - Now in single row */}
-                  <div className="bg-[#fff9f7] rounded-lg shadow-md p-2 max-sm:m-1 flex items-center gap-1">
+                  <div className="bg-[#fff9f7] rounded-lg shadow-md py-0.5 px-1  max-sm:m-1 flex items-center gap-1">
                     {/* Search Role */}
                     <div className="flex items-center flex-1 min-w-0 sm:flex-[3]">
                       <Search className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400 mr-1 flex-shrink-0" />
